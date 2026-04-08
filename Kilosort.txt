@@ -1,0 +1,13 @@
+conda activate kilosort
+python -m kilosort
+
+
+If CANT open GUI ?
+try : python -m kilosort --reset
+
+
+
+conda activate phy2
+
+cd D:\xjs_spike\姜芳丽spike_rate\kilosort4
+phy template-gui params.py

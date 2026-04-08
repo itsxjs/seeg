@@ -1,0 +1,7 @@
+coupling_type,region,phase,mean_corr,std_corr,n_pairs
+intra_region,amygdala,like,-0.001555923072946288,0.09125680771654941,406
+intra_region,hippocampus,like,0.017510052870351046,0.09894633759840167,190
+inter_region,amygdala-hippocampus,like,0.0055975848059067156,0.08514610770903777,580
+intra_region,amygdala,dislike,-0.0011144853983203718,0.07962248067990325,378
+intra_region,hippocampus,dislike,-0.007926872321996169,0.07244677365184939,210
+inter_region,amygdala-hippocampus,dislike,0.00370417759709201,0.07675908799002762,588

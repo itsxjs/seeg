@@ -1,0 +1,4 @@
+phase,n_channels,n_up,n_down,n_neutral,median_delta_hz,mean_delta_hz
+all,64,0,0,64,0.0,0.0031467013888888894
+free,64,0,0,64,0.0,0.011186079545454546
+rating,64,0,0,64,0.0,-0.009486607142857142

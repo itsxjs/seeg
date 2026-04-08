@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<SEEG_ElectrodesConf>
+ <ElectrodeConfiguration name="电极A-杏仁核" model="MA/I12003200S">
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="0"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="1"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="2"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="3"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="4"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="5"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="6"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="7"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="8"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="9"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="10"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="11"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="12"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="13"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="14"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="15"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="31"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="30"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="29"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="28"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="27"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="26"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-28" isHidden="0" absoluteChannelIndex="25"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="24"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="23"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-46" isHidden="0" absoluteChannelIndex="22"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="21"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="20"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="19"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="18"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="17"/>
+  <MicroElectrodeSite implantArea="杏仁核" portName="A" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="16"/>
+ </ElectrodeConfiguration>
+ <ElectrodeConfiguration name="电极B-海马头" model="MA/I10003200S">
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="0"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="1"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="2"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="3"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="4"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-55" isHidden="0" absoluteChannelIndex="5"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="6"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="7"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="8"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="9"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="10"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="11"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="12"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="13"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="14"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="15"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-22" isHidden="0" absoluteChannelIndex="31"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="30"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="29"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="28"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="27"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="26"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="25"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="24"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-59" isHidden="0" absoluteChannelIndex="23"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="22"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="21"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="20"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="19"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="18"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="17"/>
+  <MicroElectrodeSite implantArea="海马头" portName="B" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="16"/>
+ </ElectrodeConfiguration>
+ <ElectrodeConfiguration name="电极C-海马尾" model="MA/I12003200S">
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="0"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="1"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="2"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="3"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="4"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="5"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="6"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="7"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="8"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="9"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="10"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="11"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="12"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="13"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="14"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="15"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="31"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="30"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="29"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="28"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="27"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="26"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="25"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="24"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="23"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="22"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="21"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="20"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="19"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="18"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="17"/>
+  <MicroElectrodeSite implantArea="海马尾" portName="C" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="16"/>
+ </ElectrodeConfiguration>
+ <ElectrodeConfiguration name="电极E-楔前叶" model="MA/I14003200S">
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="0"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="1"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="2"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="3"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="4"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="5"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="6"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="7"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="8"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="9"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="10"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="11"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="12"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="13"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="14"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="15"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="31"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="30"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="29"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="28"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="27"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="26"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="25"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="24"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="23"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="22"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="21"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="20"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="19"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="18"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="17"/>
+  <MicroElectrodeSite implantArea="楔前叶" portName="D" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="16"/>
+ </ElectrodeConfiguration>
+ <ElectrodeConfiguration name="电极F-后岛" model="MA/I10003200S">
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="0"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="1"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="2"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="3"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="4"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="5"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="6"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="7"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="8"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="9"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="10"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="11"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-26" isHidden="0" absoluteChannelIndex="12"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="13"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="14"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="15"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="31"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-99" isHidden="0" absoluteChannelIndex="30"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="29"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="28"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-132" isHidden="0" absoluteChannelIndex="27"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-92" isHidden="0" absoluteChannelIndex="26"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="25"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="24"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="23"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="22"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="21"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="20"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="19"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="18"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="17"/>
+  <MicroElectrodeSite implantArea="后岛" portName="E" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="16"/>
+ </ElectrodeConfiguration>
+ <ElectrodeConfiguration name="电极K-CMT" model="MA/I14003200S">
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="" portName="A" isReference="0" isHidden="0" absoluteChannelIndex="-1"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="0"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="1"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="2"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="3"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="4"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="5"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="6"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="7"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="8"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="9"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="10"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="11"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="12"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="13"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="14"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="15"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="31"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="30"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="29"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="28"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="27"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="26"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="25"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="24"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="23"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="22"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="21"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="20"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="19"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="18"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="17"/>
+  <MicroElectrodeSite implantArea="CMT" portName="F" isReference="0" thresh="-30" isHidden="0" absoluteChannelIndex="16"/>
+ </ElectrodeConfiguration>
+</SEEG_ElectrodesConf>

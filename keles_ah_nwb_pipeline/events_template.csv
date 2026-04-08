@@ -1,0 +1,4 @@
+subject,onset,valence,event_type
+sub001,12.345,negative,valence_tag
+sub001,25.100,positive,event_boundary
+sub004,31.250,neutral,valence_tag

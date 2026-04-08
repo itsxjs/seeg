@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# macOS
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# System
+Thumbs.db
+.env
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+*.mat
+*.spk
+*.spkidx
+*.nwb
+*.raw
+
+# Data files (optional - uncomment if you want to track them)
+# *.mat
+# *.h5
+
+# Large files and directories
+System Volume Information/
+.Trash/
+
+# Large Data & Binaries (Neuroscience)
+*.bin
+*.spk
+*.spkidx
+*.npy
+*.mat
+*.exe
+*.zip
+*.rar
+*.7z
+concatenated_raw_data.bin
+concatenated_data_for_ks.bin
+pc_features.npy
+
+# Kilosort/Phy specific
+kilosort4/
+phy_env/
+phy_env312/
+rez.mat
+
+# Specific Large Folders to exclude if needed (Safe approach: ignore all data folders if they contain binaries)
+# Or keep it selective:

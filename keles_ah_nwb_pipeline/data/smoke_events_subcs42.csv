@@ -1,0 +1,4 @@
+subject,onset,valence,event_type
+sub-cs42,20.0,negative,event_boundary
+sub-cs42,60.0,neutral,event_boundary
+sub-cs42,100.0,positive,event_boundary

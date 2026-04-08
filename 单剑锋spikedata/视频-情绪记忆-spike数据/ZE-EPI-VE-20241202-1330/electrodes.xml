@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<SEEG_ElectrodesConf>
+ <ElectrodeConfiguration name="S01" model="MA/I8003200L">
+  <MacroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="63"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="59"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="55"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="51"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="48"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="52"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="56"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="60"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="0"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="4"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="8"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="12"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="15"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="11"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="7"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="3"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="61"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="57"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="53"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="49"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="50"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="54"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="58"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="62"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="2"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="6"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="10"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="14"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="13"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="9"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="5"/>
+  <MicroElectrodeSite implantArea="海马区" isReference="0" portName="A" absoluteChannelIndex="1"/>
+ </ElectrodeConfiguration>
+ <ElectrodeConfiguration name="S02" model="MA/I8003200L">
+  <MacroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MacroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="-1"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="31"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="27"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="23"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="19"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="16"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="20"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="24"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="28"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="32"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="36"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="40"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="44"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="47"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="43"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="39"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="35"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="29"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="25"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="21"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="17"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="18"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="22"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="26"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="30"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="34"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="38"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="42"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="46"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="45"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="41"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="37"/>
+  <MicroElectrodeSite implantArea="杏仁核" isReference="0" portName="A" absoluteChannelIndex="33"/>
+ </ElectrodeConfiguration>
+</SEEG_ElectrodesConf>

@@ -1,0 +1,15 @@
+numpy>=1.24
+scipy>=1.11
+pandas>=2.0
+pynwb>=2.6
+mne>=1.6
+elephant>=1.1
+neo>=0.13
+quantities>=0.15
+statsmodels>=0.14
+matplotlib>=3.7
+h5py>=3.9
+# optional for frequency-domain GC
+mne-connectivity>=0.7
+# optional alternative LME backend
+pymer4>=0.8
