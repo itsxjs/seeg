@@ -1,0 +1,125 @@
+import scipy.io
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from pathlib import Path
+
+# Paths
+data_dir = Path('/Users/defanive/Desktop/Diploma/SEEG_behavior')
+output_dir = Path('/Volumes/rmhyw/result/behavior_analysis/scene')
+output_dir.mkdir(parents=True, exist_ok=True)
+
+mat_files = list(data_dir.glob("*scene.mat"))
+all_data = []
+
+print(f"Found {len(mat_files)} scene behavior files.")
+
+for mat_path in mat_files:
+    sub_id = mat_path.name.split('_')[0]
+    # Skip sub008 as per previous instruction for general analysis, if you want him back, remove this.
+    if sub_id == 'sub008':
+        print(f"  Skipping {sub_id} (excluded).")
+        continue
+        
+    try:
+        mat_data = scipy.io.loadmat(str(mat_path))
+        # Look for the main matrix
+        matrix = None
+        for k in mat_data.keys():
+            if not k.startswith('__') and isinstance(mat_data[k], np.ndarray) and mat_data[k].ndim == 2:
+                # Expecting at least 6 columns
+                if mat_data[k].shape[1] >= 6:
+                    matrix = mat_data[k]
+                    break
+        
+        if matrix is not None:
+            # Column 3 (idx 2): Response (0 is no response)
+            # Column 4 (idx 3): Reaction Time (RT)
+            # Column 5 (idx 4): Expected/Target Category (assumed based on [3,2,1,2,3...])
+            # Column 6 (idx 5): Image Label
+            resp = matrix[:, 2]
+            rt = matrix[:, 3]
+            target = matrix[:, 4]  # Column 5
+            label = matrix[:, 5]
+            
+            df_sub = pd.DataFrame({
+                'subject': sub_id,
+                'response': resp,
+                'target': target,
+                'rt': rt,
+                'label': label,
+                'responded': (resp != 0).astype(int),
+                'correct': (resp == target).astype(int)
+            })
+            # Filter out extreme outliers in RT if necessary (optional)
+            # df_sub = df_sub[df_sub['rt'] > 0]
+            
+            all_data.append(df_sub)
+            resp_rate = df_sub['responded'].mean() * 100
+            mean_rt = df_sub[df_sub['responded'] == 1]['rt'].mean()
+            print(f"  Processed {sub_id}: {len(resp)} trials, Response Rate: {resp_rate:.2f}%, Mean RT: {mean_rt:.4f}s")
+    except Exception as e:
+        print(f"  Error processing {mat_path}: {e}")
+
+if not all_data:
+    print("No valid scene data found!")
+    exit()
+
+df_all = pd.concat(all_data, ignore_index=True)
+
+# 1. Subject-level statistics
+summary = df_all.groupby('subject').agg({
+    'responded': 'mean',
+    'correct': 'mean',
+    'rt': lambda x: x[df_all.loc[x.index, 'responded'] == 1].mean()
+}).reset_index()
+summary.columns = ['subject', 'response_rate', 'accuracy', 'mean_rt']
+print("\nScene Behavior Summary (Accuracy = Response matches Column 5):")
+print(summary)
+
+# Visualizations
+plt.style.use('seaborn-v0_8-muted')
+
+# Plot 1: Accuracy by Subject
+plt.figure(figsize=(10, 6))
+sns.barplot(data=summary, x='subject', y='accuracy', palette='rocket', hue='subject', legend=False)
+plt.title('Scene Experiment: Accuracy by Subject (Response == Target)')
+plt.ylabel('Accuracy (0-1)')
+plt.axhline(0.33, color='grey', linestyle='--', alpha=0.5, label='Chance (1/3)') # Assuming 3 categories
+plt.ylim(0, 1.1)
+plt.legend()
+plt.savefig(output_dir / 'scene_accuracy.png')
+
+# Plot 2: Response Rate by Subject
+plt.figure(figsize=(10, 6))
+sns.barplot(data=summary, x='subject', y='response_rate', palette='viridis', hue='subject', legend=False)
+plt.title('Scene Experiment: Response Rate by Subject')
+plt.ylabel('Response Rate (0-1)')
+plt.ylim(0, 1.1)
+plt.savefig(output_dir / 'scene_response_rate.png')
+
+# Plot 2: Reaction Time Distribution (Violin + Swarm)
+plt.figure(figsize=(12, 6))
+df_resp_only = df_all[df_all['responded'] == 1]
+sns.violinplot(data=df_resp_only, x='subject', y='rt', inner='quart', palette='Set2', hue='subject', legend=False)
+plt.title('Scene Experiment: Reaction Time (RT) Distribution per Subject')
+plt.ylabel('Reaction Time (s)')
+plt.savefig(output_dir / 'scene_rt_distribution.png')
+
+# Plot 3: Response Rate by Label (Are some images harder to react to?)
+plt.figure(figsize=(14, 6))
+label_summary = df_all.groupby('label')['responded'].mean().reset_index()
+sns.histplot(data=label_summary, x='responded', bins=20, kde=True, color='#118ab2')
+plt.title('Distribution of Response Rates Across Different Image Labels')
+plt.xlabel('Response Rate')
+plt.savefig(output_dir / 'scene_label_response_distribution.png')
+
+# Plot 4: RT vs Label (Optional, but useful to see consistency)
+plt.figure(figsize=(12, 6))
+sns.boxplot(data=df_resp_only, x='subject', y='rt', hue='subject', legend=False)
+plt.title('Scene Experiment: RT Boxplot (Filtered for Responded Trials)')
+plt.ylabel('Reaction Time (s)')
+plt.savefig(output_dir / 'scene_rt_boxplot.png')
+
+print(f"\nScene analysis complete. Results saved to {output_dir}")

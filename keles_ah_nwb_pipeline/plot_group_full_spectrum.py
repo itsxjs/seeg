@@ -265,12 +265,12 @@ def main() -> None:
     plt.close(fig2)
 
     # Plot 3: literature-style combined panel
-    fig3 = plt.figure(figsize=(10.8, 4.8), dpi=220)
-    gs = fig3.add_gridspec(1, 3, width_ratios=[1.25, 1.0, 1.0], wspace=0.35)
+    fig3 = plt.figure(figsize=(14.0, 5.2), dpi=220)
+    gs = fig3.add_gridspec(1, 3, width_ratios=[1.25, 1.0, 1.0], wspace=0.6, left=0.08, right=0.95, bottom=0.15, top=0.78)
 
     axc = fig3.add_subplot(gs[0, 0])
-    im2 = axc.imshow(group_coh, aspect='auto', origin='lower', extent=extent, cmap='viridis')
-    axc.set_title('A  Coherence (A-H)', loc='left', fontsize=13, fontweight='bold')
+    im2 = axc.imshow(group_coh, aspect='auto', origin='lower', extent=extent, cmap='viridis', interpolation='gaussian')
+    axc.set_title('A  Coherence (A-H)', loc='left', fontsize=13, fontweight='bold', pad=25)
     axc.set_xlabel('Time (s)')
     axc.set_ylabel('Frequency (Hz)')
     fig3.colorbar(im2, ax=axc, fraction=0.046, pad=0.04, label='Coherence')
@@ -281,7 +281,7 @@ def main() -> None:
     axa.plot(ref_freqs_gc, perm_thr_a, color='#4d4d4d', lw=1.1, ls='--', alpha=0.9)
     for lo, hi in sig_spans:
         axa.axvspan(lo, hi, color='#ef476f', alpha=0.18, lw=0)
-    axa.set_title('B  Spectral Granger Causality\nA→H', loc='left', fontsize=13, fontweight='bold')
+    axa.set_title('B  Spectral Granger Causality\nA→H', loc='left', fontsize=13, fontweight='bold', pad=25)
     axa.set_xlabel('Frequency (Hz)')
     axa.set_ylabel('Granger index')
     axa.set_xlim(2, 45)
@@ -298,10 +298,10 @@ def main() -> None:
     axh.set_xlim(2, 45)
     axh.grid(alpha=0.25)
 
-    fig3.suptitle(f'Group full-spectrum connectivity (n={len(used_files)} runs)', fontsize=11, y=0.99)
-    fig3.tight_layout(rect=[0, 0, 1, 0.96])
+    fig3.suptitle(f'Group full-spectrum connectivity (n={len(used_files)} runs)', fontsize=11, y=0.98)
+    # fig3.tight_layout(rect=[0, 0, 1, 0.96]) # Tight layout often ignores wspace in gridspec
     combo_png = out_dir / 'group_fullspectrum_literature_style.png'
-    fig3.savefig(combo_png)
+    fig3.savefig(combo_png, bbox_inches='tight')
     plt.close(fig3)
 
     summary_txt = out_dir / 'group_fullspectrum_summary.txt'
