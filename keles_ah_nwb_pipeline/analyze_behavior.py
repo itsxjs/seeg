@@ -55,6 +55,9 @@ if not all_data:
     exit()
 
 df_all = pd.concat(all_data, ignore_index=True)
+# Sort by subject ID numerically if possible, else alphabetically
+df_all['subject_num'] = df_all['subject'].str.extract('(\d+)').astype(float)
+df_all = df_all.sort_values(by='subject_num').drop(columns='subject_num')
 
 # 1. Subject-level summary
 sub_summary = df_all.groupby('subject')['rating'].agg(['mean', 'std', 'count']).reset_index()

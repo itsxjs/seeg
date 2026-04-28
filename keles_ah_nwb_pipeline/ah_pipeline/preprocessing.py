@@ -82,11 +82,10 @@ def run_hybrid_qc(ep: EpochData, cfg: PipelineConfig) -> tuple[EpochData, dict[s
 
     n_trials, n_ch, _ = data_uV.shape
     labels = ep.trial_info["valence"].astype(str).str.lower().to_numpy()
-    cond_masks = {
-        "negative": labels == "negative",
-        "neutral": labels == "neutral",
-        "positive": labels == "positive",
-    }
+    present_labels = [lab for lab in sorted(pd.unique(labels)) if lab and lab != "nan"]
+    if not present_labels:
+        present_labels = ["all"]
+    cond_masks = {lab: labels == lab for lab in present_labels}
 
     flag_rms = np.zeros((n_trials, n_ch), dtype=bool)
     flag_p2p = np.zeros((n_trials, n_ch), dtype=bool)
@@ -119,7 +118,7 @@ def run_hybrid_qc(ep: EpochData, cfg: PipelineConfig) -> tuple[EpochData, dict[s
     flag_p2p3s = np.zeros((n_trials, n_ch), dtype=bool)
     for ch in range(n_ch):
         p2p_full = np.max(data_uV[:, ch, :], axis=1) - np.min(data_uV[:, ch, :], axis=1)
-        for key in ("negative", "positive"):
+        for key in present_labels:
             idx = np.where(cond_masks[key])[0]
             if idx.size == 0:
                 continue

@@ -1,7 +1,7 @@
 #!/bin/bash
 # 直接在外接硬盘下载DANDI数据，避免本地空间不足
 
-EXTERNAL_STORAGE="/Volumes/人盘含鱼纹/keles_ah_nwb_pipeline/data"
+EXTERNAL_STORAGE="/Volumes/rmhyw/keles_ah_nwb_pipeline/data"
 DANDISET="DANDI:000623"
 
 echo "📥 开始从DANDI下载数据到外接硬盘..."

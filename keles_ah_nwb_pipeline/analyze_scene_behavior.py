@@ -67,6 +67,9 @@ if not all_data:
     exit()
 
 df_all = pd.concat(all_data, ignore_index=True)
+# Sort by subject ID numerically
+df_all['subject_num'] = df_all['subject'].str.extract(r'(\d+)').astype(float)
+df_all = df_all.sort_values(by='subject_num').drop(columns='subject_num')
 
 # 1. Subject-level statistics
 summary = df_all.groupby('subject').agg({
@@ -75,6 +78,7 @@ summary = df_all.groupby('subject').agg({
     'rt': lambda x: x[df_all.loc[x.index, 'responded'] == 1].mean()
 }).reset_index()
 summary.columns = ['subject', 'response_rate', 'accuracy', 'mean_rt']
+subject_order = summary['subject'].tolist()
 print("\nScene Behavior Summary (Accuracy = Response matches Column 5):")
 print(summary)
 
@@ -83,28 +87,30 @@ plt.style.use('seaborn-v0_8-muted')
 
 # Plot 1: Accuracy by Subject
 plt.figure(figsize=(10, 6))
-sns.barplot(data=summary, x='subject', y='accuracy', palette='rocket', hue='subject', legend=False)
+sns.barplot(data=summary, x='subject', y='accuracy', palette='rocket', hue='subject')
 plt.title('Scene Experiment: Accuracy by Subject (Response == Target)')
 plt.ylabel('Accuracy (0-1)')
 plt.axhline(0.33, color='grey', linestyle='--', alpha=0.5, label='Chance (1/3)') # Assuming 3 categories
 plt.ylim(0, 1.1)
-plt.legend()
+plt.legend([], frameon=False)
 plt.savefig(output_dir / 'scene_accuracy.png')
 
 # Plot 2: Response Rate by Subject
 plt.figure(figsize=(10, 6))
-sns.barplot(data=summary, x='subject', y='response_rate', palette='viridis', hue='subject', legend=False)
+sns.barplot(data=summary, x='subject', y='response_rate', palette='viridis', hue='subject')
 plt.title('Scene Experiment: Response Rate by Subject')
 plt.ylabel('Response Rate (0-1)')
 plt.ylim(0, 1.1)
+plt.legend([], frameon=False)
 plt.savefig(output_dir / 'scene_response_rate.png')
 
 # Plot 2: Reaction Time Distribution (Violin + Swarm)
 plt.figure(figsize=(12, 6))
 df_resp_only = df_all[df_all['responded'] == 1]
-sns.violinplot(data=df_resp_only, x='subject', y='rt', inner='quart', palette='Set2', hue='subject', legend=False)
+sns.violinplot(data=df_resp_only, x='subject', y='rt', inner='quart', color='#98c1d9', order=subject_order)
 plt.title('Scene Experiment: Reaction Time (RT) Distribution per Subject')
 plt.ylabel('Reaction Time (s)')
+plt.legend([], frameon=False)
 plt.savefig(output_dir / 'scene_rt_distribution.png')
 
 # Plot 3: Response Rate by Label (Are some images harder to react to?)
@@ -117,9 +123,10 @@ plt.savefig(output_dir / 'scene_label_response_distribution.png')
 
 # Plot 4: RT vs Label (Optional, but useful to see consistency)
 plt.figure(figsize=(12, 6))
-sns.boxplot(data=df_resp_only, x='subject', y='rt', hue='subject', legend=False)
+sns.boxplot(data=df_resp_only, x='subject', y='rt', order=subject_order, width=0.6, color='#7aa6c2')
 plt.title('Scene Experiment: RT Boxplot (Filtered for Responded Trials)')
 plt.ylabel('Reaction Time (s)')
+plt.legend([], frameon=False)
 plt.savefig(output_dir / 'scene_rt_boxplot.png')
 
 print(f"\nScene analysis complete. Results saved to {output_dir}")

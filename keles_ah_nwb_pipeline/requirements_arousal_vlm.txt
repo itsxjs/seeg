@@ -1,0 +1,24 @@
+# Isolated environment for local short.mp4 arousal annotation
+# Do not mix with the main pipeline requirements.txt
+
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+scipy>=1.12
+
+# Video and image decoding
+opencv-python-headless>=4.10
+Pillow>=10.3
+
+# Audio loading features
+librosa>=0.10.2
+soundfile>=0.12.1
+
+# VLM inference stack (Qwen2.5-VL compatible route)
+transformers>=4.49.0
+accelerate>=0.34.2
+huggingface-hub>=0.24.0
+safetensors>=0.4.4
+
+# PyTorch 2.4+ for Apple Silicon MPS support
+torch>=2.4

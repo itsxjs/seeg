@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import numpy as np
+import pandas as pd
 import scipy.signal as sps
 from mne.time_frequency import tfr_array_morlet
 
@@ -52,8 +53,11 @@ def compute_tf_bootstrap_z(ep: EpochData, cfg: PipelineConfig) -> TimeFrequencyR
 
     labels = ep.trial_info["valence"].astype(str).str.lower().to_numpy()
     cond_mean = {}
-    for cond in ("negative", "neutral", "positive"):
-        mask = labels == cond
+    present_labels = [lab for lab in sorted(pd.unique(labels)) if lab and lab != "nan"]
+    if not present_labels:
+        present_labels = ["all"]
+    for cond in present_labels:
+        mask = labels == cond if cond != "all" else np.ones_like(labels, dtype=bool)
         if np.any(mask):
             cond_mean[cond] = np.mean(z_ds[mask], axis=0)
         else:

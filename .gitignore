@@ -51,33 +51,22 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb
-*.mat
-*.spk
-*.spkidx
-*.nwb
+
+# --- TRACKED BY GIT LFS ---
+# Allow these extensions for LFS up to 2GB
+# .mat, .bin, .npy, .spk, .zip are handled by LFS in .gitattributes
+
+# --- STRICTLY IGNORED (FILES > 2GB OR RAW DATA) ---
+# GitHub LFS free/standard tier limits single files to 2GB.
+# We must ignore these extremely large raw/concatenated files.
 *.raw
-
-# Data files (optional - uncomment if you want to track them)
-# *.mat
-# *.h5
-
-# Large files and directories
-System Volume Information/
-.Trash/
-
-# Large Data & Binaries (Neuroscience)
-*.bin
+*concatenated_raw_data.bin
+*concatenated_data_for_ks.bin
 *.spk
 *.spkidx
-*.npy
-*.mat
-*.exe
-*.zip
-*.rar
-*.7z
-concatenated_raw_data.bin
-concatenated_data_for_ks.bin
-pc_features.npy
+
+# Specific large .mat files found in search
+ZE-EPI-VE-20241202-1330.mat
 
 # Kilosort/Phy specific
 kilosort4/
@@ -85,5 +74,7 @@ phy_env/
 phy_env312/
 rez.mat
 
-# Specific Large Folders to exclude if needed (Safe approach: ignore all data folders if they contain binaries)
-# Or keep it selective:
+# System
+System Volume Information/
+.Trash/
+$RECYCLE.BIN/
