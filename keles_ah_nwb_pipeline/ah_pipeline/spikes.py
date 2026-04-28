@@ -70,4 +70,5 @@ def ifr_hgamma_coupling(units_df: pd.DataFrame, ep: EpochData, cfg: PipelineConf
             }
         )
 
-    return SpikeResult(ifr=ifr_trials, ifr_times=ifr_time, psth=psth, coupling=pd.DataFrame(rows))
+    coupling_cols = ["subject", "trial", "valence", "spearman_rho", "p_value"]
+    return SpikeResult(ifr=ifr_trials, ifr_times=ifr_time, psth=psth, coupling=pd.DataFrame(rows, columns=coupling_cols))

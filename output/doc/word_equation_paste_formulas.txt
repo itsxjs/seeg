@@ -1,0 +1,131 @@
+说明：
+1. Word 的公式 Professional 不是 Markdown。
+2. 使用方法：在 Word 中按 Insert -> Equation 新建公式框，把下面单行公式复制进去。
+3. 如果 Word 处于 LaTeX 输入模式，粘贴后按空格或点击 Convert / Professional。
+4. 如果没有自动转换，进入 Equation 选项卡，将输入格式切到 LaTeX 后再粘贴。
+
+==============================
+2.3 LFP预处理流程
+==============================
+
+x_i^{\mathrm{filt}}(t)=\mathrm{Notch}_{49-51\,\mathrm{Hz}}\left(\mathrm{Bandpass}_{1-200\,\mathrm{Hz}}\left(\mathrm{Resample}_{1000\,\mathrm{Hz}}\left(x_i(t)\right)\right)\right)
+
+\bar{x}(t)=\frac{1}{N}\sum_{j=1}^{N}x_j^{\mathrm{filt}}(t)
+
+y_i(t)=x_i^{\mathrm{filt}}(t)-\bar{x}(t)
+
+e_{i,k}(\tau)=y_i(t_k+\tau),\quad \tau\in[-0.5,2.0]\,\mathrm{s}
+
+==============================
+2.3 伪迹剔除：稳健统计
+==============================
+
+\mathrm{FlatlineCriterion}=5,\quad \mathrm{ChannelCriterion}=0.8
+
+\mathrm{LineNoiseCriterion}=4,\quad \mathrm{BurstCriterion}=20,\quad \mathrm{WindowCriterion}=0.25
+
+\mathrm{RMS}_{\mathrm{base}}=\sqrt{\frac{1}{|B|}\sum_{t\in B}e(t)^2}
+
+\mathrm{RMS}_{\mathrm{resp}}=\sqrt{\frac{1}{|R|}\sum_{t\in R}e(t)^2}
+
+Q=\frac{\mathrm{RMS}_{\mathrm{resp}}}{\mathrm{RMS}_{\mathrm{base}}}
+
+\mathrm{PTP}=\max_{t\in R}e(t)-\min_{t\in R}e(t)
+
+z_{\mathrm{robust}}=0.6745\cdot\frac{v-\mathrm{median}(v)}{\mathrm{MAD}(v)}
+
+\mathrm{reject}_{\mathrm{robust}}=I\left(z_{\mathrm{robust}}>4\right)
+
+==============================
+2.3 伪迹剔除：振幅与峰-峰值阈值
+==============================
+
+\mathrm{reject}_{\mathrm{amp}}=I\left(\max_t |e(t)|\ge 200\,\mu\mathrm{V}\right)
+
+\mathrm{reject}_{\mathrm{ptp}}=I\left(\mathrm{PTP}_e\ge \mu_{\mathrm{PTP}}+3\sigma_{\mathrm{PTP}}\right)
+
+\mathrm{reject}=\mathrm{reject}_{\mathrm{robust}}\cup\mathrm{reject}_{\mathrm{amp}}\cup\mathrm{reject}_{\mathrm{ptp}}
+
+==============================
+2.4 Spike预处理：瞬时放电率
+==============================
+
+r_u(t)=\sum_{n=1}^{N_u}K_{\sigma}\left(t-s_{u,n}\right)
+
+K_{\sigma}(t)=\frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{t^2}{2\sigma^2}\right)
+
+\sigma=50\,\mathrm{ms},\quad \Delta t=10\,\mathrm{ms}
+
+==============================
+3.2.5 时频分析：Morlet小波与功率
+==============================
+
+\psi_f(t)=\frac{1}{\sqrt{\sigma_f\sqrt{\pi}}}\exp(2\pi i f t)\exp\left(-\frac{t^2}{2\sigma_f^2}\right)
+
+W_x(t,f)=\int_{-\infty}^{+\infty}x(\tau)\psi_f^*(\tau-t)\,d\tau
+
+P(t,f)=\left|W_x(t,f)\right|^2
+
+P_{\mathrm{dB}}(t,f)=10\log_{10}\left(\frac{P(t,f)}{\frac{1}{|B|}\sum_{\tau\in B}P(\tau,f)}\right)
+
+\Delta P_{c_1-c_2}(t,f)=\overline{P}_{c_1,\mathrm{dB}}(t,f)-\overline{P}_{c_2,\mathrm{dB}}(t,f)
+
+==============================
+4.2.5 主观偏好条件与神经指标
+==============================
+
+C(v)=\mathrm{like},\quad R(v)\ge 4
+
+C(v)=\mathrm{dislike},\quad R(v)\le 2
+
+\Delta P_{\mathrm{like}-\mathrm{dislike}}(t,f)=\overline{P}_{\mathrm{like},\mathrm{dB}}(t,f)-\overline{P}_{\mathrm{dislike},\mathrm{dB}}(t,f)
+
+\Delta r_u(t)=\overline{r}_{u,\mathrm{like}}(t)-\overline{r}_{u,\mathrm{dislike}}(t)
+
+\mathrm{slope}_u=\frac{\overline{r}_u(t_2)-\overline{r}_u(t_1)}{t_2-t_1}
+
+==============================
+5.2.2 视频事件标记与唤醒评分
+==============================
+
+w_m=[t_m,t_m+2\,\mathrm{s}],\quad t_m=t_0+m\cdot 1\,\mathrm{s}
+
+\mathrm{audio}_m=0.6\cdot \mathrm{RMS}_m+0.4\cdot \mathrm{Flux}_m
+
+\mathrm{audio}_{m,\mathrm{norm}}=100\cdot\frac{\mathrm{audio}_m-\min(\mathrm{audio})}{\max(\mathrm{audio})-\min(\mathrm{audio})}
+
+S_m=0.7\cdot \mathrm{arousal}_m+0.2\cdot \mathrm{confidence}_m+0.1\cdot \mathrm{audio}_{m,\mathrm{norm}}
+
+Z_m=\frac{S_m-\mu_S}{\sigma_S}
+
+==============================
+5.2.3 功能连接：相干性
+==============================
+
+C_{xy}(f)=\frac{\left|S_{xy}(f)\right|^2}{S_{xx}(f)S_{yy}(f)}
+
+==============================
+5.2.3 谱Granger因果分析
+==============================
+
+\mathbf{X}_t=\sum_{k=1}^{p}\mathbf{A}_k\mathbf{X}_{t-k}+\boldsymbol{\varepsilon}_t
+
+\mathbf{S}(f)=\mathbf{H}(f)\boldsymbol{\Sigma}\mathbf{H}^{*}(f)
+
+\mathbf{H}(f)=\left(\mathbf{I}-\sum_{k=1}^{p}\mathbf{A}_k e^{-i2\pi f k}\right)^{-1}
+
+F_{x\rightarrow y}(f)=\ln\left(\frac{S_{yy}(f)}{S_{yy|x}(f)}\right)
+
+F_{y\rightarrow x}(f)=\ln\left(\frac{S_{xx}(f)}{S_{xx|y}(f)}\right)
+
+D(f)=F_{\mathrm{HPC}\rightarrow \mathrm{AMY}}(f)-F_{\mathrm{AMY}\rightarrow \mathrm{HPC}}(f)
+
+==============================
+5.2.4 Spike分析：PSTH与标准化响应
+==============================
+
+\mathrm{PSTH}_u(b)=\frac{1}{N_e\Delta t}\sum_{e=1}^{N_e}\sum_n I\left(s_{u,n}^{(e)}\in b\right)
+
+z_u(b)=\frac{\mathrm{PSTH}_u(b)-\mu_{u,B}}{\sigma_{u,B}}
+
+\mathbf{z}_u=\left[z_u(b_1),z_u(b_2),\ldots,z_u(b_M)\right]

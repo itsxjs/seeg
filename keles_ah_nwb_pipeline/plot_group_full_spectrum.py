@@ -137,94 +137,126 @@ def _perm_upper_threshold(
     return threshold, pvals
 
 
-def main() -> None:
-    out_dir = Path('/Volumes/rmhyw/keles_ah_nwb_pipeline/results/full_spectrum_batch')
-    mat_paths = sorted([p for p in out_dir.glob('*_fullspectrum.mat') if not p.name.startswith('._')])
-    if not mat_paths:
-        raise RuntimeError(f'No *_fullspectrum.mat found in {out_dir}')
+def _load_group_connectivity_summary(mat_path: Path) -> dict[str, np.ndarray]:
+    mat = loadmat(mat_path, squeeze_me=True, struct_as_record=False)
+    return {
+        "freqs_coh": np.asarray(mat["freqs_coh"], dtype=float).reshape(-1),
+        "time_coh": np.asarray(mat["time_coh"], dtype=float).reshape(-1),
+        "group_coh_tf": np.asarray(mat["group_coh_tf"], dtype=float),
+        "freqs_gc": np.asarray(mat["freqs_gc"], dtype=float).reshape(-1),
+        "group_gc_a2h": np.asarray(mat["group_gc_a2h"], dtype=float).reshape(-1),
+        "group_gc_h2a": np.asarray(mat["group_gc_h2a"], dtype=float).reshape(-1),
+        "group_gc_a2h_sem": np.asarray(mat["group_gc_a2h_sem"], dtype=float).reshape(-1),
+        "group_gc_h2a_sem": np.asarray(mat["group_gc_h2a_sem"], dtype=float).reshape(-1),
+        "sgc_pvals": np.asarray(mat.get("sgc_pvals", np.array([])), dtype=float).reshape(-1),
+        "sgc_sig_mask_fdr_q05": np.asarray(mat.get("sgc_sig_mask_fdr_q05", np.array([])), dtype=bool).reshape(-1),
+        "sgc_n_pairs_per_freq": np.asarray(mat.get("sgc_n_pairs_per_freq", np.array([])), dtype=int).reshape(-1),
+        "perm_thr_a2h_q999": np.asarray(
+            mat.get("perm_thr_a2h_q999", mat.get("group_gc_a2h_cl_perm_q999", np.array([]))),
+            dtype=float,
+        ).reshape(-1),
+        "perm_thr_h2a_q999": np.asarray(
+            mat.get("perm_thr_h2a_q999", mat.get("group_gc_h2a_cl_perm_q999", np.array([]))),
+            dtype=float,
+        ).reshape(-1),
+        "perm_pvals_a2h": np.asarray(mat.get("perm_pvals_a2h", np.array([])), dtype=float).reshape(-1),
+        "perm_pvals_h2a": np.asarray(mat.get("perm_pvals_h2a", np.array([])), dtype=float).reshape(-1),
+        "perm_sig_mask_a2h_p_lt_0p001": np.asarray(mat.get("perm_sig_mask_a2h_p_lt_0p001", np.array([])), dtype=bool).reshape(-1),
+        "perm_sig_mask_h2a_p_lt_0p001": np.asarray(mat.get("perm_sig_mask_h2a_p_lt_0p001", np.array([])), dtype=bool).reshape(-1),
+        "used_files": np.asarray(mat.get("used_files", np.array([])), dtype=object).reshape(-1),
+        "skipped_files": np.asarray(mat.get("skipped_files", np.array([])), dtype=object).reshape(-1),
+    }
+
+
+def _load_subject_mats(out_dir: Path, mats: list[Path] | None = None) -> tuple[list[Path], list[str], np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    candidates = mats or sorted(
+        p for p in out_dir.glob("sub-*_fullspectrum.mat")
+        if not p.name.startswith("._") and not p.name.startswith("group_")
+    )
+    if not candidates:
+        raise RuntimeError(f"No subject full-spectrum .mat files found under {out_dir}")
 
     coh_list: list[np.ndarray] = []
-    gc_a_list: list[np.ndarray] = []
-    gc_h_list: list[np.ndarray] = []
+    a_list: list[np.ndarray] = []
+    h_list: list[np.ndarray] = []
     used_files: list[str] = []
     skipped_files: list[str] = []
+    ref_freqs_coh = ref_times_coh = ref_freqs_gc = None
 
-    ref_freqs_coh: np.ndarray | None = None
-    ref_times_coh: np.ndarray | None = None
-    ref_freqs_gc: np.ndarray | None = None
-
-    for path in mat_paths:
+    for p in candidates:
         try:
-            mat = loadmat(path, squeeze_me=True, struct_as_record=False)
-            coh_tf = np.asarray(mat['coh_tf'], dtype=float)
-            freqs_coh = np.asarray(mat['freqs_coh'], dtype=float).reshape(-1)
-            time_coh = np.asarray(mat['time_coh'], dtype=float).reshape(-1)
-            freqs_gc = np.asarray(mat['freqs_gc'], dtype=float).reshape(-1)
-            gc_a = np.asarray(mat['gc_a2h'], dtype=float).reshape(-1)
-            gc_h = np.asarray(mat['gc_h2a'], dtype=float).reshape(-1)
-
-            if coh_tf.ndim != 2 or len(freqs_coh) < 2 or len(time_coh) < 2 or len(freqs_gc) < 2:
-                skipped_files.append(path.name)
-                continue
+            m = loadmat(p, squeeze_me=True, struct_as_record=False)
+            coh_tf = np.asarray(m["coh_tf"], dtype=float)
+            freqs_coh = np.asarray(m["freqs_coh"], dtype=float).reshape(-1)
+            times_coh = np.asarray(m["time_coh"], dtype=float).reshape(-1)
+            freqs_gc = np.asarray(m["freqs_gc"], dtype=float).reshape(-1)
+            gc_a = np.asarray(m["gc_a2h"], dtype=float).reshape(-1)
+            gc_h = np.asarray(m["gc_h2a"], dtype=float).reshape(-1)
 
             if ref_freqs_coh is None:
                 ref_freqs_coh = freqs_coh
-                ref_times_coh = time_coh
+                ref_times_coh = times_coh
                 ref_freqs_gc = freqs_gc
 
-            assert ref_freqs_coh is not None and ref_times_coh is not None and ref_freqs_gc is not None
-
-            coh_ref = _interp_coh_to_ref(coh_tf, freqs_coh, time_coh, ref_freqs_coh, ref_times_coh)
-            gc_a_ref = _interp_1d_to_ref(freqs_gc, gc_a, ref_freqs_gc)
-            gc_h_ref = _interp_1d_to_ref(freqs_gc, gc_h, ref_freqs_gc)
-
-            if not np.any(np.isfinite(coh_ref)):
-                skipped_files.append(path.name)
-                continue
-
-            coh_list.append(coh_ref)
-            gc_a_list.append(gc_a_ref)
-            gc_h_list.append(gc_h_ref)
-            used_files.append(path.name)
+            coh_list.append(_interp_coh_to_ref(coh_tf, freqs_coh, times_coh, ref_freqs_coh, ref_times_coh))
+            a_list.append(_interp_1d_to_ref(freqs_gc, gc_a, ref_freqs_gc))
+            h_list.append(_interp_1d_to_ref(freqs_gc, gc_h, ref_freqs_gc))
+            used_files.append(p.name)
         except Exception:
-            skipped_files.append(path.name)
+            skipped_files.append(p.name)
 
-    if not coh_list:
-        raise RuntimeError('No usable full-spectrum MAT files after filtering')
+    if not coh_list or ref_freqs_coh is None or ref_times_coh is None or ref_freqs_gc is None:
+        raise RuntimeError(f"No readable subject full-spectrum .mat files found under {out_dir}")
 
-    coh_stack = np.stack(coh_list, axis=0)
-    gc_a_stack = np.stack(gc_a_list, axis=0)
-    gc_h_stack = np.stack(gc_h_list, axis=0)
+    return (
+        candidates,
+        skipped_files,
+        np.asarray(used_files, dtype=object),
+        np.stack(coh_list, axis=0),
+        np.stack(a_list, axis=0),
+        np.stack(h_list, axis=0),
+        np.array([ref_freqs_coh, ref_times_coh, ref_freqs_gc], dtype=object),
+    )
+
+
+def summarize_full_spectrum_group(
+    out_dir: Path,
+    mats: list[Path] | None = None,
+    skipped_runs: list[str] | None = None,
+) -> None:
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    _, skipped_files, used_files_arr, coh_stack, a_stack, h_stack, refs = _load_subject_mats(out_dir, mats)
+    if skipped_runs:
+        skipped_files = [*skipped_files, *skipped_runs]
+    ref_freqs_coh = np.asarray(refs[0], dtype=float)
+    ref_times_coh = np.asarray(refs[1], dtype=float)
+    ref_freqs_gc = np.asarray(refs[2], dtype=float)
 
     group_coh = np.nanmean(coh_stack, axis=0)
-    group_gc_a = np.nanmean(gc_a_stack, axis=0)
-    group_gc_h = np.nanmean(gc_h_stack, axis=0)
-    gc_a_sem = np.nanstd(gc_a_stack, axis=0, ddof=0) / np.sqrt(np.maximum(np.sum(np.isfinite(gc_a_stack), axis=0), 1))
-    gc_h_sem = np.nanstd(gc_h_stack, axis=0, ddof=0) / np.sqrt(np.maximum(np.sum(np.isfinite(gc_h_stack), axis=0), 1))
+    group_gc_a = np.nanmean(a_stack, axis=0)
+    group_gc_h = np.nanmean(h_stack, axis=0)
+    gc_a_sem = np.nanstd(a_stack, axis=0, ddof=0) / np.sqrt(np.maximum(np.sum(np.isfinite(a_stack), axis=0), 1))
+    gc_h_sem = np.nanstd(h_stack, axis=0, ddof=0) / np.sqrt(np.maximum(np.sum(np.isfinite(h_stack), axis=0), 1))
 
-    # One-sample permutation thresholds (99.9%) per direction
-    perm_thr_a, perm_p_a = _perm_upper_threshold(gc_a_stack, quantile=0.999, n_perm=10000, seed=42)
-    perm_thr_h, perm_p_h = _perm_upper_threshold(gc_h_stack, quantile=0.999, n_perm=10000, seed=43)
-    perm_sig_a = np.isfinite(perm_thr_a) & np.isfinite(group_gc_a) & (group_gc_a > perm_thr_a)
-    perm_sig_h = np.isfinite(perm_thr_h) & np.isfinite(group_gc_h) & (group_gc_h > perm_thr_h)
-
-    # Frequency-wise paired significance: A→H vs H→A across runs
-    pvals = np.full(len(group_gc_a), np.nan, dtype=float)
-    n_pairs = np.zeros(len(group_gc_a), dtype=int)
-    for fi in range(len(group_gc_a)):
-        a = gc_a_stack[:, fi]
-        h = gc_h_stack[:, fi]
+    pvals = np.full(len(ref_freqs_gc), np.nan, dtype=float)
+    n_pairs = np.zeros(len(ref_freqs_gc), dtype=int)
+    for fi in range(len(ref_freqs_gc)):
+        a = a_stack[:, fi]
+        h = h_stack[:, fi]
         ok = np.isfinite(a) & np.isfinite(h)
         n_pairs[fi] = int(np.sum(ok))
         if n_pairs[fi] < 3:
             continue
-        _, p = ttest_rel(a[ok], h[ok], alternative='two-sided')
-        pvals[fi] = p
+        _, pvals[fi] = ttest_rel(a[ok], h[ok], nan_policy="omit")
 
     sig_mask_fdr = _fdr_bh(pvals, alpha=0.05)
-    sig_spans = _mask_to_spans(sig_mask_fdr, ref_freqs_gc if ref_freqs_gc is not None else np.array([]))
-
-    assert ref_freqs_coh is not None and ref_times_coh is not None and ref_freqs_gc is not None
+    perm_thr_a, perm_p_a = _perm_upper_threshold(a_stack, quantile=0.999, n_perm=10000, seed=42)
+    perm_thr_h, perm_p_h = _perm_upper_threshold(h_stack, quantile=0.999, n_perm=10000, seed=43)
+    perm_sig_a = np.isfinite(perm_p_a) & (perm_p_a < 0.001)
+    perm_sig_h = np.isfinite(perm_p_h) & (perm_p_h < 0.001)
+    sig_spans = _mask_to_spans(sig_mask_fdr, ref_freqs_gc)
+    used_files = [str(x) for x in used_files_arr.tolist()] if used_files_arr.size else []
 
     # Plot 1: group coherence heatmap
     fig1, ax1 = plt.subplots(figsize=(7.2, 4.8), dpi=220)
@@ -247,8 +279,8 @@ def main() -> None:
     ax2.plot(ref_freqs_gc, group_gc_h, color='#2f6fbd', lw=2.2, label='H→A')
     ax2.fill_between(ref_freqs_gc, group_gc_h - gc_h_sem, group_gc_h + gc_h_sem, color='#2f6fbd', alpha=0.2)
     ax2.plot(ref_freqs_gc, perm_thr_h, color='#2f6fbd', lw=1.2, ls='--', alpha=0.9, label='H→A perm 99.9%')
-    for lo, hi in sig_spans:
-        ax2.axvspan(lo, hi, color='#ef476f', alpha=0.18, lw=0)
+    # for lo, hi in sig_spans:
+    #     ax2.axvspan(lo, hi, color='#ef476f', alpha=0.18, lw=0)
     ax2.set_title('Group Full-Spectrum Spectral GC')
     ax2.set_xlabel('Frequency (Hz)')
     ax2.set_ylabel('Granger index')
@@ -279,8 +311,8 @@ def main() -> None:
     axa.plot(ref_freqs_gc, group_gc_a, color='#4d4d4d', lw=2.0)
     axa.fill_between(ref_freqs_gc, group_gc_a - gc_a_sem, group_gc_a + gc_a_sem, color='#4d4d4d', alpha=0.2)
     axa.plot(ref_freqs_gc, perm_thr_a, color='#4d4d4d', lw=1.1, ls='--', alpha=0.9)
-    for lo, hi in sig_spans:
-        axa.axvspan(lo, hi, color='#ef476f', alpha=0.18, lw=0)
+    # for lo, hi in sig_spans:
+    #     axa.axvspan(lo, hi, color='#ef476f', alpha=0.18, lw=0)
     axa.set_title('B  Spectral Granger Causality\nA→H', loc='left', fontsize=13, fontweight='bold', pad=25)
     axa.set_xlabel('Frequency (Hz)')
     axa.set_ylabel('Granger index')
@@ -291,8 +323,8 @@ def main() -> None:
     axh.plot(ref_freqs_gc, group_gc_h, color='#2f6fbd', lw=2.0)
     axh.fill_between(ref_freqs_gc, group_gc_h - gc_h_sem, group_gc_h + gc_h_sem, color='#2f6fbd', alpha=0.2)
     axh.plot(ref_freqs_gc, perm_thr_h, color='#2f6fbd', lw=1.1, ls='--', alpha=0.9)
-    for lo, hi in sig_spans:
-        axh.axvspan(lo, hi, color='#ef476f', alpha=0.18, lw=0)
+    # for lo, hi in sig_spans:
+    #     axh.axvspan(lo, hi, color='#ef476f', alpha=0.18, lw=0)
     axh.set_title('H→A', fontsize=12, fontweight='bold')
     axh.set_xlabel('Frequency (Hz)')
     axh.set_xlim(2, 45)
@@ -301,12 +333,13 @@ def main() -> None:
     fig3.suptitle(f'Group full-spectrum connectivity (n={len(used_files)} runs)', fontsize=11, y=0.98)
     # fig3.tight_layout(rect=[0, 0, 1, 0.96]) # Tight layout often ignores wspace in gridspec
     combo_png = out_dir / 'group_fullspectrum_literature_style.png'
+    group_mat = out_dir / 'group_fullspectrum_connectivity.mat'
     fig3.savefig(combo_png, bbox_inches='tight')
     plt.close(fig3)
 
     summary_txt = out_dir / 'group_fullspectrum_summary.txt'
     with summary_txt.open('w', encoding='utf-8') as f:
-        f.write(f'total_mat_files={len(mat_paths)}\n')
+        f.write(f'total_mat_files={len(used_files) + len(skipped_files)}\n')
         f.write(f'used_runs={len(used_files)}\n')
         f.write(f'skipped_runs={len(skipped_files)}\n')
         if skipped_files:
@@ -323,7 +356,6 @@ def main() -> None:
         f.write(f'perm_sig_bins_a2h_p_lt_0.001={int(np.sum(perm_sig_a))}\n')
         f.write(f'perm_sig_bins_h2a_p_lt_0.001={int(np.sum(perm_sig_h))}\n')
 
-    group_mat = out_dir / 'group_fullspectrum_connectivity.mat'
     savemat(
         group_mat,
         {
@@ -342,6 +374,8 @@ def main() -> None:
             'sgc_n_pairs_per_freq': n_pairs,
             'perm_thr_a2h_q999': perm_thr_a,
             'perm_thr_h2a_q999': perm_thr_h,
+            'group_gc_a2h_cl_perm_q999': perm_thr_a,
+            'group_gc_h2a_cl_perm_q999': perm_thr_h,
             'perm_pvals_a2h': perm_p_a,
             'perm_pvals_h2a': perm_p_h,
             'perm_sig_mask_a2h_p_lt_0p001': perm_sig_a.astype(np.uint8),
@@ -375,6 +409,10 @@ def main() -> None:
     print(f'saved {combo_png}')
     print(f'saved {group_mat}')
     print(f'saved {summary_txt}')
+
+
+def main() -> None:
+    summarize_full_spectrum_group(Path('/Volumes/rmhyw/keles_ah_nwb_pipeline/results/full_spectrum_batch'))
 
 
 if __name__ == '__main__':
