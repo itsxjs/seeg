@@ -1,0 +1,383 @@
+%% ===== 1) 只添加 6 类原始事件，合并为 4 类情绪事件并检查窗长 =====
+% 假设 EEG 已在工作区；若未载入请先 pop_loadset
+subj_id  = 'sub008';  % 按需修改
+subj_channels = {'A1-Ref','A2-Ref','POL A3','POL B1','POL B2','POL B3'};
+EEG_orig = EEG;
+
+% 参数
+epoch_win = [-0.5 2];                  % 计划切段窗口（秒）
+srate     = EEG.srate;
+pre_samp  = round(abs(epoch_win(1)) * srate);
+post_samp = round(epoch_win(2)       * srate);
+
+% 工具：把 event.type 统一为 string（兼容 char/string/numeric）
+toStr = @(x) string(x);
+
+% 新事件列表：先拷贝原事件，后面只“追加”通过检查的四类合并事件
+newEvents = EEG.event;
+addCount  = 0;
+skipCount = 0;
+
+for i = 1:numel(EEG.event)
+    etype = toStr(EEG.event(i).type);
+
+    % 跳过 boundary
+    if etype == "boundary"
+        continue;
+    end
+
+    % 只接受 0–5 这 6 种原始事件
+    if ~(etype == "0" || etype == "1" || etype == "2" || ...
+         etype == "3" || etype == "4" || etype == "5")
+        continue;
+    end
+
+    % 映射标签：
+    % 0 -> 未按键(nopress)
+    % 1/2 -> 不喜欢(dislike)
+    % 3 -> 中立(neutral)
+    % 4/5 -> 喜欢(like)
+    lab = '';
+    if etype == "0"
+        lab = 'nopress';
+    elseif etype == "1" || etype == "2"
+        lab = 'dislike';
+    elseif etype == "3"
+        lab = 'neutral';
+    elseif etype == "4" || etype == "5"
+        lab = 'like';
+    end
+
+    % 时间边界检查：能否切 [-0.5, 2] s
+    lat = EEG.event(i).latency;   % 样本点（可能含小数）
+    if (lat - pre_samp < 1) || (lat + post_samp > EEG.pnts)
+        skipCount = skipCount + 1;
+        continue;   % 不足窗长度，跳过
+    end
+
+    % 通过检查则追加一个同 latency 的新事件，type 设置为合并后的标签
+    e2         = EEG.event(i);    % 用原事件做模板，避免字段不一致
+    e2.type    = lab;
+    e2.latency = EEG.event(i).latency;
+
+    newEvents(end+1) = e2;  %#ok<SAGROW>
+    addCount = addCount + 1;
+end
+
+EEG.event = newEvents;
+
+% 事件一致性 & 按 latency 排序
+EEG = eeg_checkset(EEG, 'eventconsistency');
+[~, ord] = sort([EEG.event.latency]);
+EEG.event = EEG.event(ord);
+EEG = eeg_checkset(EEG, 'eventconsistency');
+
+fprintf('✔ 已追加合并后的情绪事件：%d 条（nopress/dislike/neutral/like），\n', addCount);
+fprintf('  跳过不足窗长度的原始事件：%d 条。\n', skipCount);
+
+%% ===== 2) 以 4 类情绪事件切段并保存 =====
+EEG = pop_epoch(EEG, {'nopress','dislike','neutral','like'}, epoch_win);
+EEG.setname = [subj_id '_4bin_epoch'];   % 四类情绪事件
+[ALLEEG, EEG, CURRENTSET] = eeg_store(ALLEEG, EEG, 0);
+idxVal = CURRENTSET;
+pop_saveset(EEG, 'filename', [subj_id '_4bin_epoch.set']);
+fprintf('✔ 已保存 4-bin locked epoch（%.1f~%.1f s）。\n', epoch_win(1), epoch_win(2));
+
+%% ===== 2.5) 只保留指定通道（可选）=====
+if exist('subj_channels','var') && ~isempty(subj_channels)
+    have_labels = {EEG.chanlocs.labels};
+    keep = intersect(subj_channels, have_labels, 'stable');
+
+    if isempty(keep)
+        warning('subj_channels 中的通道在数据里都不存在，将不做通道裁剪。');
+    else
+        miss = setdiff(subj_channels, keep);
+        if ~isempty(miss)
+            warning('以下指定通道缺失，将忽略：%s', strjoin(miss, ', '));
+        end
+
+        EEG = pop_select(EEG, 'channel', keep);
+        EEG.setname = [subj_id '_4bin_epoch_selch'];
+        [ALLEEG, EEG, CURRENTSET] = eeg_store(ALLEEG, EEG, idxVal);  % 覆盖原idxVal那份
+        idxVal = CURRENTSET;
+
+        fprintf('✔ 已裁剪通道：保留 %d/%d 个 -> %s\n', ...
+            numel(keep), numel(have_labels), strjoin(keep, ', '));
+    end
+end
+
+
+%% ===== 3) QC（鲁棒RMS比值 + 鲁棒P2P + abs阈值 + P2P 3σ）=====
+EEG = ALLEEG(idxVal);
+
+% 基本参数
+tms      = EEG.times;
+fs       = EEG.srate;
+n_tr     = EEG.trials;
+n_ch     = EEG.nbchan;
+ch_names = {EEG.chanlocs.labels};
+
+% QC 参数（原策略：鲁棒Z）
+baseline_win = [-500 0];  % ms
+post_win     = [0 1000];  % ms
+thr_z        = 4;         % 单侧阈值（鲁棒Z）
+vote_M_robust = 5;        % 鲁棒策略投票：≥M个通道命中 -> 剔除
+
+% 新增策略：abs阈值 + P2P 3σ（like/dislike分开）
+abs_threshold = 200;      % uV：任一点 |ERP|>=200
+sigma_p2p     = 3;        % mean + 3*std
+vote_M_sigma  = 1;        % 阈值策略投票：建议更敏感（你也可设成 5 跟robust一致）
+
+eps_small    = 1e-12;
+
+% 时间索引检查
+base_idx = find(tms >= baseline_win(1) & tms <= baseline_win(2));
+post_idx = find(tms >= post_win(1)     & tms <= post_win(2));
+if isempty(base_idx) || isempty(post_idx)
+    error('baseline_win 或 post_win 超出 epoch 时间范围，请调整。');
+end
+
+% 条件识别（按 epoch 的事件类型；注意一个 epoch 里可能有多个 eventtype）
+is_nopress = false(n_tr,1);
+is_dislike = false(n_tr,1);
+is_neutral = false(n_tr,1);
+is_like    = false(n_tr,1);
+
+for k = 1:n_tr
+    et = EEG.epoch(k).eventtype;
+    if iscell(et)
+        types = string(et);
+    else
+        types = string({et});
+    end
+    is_nopress(k) = any(types == "nopress");
+    is_dislike(k) = any(types == "dislike");
+    is_neutral(k) = any(types == "neutral");
+    is_like(k)    = any(types == "like");
+end
+
+% ========== A) 原策略：RMS log比值 + post窗P2P，按条件鲁棒Z ==========
+flag_rms = false(n_tr, n_ch);
+flag_p2p = false(n_tr, n_ch);
+
+for ch = 1:n_ch
+    X  = squeeze(EEG.data(ch, :, :)).';     % [n_tr x n_time]
+    xb = sqrt(mean(X(:, base_idx).^2, 2));  % baseline RMS
+    xp = sqrt(mean(X(:, post_idx).^2,  2)); % post RMS
+    r  = log( xp ./ max(xb, eps_small) );   % log 比值
+    p2p_post = max(X(:, post_idx),[],2) - min(X(:, post_idx),[],2);
+
+    % helper：给某个条件做robust Z 并写入 flag
+    % nopress
+    if any(is_nopress)
+        r_   = r(is_nopress);
+        p_   = p2p_post(is_nopress);
+
+        med_r = median(r_);  mad_r = max(mad(r_,1), eps_small);
+        z_r   = 0.6745 * (r_ - med_r) / mad_r;
+
+        med_p = median(p_);  mad_p = max(mad(p_,1), eps_small);
+        z_p   = 0.6745 * (p_ - med_p) / mad_p;
+
+        idx = find(is_nopress);
+        flag_rms(idx, ch) = z_r > thr_z;
+        flag_p2p(idx, ch) = z_p > thr_z;
+    end
+
+    % dislike
+    if any(is_dislike)
+        r_   = r(is_dislike);
+        p_   = p2p_post(is_dislike);
+
+        med_r = median(r_);  mad_r = max(mad(r_,1), eps_small);
+        z_r   = 0.6745 * (r_ - med_r) / mad_r;
+
+        med_p = median(p_);  mad_p = max(mad(p_,1), eps_small);
+        z_p   = 0.6745 * (p_ - med_p) / mad_p;
+
+        idx = find(is_dislike);
+        flag_rms(idx, ch) = z_r > thr_z;
+        flag_p2p(idx, ch) = z_p > thr_z;
+    end
+
+    % neutral
+    if any(is_neutral)
+        r_   = r(is_neutral);
+        p_   = p2p_post(is_neutral);
+
+        med_r = median(r_);  mad_r = max(mad(r_,1), eps_small);
+        z_r   = 0.6745 * (r_ - med_r) / mad_r;
+
+        med_p = median(p_);  mad_p = max(mad(p_,1), eps_small);
+        z_p   = 0.6745 * (p_ - med_p) / mad_p;
+
+        idx = find(is_neutral);
+        flag_rms(idx, ch) = z_r > thr_z;
+        flag_p2p(idx, ch) = z_p > thr_z;
+    end
+
+    % like
+    if any(is_like)
+        r_   = r(is_like);
+        p_   = p2p_post(is_like);
+
+        med_r = median(r_);  mad_r = max(mad(r_,1), eps_small);
+        z_r   = 0.6745 * (r_ - med_r) / mad_r;
+
+        med_p = median(p_);  mad_p = max(mad(p_,1), eps_small);
+        z_p   = 0.6745 * (p_ - med_p) / mad_p;
+
+        idx = find(is_like);
+        flag_rms(idx, ch) = z_r > thr_z;
+        flag_p2p(idx, ch) = z_p > thr_z;
+    end
+end
+
+% 鲁棒策略：trial×chan 命中矩阵
+flag_robust = flag_rms | flag_p2p;
+
+% ========== B) 新增策略：abs阈值 + 全窗P2P 3σ（like/dislike分开） ==========
+flag_abs   = false(n_tr, n_ch);   % any(|x|>=200) in full epoch
+flag_p2p3s = false(n_tr, n_ch);   % P2P(full epoch) > mean+3std within like/dislike
+
+for ch = 1:n_ch
+    X = squeeze(EEG.data(ch, :, :)).';     % [n_tr x n_time] 全epoch窗
+
+    % (1) abs阈值（全窗）
+    flag_abs(:, ch) = any(abs(X) >= abs_threshold, 2);
+
+    % (2) 全窗 P2P
+    p2p_full = max(X, [], 2) - min(X, [], 2);
+
+    % like 单独阈值
+    if any(is_like)
+        p_like = p2p_full(is_like);
+        thr_like = mean(p_like) + sigma_p2p * max(std(p_like), eps_small);
+        idx = find(is_like);
+        flag_p2p3s(idx, ch) = p_like > thr_like;
+    end
+
+    % dislike 单独阈值
+    if any(is_dislike)
+        p_dis = p2p_full(is_dislike);
+        thr_dis = mean(p_dis) + sigma_p2p * max(std(p_dis), eps_small);
+        idx = find(is_dislike);
+        flag_p2p3s(idx, ch) = p_dis > thr_dis;
+    end
+
+    % 如你希望 neutral / nopress 也做 3σ，可在此按同样方式添加
+end
+
+flag_sigma = flag_abs | flag_p2p3s;
+
+% ========== C) Trial-level 合并：分别投票 + 取并集 ==========
+n_flag_robust = sum(flag_robust, 2);
+n_flag_sigma  = sum(flag_sigma,  2);
+
+reject_robust = n_flag_robust >= vote_M_robust;
+reject_sigma  = n_flag_sigma  >= vote_M_sigma;
+
+reject_mask = reject_robust | reject_sigma;
+keep_idx    = find(~reject_mask);
+reject_idx  = find(reject_mask);
+
+% 打印统计
+n_reject_total    = numel(reject_idx);
+rate_reject_total = n_reject_total / n_tr;
+
+fprintf('\n==== Trial 检查统计（4-bin locked）====\n');
+fprintf('trial 总数: %d\n', n_tr);
+
+fprintf('\n-- 鲁棒策略（RMS log-ratio + postP2P, 条件内MAD-Z） --\n');
+fprintf('thr_z = %.2f, vote_M_robust = %d\n', thr_z, vote_M_robust);
+fprintf('被鲁棒策略判为剔除: %d (%.2f%%)\n', sum(reject_robust), 100*sum(reject_robust)/n_tr);
+
+fprintf('\n-- 阈值策略（abs阈值 + 全窗P2P 3σ, like/dislike 分开） --\n');
+fprintf('abs_threshold = %.1f uV, sigma_p2p = %.2f, vote_M_sigma = %d\n', abs_threshold, sigma_p2p, vote_M_sigma);
+fprintf('被阈值策略判为剔除: %d (%.2f%%)\n', sum(reject_sigma), 100*sum(reject_sigma)/n_tr);
+
+fprintf('\n-- 最终并集剔除 --\n');
+fprintf('总体剔除: %d (%.2f%%)\n', n_reject_total, 100*rate_reject_total);
+
+% 条件内剔除率
+if any(is_nopress)
+    n_no = sum(is_nopress); n_rej_no = sum(reject_mask & is_nopress);
+    fprintf('  nopress : %d/%d (%.2f%%)\n', n_rej_no, n_no, 100*n_rej_no/max(n_no,1));
+end
+if any(is_dislike)
+    n_dis = sum(is_dislike); n_rej_dis = sum(reject_mask & is_dislike);
+    fprintf('  dislike : %d/%d (%.2f%%)\n', n_rej_dis, n_dis, 100*n_rej_dis/max(n_dis,1));
+end
+if any(is_neutral)
+    n_neu = sum(is_neutral); n_rej_neu = sum(reject_mask & is_neutral);
+    fprintf('  neutral : %d/%d (%.2f%%)\n', n_rej_neu, n_neu, 100*n_rej_neu/max(n_neu,1));
+end
+if any(is_like)
+    n_like = sum(is_like); n_rej_like = sum(reject_mask & is_like);
+    fprintf('  like    : %d/%d (%.2f%%)\n', n_rej_like, n_like, 100*n_rej_like/max(n_like,1));
+end
+
+% 每通道命中计数（可分别看两套策略）
+rejected_per_channel_robust = sum(flag_robust, 1);
+rejected_per_channel_sigma  = sum(flag_sigma,  1);
+rejected_per_channel_union  = sum(flag_robust | flag_sigma, 1);
+
+fprintf('\n---- Per-channel hit counts ----\n');
+for ch = 1:n_ch
+    fprintf('  %-12s robust=%4d | sigma=%4d | union=%4d\n', ...
+        ch_names{ch}, ...
+        rejected_per_channel_robust(ch), ...
+        rejected_per_channel_sigma(ch), ...
+        rejected_per_channel_union(ch));
+end
+
+% 保存 QC 结果
+QC = struct();
+QC.subj_id     = subj_id;
+QC.epoch_win   = epoch_win;
+
+QC.baseline_win = baseline_win;
+QC.post_win     = post_win;
+
+QC.thr_z         = thr_z;
+QC.vote_M_robust = vote_M_robust;
+
+QC.abs_threshold = abs_threshold;
+QC.sigma_p2p     = sigma_p2p;
+QC.vote_M_sigma  = vote_M_sigma;
+
+QC.reject_mask   = reject_mask;
+QC.reject_idx    = reject_idx;
+QC.keep_idx      = keep_idx;
+
+QC.n_flag_robust = n_flag_robust;
+QC.n_flag_sigma  = n_flag_sigma;
+QC.reject_robust = reject_robust;
+QC.reject_sigma  = reject_sigma;
+
+QC.flag_rms     = flag_rms;
+QC.flag_p2p     = flag_p2p;
+QC.flag_abs     = flag_abs;
+QC.flag_p2p3s   = flag_p2p3s;
+QC.flag_robust  = flag_robust;
+QC.flag_sigma   = flag_sigma;
+
+QC.rejected_per_channel_robust = rejected_per_channel_robust;
+QC.rejected_per_channel_sigma  = rejected_per_channel_sigma;
+QC.rejected_per_channel_union  = rejected_per_channel_union;
+QC.rate_reject_total           = rate_reject_total;
+
+QC.is_nopress = is_nopress;
+QC.is_dislike = is_dislike;
+QC.is_neutral = is_neutral;
+QC.is_like    = is_like;
+
+save([subj_id '_4binQC_RMSP2P_ROBUST_plus_ABS_P2P3SD.mat'], 'QC');
+disp('✔ 已保存 4-bin QC 统计（MAT 文件）');
+
+% 生成 clean 数据集
+EEG_4bin_clean = pop_select(ALLEEG(idxVal), 'trial', keep_idx);
+EEG_4bin_clean.setname = [subj_id '_4bin_epoch_clean'];
+[ALLEEG, EEG_4bin_clean, CURRENTSET] = eeg_store(ALLEEG, EEG_4bin_clean, 0);
+pop_saveset(EEG_4bin_clean, 'filename', [subj_id '_4bin_epoch_clean.set']);
+disp('✔ 已保存 4-bin locked 删去坏 trial 的数据');

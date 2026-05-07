@@ -14,6 +14,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+plt.rcParams["font.sans-serif"] = [
+    "Arial Unicode MS",
+    "Heiti TC",
+    "Songti SC",
+    "PingFang SC",
+    "SimHei",
+    "Noto Sans CJK SC",
+    "DejaVu Sans",
+]
+plt.rcParams["axes.unicode_minus"] = False
+
 
 FIXED_PROMPT = (
     "You are rating a 2-second movie clip for AROUSAL (activation intensity), "
@@ -718,24 +729,25 @@ def save_plot(
     scenecut_df: pd.DataFrame,
     duration_sec: float,
 ) -> None:
-    fig, ax = plt.subplots(figsize=(14, 5), dpi=120)
+    fig, ax = plt.subplots(figsize=(16, 5.8), dpi=160)
 
-    ax.plot(windows_df["center_sec"], windows_df["final_score"], color="#1f77b4", linewidth=1.2, label="final_score")
-    ax.plot(windows_df["center_sec"], windows_df["arousal_score"], color="#ff7f0e", linewidth=0.9, alpha=0.7, label="vlm_arousal")
+    ax.plot(windows_df["center_sec"], windows_df["final_score"], color="#1f77b4", linewidth=1.8, label="综合评分")
+    ax.plot(windows_df["center_sec"], windows_df["arousal_score"], color="#ff7f0e", linewidth=1.4, alpha=0.75, label="VLM唤醒评分")
 
     shot_times = scenecut_df["shot_start_t"].to_numpy(dtype=float)
     for t in shot_times:
-        ax.axvline(t, color="#666666", linewidth=0.5, alpha=0.12)
+        ax.axvline(t, color="#666666", linewidth=0.7, alpha=0.14)
 
     for _, row in selected_df.iterrows():
         ax.axvspan(row["start_sec"], row["end_sec"], color="#d62728", alpha=0.2)
 
     ax.set_xlim(0, duration_sec)
-    ax.set_xlabel("Time (s)")
-    ax.set_ylabel("Score")
-    ax.set_title("AI high-arousal windows vs official shot starts")
+    ax.set_xlabel("时间 (s)", fontsize=18)
+    ax.set_ylabel("评分", fontsize=18)
+    ax.set_title("AI高唤醒窗口与官方镜头切割", fontsize=20, pad=12)
+    ax.tick_params(axis="both", labelsize=15)
     ax.grid(alpha=0.2)
-    ax.legend(loc="upper right")
+    ax.legend(loc="upper right", fontsize=15, frameon=True)
 
     fig.tight_layout()
     fig.savefig(output_png)

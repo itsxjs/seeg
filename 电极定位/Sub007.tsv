@@ -1,0 +1,115 @@
+Channel	SCS	MNI	World	ASEG	ASEG_prob	DKT	DKT_prob	Desikan-Killiany	Desikan-Killiany_prob	Destrieux	Destrieux_prob	white_254061V:DKT	white_254061V:Destrieux	white_254061V:Desikan-Killiany	white_254061V:Brodmann	white_254061V:Brodmann-thresh	white_254061V:vcAtlas
+A1	[13.325,14.913,27.604]	[-16.667,-4.377,-16.113]	[-26.340,46.024,2.208]	Amygdala L	88%	Amygdala L	88%	Amygdala L	88%	Amygdala L	88%	N/A	N/A	N/A	N/A	N/A	N/A
+A2	[14.479,18.073,26.637]	[-20.175,-3.270,-17.260]	[-29.607,46.864,1.275]	Amygdala L	92%	Amygdala L	92%	Amygdala L	92%	Amygdala L	92%	N/A	N/A	N/A	N/A	N/A	N/A
+A3	[15.634,21.233,25.671]	[-23.683,-2.163,-18.408]	[-32.874,47.704,0.341]	Amygdala L	81%	Amygdala L	81%	Amygdala L	81%	Amygdala L	81%	N/A	N/A	N/A	N/A	N/A	N/A
+A4	[16.788,24.393,24.705]	[-27.190,-1.056,-19.556]	[-36.141,48.544,-0.592]	Amygdala L	46%	Amygdala L	46%	Amygdala L	46%	Amygdala L	46%	N/A	N/A	N/A	N/A	N/A	N/A
+A5	[17.942,27.553,23.739]	[-30.698,0.052,-20.703]	[-39.408,49.384,-1.525]	Cortex L	32%	Amygdala L	25%	Insula L	32%	Amygdala L	25%	superiortemporal L	G_Ins_lg_and_S_cent_ins L	insula L	N/A	N/A	N/A
+A6	[19.096,30.712,22.772]	[-34.206,1.159,-21.851]	[-42.675,50.224,-2.459]	White L	74%	White L	74%	White L	74%	White L	74%	superiortemporal L	G_oc-temp_med-Parahip L	insula L	N/A	N/A	N/A
+A7	[20.250,33.872,21.806]	[-37.714,2.266,-22.999]	[-45.942,51.064,-3.392]	White L	90%	White L	90%	White L	90%	White L	90%	superiortemporal L	S_circular_insula_inf L	superiortemporal L	N/A	N/A	N/A
+A8	[21.404,37.032,20.840]	[-41.222,3.373,-24.146]	[-49.208,51.905,-4.326]	White L	95%	White L	95%	White L	95%	White L	95%	superiortemporal L	S_circular_insula_inf L	superiortemporal L	N/A	N/A	N/A
+A9	[22.558,40.192,19.874]	[-44.730,4.481,-25.294]	[-52.475,52.745,-5.259]	White L	95%	White L	95%	White L	95%	White L	95%	superiortemporal L	G_temp_sup-Lateral L	superiortemporal L	N/A	N/A	N/A
+A10	[23.713,43.351,18.907]	[-48.237,5.588,-26.442]	[-55.742,53.585,-6.193]	White L	51%	White L	51%	White L	51%	White L	51%	superiortemporal L	G_temp_sup-Lateral L	superiortemporal L	N/A	N/A	N/A
+B3	[5.692,25.375,25.109]	[-28.283,-13.169,-18.849]	[-35.991,37.402,-0.332]	Hippocampus L	99%	Hippocampus L	99%	Hippocampus L	99%	Hippocampus L	99%	N/A	N/A	N/A	N/A	N/A	N/A
+B4	[5.232,28.770,25.827]	[-32.058,-13.786,-18.001]	[-39.316,36.591,0.398]	Hippocampus L	89%	Hippocampus L	89%	Hippocampus L	89%	Hippocampus L	89%	N/A	N/A	N/A	N/A	N/A	N/A
+B5	[4.772,32.164,26.545]	[-35.833,-14.404,-17.152]	[-42.642,35.780,1.128]	White L	58%	White L	58%	White L	58%	White L	58%	N/A	N/A	N/A	N/A	N/A	N/A
+B6	[4.312,35.559,27.262]	[-39.607,-15.021,-16.304]	[-45.967,34.968,1.858]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+B7	[3.852,38.953,27.980]	[-43.382,-15.638,-15.455]	[-49.293,34.157,2.588]	White L	100%	White L	100%	White L	100%	White L	100%	superiortemporal L	S_circular_insula_inf L	superiortemporal L	N/A	N/A	N/A
+B8	[3.392,42.348,28.698]	[-47.156,-16.256,-14.607]	[-52.619,33.346,3.318]	White L	99%	White L	99%	White L	99%	White L	99%	superiortemporal L	S_temporal_sup L	superiortemporal L	N/A	N/A	N/A
+B9	[2.932,45.743,29.416]	[-50.931,-16.873,-13.758]	[-55.944,32.535,4.048]	White L	98%	White L	98%	White L	98%	White L	98%	superiortemporal L	S_temporal_sup L	superiortemporal L	N/A	N/A	N/A
+B10	[2.472,49.137,30.133]	[-54.705,-17.491,-12.910]	[-59.270,31.724,4.778]	White L	67%	White L	67%	White L	67%	White L	67%	superiortemporal L	G_temp_sup-Lateral L	superiortemporal L	N/A	N/A	N/A
+B11	[2.011,52.532,30.851]	[-58.480,-18.108,-12.061]	[-62.595,30.913,5.508]	Cortex L	77%	Superior temporal L	77%	Superior temporal L	77%	G_temp_sup-Lateral L	72%	superiortemporal L	G_temp_sup-Lateral L	superiortemporal L	N/A	N/A	N/A
+B12	[1.551,55.926,31.569]	[-62.254,-18.725,-11.213]	[-65.921,30.102,6.238]	Cortex L	32%	Superior temporal L	32%	Superior temporal L	32%	G_temp_sup-Lateral L	32%	N/A	N/A	N/A	N/A	N/A	N/A
+C1	[1.244,24.207,30.716]	[-27.005,-17.824,-12.224]	[-34.340,33.024,5.208]	Hippocampus L	51%	Hippocampus L	51%	Hippocampus L	51%	Hippocampus L	51%	N/A	N/A	N/A	N/A	N/A	N/A
+B1	[6.612,18.586,23.674]	[-20.734,-11.934,-20.546]	[-29.340,39.024,-1.792]	Hippocampus L	80%	Hippocampus L	80%	Hippocampus L	80%	Hippocampus L	80%	N/A	N/A	N/A	N/A	N/A	N/A
+B2	[6.152,21.981,24.391]	[-24.509,-12.552,-19.698]	[-32.665,38.213,-1.062]	Hippocampus L	87%	Hippocampus L	87%	Hippocampus L	87%	Hippocampus L	87%	N/A	N/A	N/A	N/A	N/A	N/A
+C2	[-1.055,26.830,31.006]	[-29.920,-20.425,-11.835]	[-36.714,30.467,5.482]	Hippocampus L	84%	Hippocampus L	84%	Hippocampus L	84%	Hippocampus L	84%	N/A	N/A	N/A	N/A	N/A	N/A
+C3	[-3.354,29.452,31.297]	[-32.835,-23.026,-11.446]	[-39.088,27.910,5.756]	Hippocampus L	63%	Hippocampus L	63%	Hippocampus L	63%	Hippocampus L	63%	N/A	N/A	N/A	N/A	N/A	N/A
+C4	[-5.653,32.075,31.588]	[-35.751,-25.627,-11.057]	[-41.463,25.353,6.030]	Hippocampus L	49%	Hippocampus L	49%	Hippocampus L	49%	Hippocampus L	49%	N/A	N/A	N/A	N/A	N/A	N/A
+C5	[-7.953,34.698,31.878]	[-38.666,-28.227,-10.667]	[-43.837,22.796,6.304]	White L	73%	White L	73%	White L	73%	White L	73%	N/A	N/A	N/A	N/A	N/A	N/A
+C6	[-10.252,37.321,32.169]	[-41.582,-30.828,-10.278]	[-46.211,20.239,6.578]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+C7	[-12.551,39.943,32.460]	[-44.497,-33.429,-9.889]	[-48.585,17.683,6.852]	White L	99%	White L	99%	White L	99%	White L	99%	middletemporal L	S_temporal_sup L	middletemporal L	N/A	N/A	N/A
+C8	[-14.850,42.566,32.750]	[-47.413,-36.029,-9.500]	[-50.960,15.126,7.126]	White L	61%	White L	61%	White L	61%	White L	61%	middletemporal L	S_temporal_sup L	middletemporal L	N/A	N/A	N/A
+C9	[-17.150,45.189,33.041]	[-50.328,-38.630,-9.111]	[-53.334,12.569,7.400]	Cortex L	68%	Middle temporal L	68%	Middle temporal L	68%	S_temporal_sup L	68%	middletemporal L	S_temporal_sup L	middletemporal L	N/A	N/A	N/A
+C10	[-19.449,47.812,33.331]	[-53.243,-41.231,-8.721]	[-55.708,10.012,7.674]	Cortex L	51%	Middle temporal L	51%	Middle temporal L	51%	S_temporal_sup L	47%	middletemporal L	S_temporal_sup L	middletemporal L	N/A	N/A	N/A
+C11	[-21.748,50.435,33.622]	[-56.159,-43.832,-8.332]	[-58.083,7.455,7.948]	White L	63%	White L	63%	White L	63%	White L	63%	middletemporal L	S_temporal_sup L	middletemporal L	N/A	N/A	N/A
+C12	[-24.047,53.057,33.913]	[-59.074,-46.432,-7.943]	[-60.457,4.898,8.222]	Cortex L	71%	Middle temporal L	71%	Middle temporal L	71%	G_temporal_middle L	71%	middletemporal L	G_temporal_middle L	middletemporal L	N/A	N/A	N/A
+D1	[12.015,29.249,46.545]	[-32.662,-5.892,5.993]	[-40.340,43.024,21.208]	White L	65%	White L	65%	White L	65%	White L	65%	N/A	N/A	N/A	N/A	N/A	N/A
+D2	[13.073,32.576,46.797]	[-36.360,-4.865,6.267]	[-43.755,43.735,21.493]	White L	75%	White L	75%	White L	75%	White L	75%	insula L	G_Ins_lg_and_S_cent_ins L	insula L	N/A	N/A	N/A
+D3	[14.130,35.902,47.050]	[-40.057,-3.839,6.541]	[-47.170,44.447,21.777]	Cortex L	75%	Insula L	75%	Insula L	75%	G_insular_short L	51%	insula L	G_insular_short L	insula L	N/A	N/A	N/A
+D4	[15.188,39.229,47.302]	[-43.755,-2.812,6.815]	[-50.585,45.158,22.062]	Cortex L	44%	Insula L	44%	Insula L	44%	G_insular_short L	43%	insula L	G_insular_short L	insula L	N/A	N/A	N/A
+D5	[16.246,42.556,47.554]	[-47.452,-1.786,7.089]	[-54.000,45.870,22.347]	Cortex L	59%	Precentral L	59%	Precentral L	59%	G_front_inf-Opercular L	40%	precentral L	G_front_inf-Opercular L	precentral L	N/A	N/A	N/A
+D6	[17.303,45.883,47.806]	[-51.150,-0.759,7.363]	[-57.415,46.581,22.631]	White L	54%	White L	54%	White L	54%	White L	54%	precentral L	G_front_inf-Opercular L	precentral L	BA44_exvivo L	N/A	N/A
+D7	[18.361,49.210,48.059]	[-54.848,0.267,7.637]	[-60.830,47.293,22.916]	White L	96%	White L	96%	White L	96%	White L	96%	precentral L	G_and_S_subcentral L	precentral L	BA44_exvivo L	N/A	N/A
+D8	[19.419,52.537,48.311]	[-58.545,1.294,7.911]	[-64.245,48.004,23.200]	Cortex L	68%	Precentral L	68%	Precentral L	68%	G_and_S_subcentral L	68%	precentral L	G_and_S_subcentral L	precentral L	BA44_exvivo L	N/A	N/A
+E1	[5.979,29.830,41.623]	[-33.291,-12.613,0.386]	[-40.340,37.024,16.208]	Putamen L	62%	Putamen L	62%	Putamen L	62%	Putamen L	62%	insula L	S_circular_insula_inf L	insula L	N/A	N/A	N/A
+E2	[6.329,33.298,41.308]	[-37.144,-12.378,0.015]	[-43.828,37.024,15.918]	Cortex L	49%	Insula L	49%	Insula L	49%	White L	41%	insula L	G_Ins_lg_and_S_cent_ins L	insula L	N/A	N/A	N/A
+E3	[6.678,36.767,40.994]	[-40.997,-12.143,-0.356]	[-47.316,37.024,15.627]	Cortex L	55%	Insula L	55%	Insula L	55%	G_Ins_lg_and_S_cent_ins L	51%	insula L	G_Ins_lg_and_S_cent_ins L	insula L	N/A	N/A	N/A
+E4	[7.028,40.235,40.680]	[-44.849,-11.908,-0.727]	[-50.804,37.024,15.336]	Cortex L	16%	Superior temporal L	13%	Superior temporal L	13%	S_circular_insula_inf L	9%	N/A	N/A	N/A	N/A	N/A	N/A
+E5	[7.377,43.703,40.365]	[-48.702,-11.672,-1.097]	[-54.291,37.024,15.046]	Cortex L	52%	Superior temporal L	52%	Superior temporal L	52%	White L	47%	superiortemporal L	G_temp_sup-G_T_transv L	superiortemporal L	N/A	N/A	N/A
+E6	[7.727,47.171,40.051]	[-52.555,-11.437,-1.468]	[-57.779,37.024,14.755]	Cortex L	62%	Superior temporal L	61%	Superior temporal L	55%	G_temp_sup-G_T_transv L	62%	superiortemporal L	G_temp_sup-G_T_transv L	superiortemporal L	N/A	N/A	N/A
+E7	[8.076,50.640,39.737]	[-56.408,-11.202,-1.839]	[-61.267,37.024,14.464]	Cortex L	69%	Superior temporal L	69%	Superior temporal L	69%	G_temp_sup-G_T_transv L	38%	superiortemporal L	G_temp_sup-Lateral L	superiortemporal L	N/A	N/A	N/A
+E8	[8.426,54.108,39.423]	[-60.261,-10.967,-2.210]	[-64.755,37.024,14.174]	Cortex L	68%	Superior temporal L	68%	Superior temporal L	68%	G_temp_sup-Lateral L	68%	superiortemporal L	G_temp_sup-Lateral L	superiortemporal L	N/A	N/A	N/A
+F1	[6.329,16.564,17.688]	[-18.467,-12.315,-27.515]	[-27.340,39.024,-7.792]	Cortex L	40%	Entorhinal L	40%	Entorhinal L	40%	G_oc-temp_med-Parahip L	40%	entorhinal L	G_oc-temp_med-Parahip L	entorhinal L	entorhinal_exvivo L	entorhinal_exvivo L	N/A
+F2	[7.167,19.951,17.411]	[-22.229,-11.543,-27.853]	[-30.796,39.518,-8.039]	Hippocampus L	54%	Hippocampus L	54%	Hippocampus L	54%	Hippocampus L	54%	entorhinal L	G_oc-temp_med-Parahip L	entorhinal L	entorhinal_exvivo L	entorhinal_exvivo L	N/A
+F3	[8.005,23.337,17.134]	[-25.992,-10.772,-28.190]	[-34.252,40.011,-8.286]	Hippocampus L	95%	Hippocampus L	95%	Hippocampus L	95%	Hippocampus L	95%	N/A	N/A	N/A	N/A	N/A	N/A
+F4	[8.843,26.724,16.858]	[-29.754,-10.000,-28.527]	[-37.708,40.505,-8.532]	Hippocampus L	58%	Hippocampus L	58%	Hippocampus L	58%	Hippocampus L	58%	entorhinal L	G_oc-temp_med-Parahip L	entorhinal L	perirhinal_exvivo L	perirhinal_exvivo L	N/A
+F5	[9.681,30.111,16.581]	[-33.517,-9.229,-28.865]	[-41.165,40.999,-8.779]	Cortex L	66%	Fusiform L	34%	Fusiform L	55%	S_collat_transv_ant L	51%	entorhinal L	S_collat_transv_ant L	fusiform L	perirhinal_exvivo L	perirhinal_exvivo L	N/A
+F6	[10.519,33.498,16.305]	[-37.279,-8.457,-29.202]	[-44.621,41.493,-9.026]	White L	63%	White L	63%	White L	63%	White L	63%	fusiform L	S_collat_transv_ant L	fusiform L	N/A	N/A	N/A
+F7	[11.357,36.885,16.028]	[-41.042,-7.686,-29.540]	[-48.077,41.986,-9.273]	White L	99%	White L	99%	White L	99%	White L	99%	middletemporal L	S_temporal_inf L	middletemporal L	N/A	N/A	N/A
+F8	[12.195,40.272,15.751]	[-44.804,-6.914,-29.877]	[-51.533,42.480,-9.520]	White L	56%	White L	56%	White L	56%	White L	56%	middletemporal L	G_temporal_middle L	middletemporal L	N/A	N/A	N/A
+F9	[13.033,43.659,15.475]	[-48.567,-6.143,-30.214]	[-54.989,42.974,-9.767]	Cortex L	83%	Middle temporal L	83%	Middle temporal L	83%	G_temporal_middle L	76%	middletemporal L	G_temporal_middle L	middletemporal L	N/A	N/A	N/A
+F10	[13.871,47.046,15.198]	[-52.330,-5.371,-30.552]	[-58.446,43.468,-10.014]	Cortex L	74%	Middle temporal L	74%	Middle temporal L	74%	G_temporal_middle L	74%	middletemporal L	G_temporal_middle L	middletemporal L	N/A	N/A	N/A
+G1	[54.334,0.804,45.131]	[-1.049,41.290,3.428]	[-16.340,88.024,20.208]	Cortex L	35%	Rostral ant cing L	35%	Rostral ant cing L	35%	G_and_S_cingul-Ant L	35%	rostralanteriorcingulate L	G_and_S_cingul-Ant L	rostralanteriorcingulate L	N/A	N/A	N/A
+G2	[53.961,4.264,44.758]	[-4.893,40.737,3.004]	[-19.747,87.307,19.850]	Cortex L	68%	Rostral ant cing L	68%	Rostral ant cing L	68%	G_and_S_cingul-Ant L	68%	rostralanteriorcingulate L	G_and_S_cingul-Ant L	rostralanteriorcingulate L	N/A	N/A	N/A
+G3	[53.588,7.724,44.386]	[-8.736,40.184,2.581]	[-23.154,86.589,19.491]	White L	55%	White L	55%	White L	55%	White L	55%	rostralanteriorcingulate L	G_and_S_cingul-Ant L	rostralanteriorcingulate L	N/A	N/A	N/A
+G4	[53.215,11.184,44.013]	[-12.580,39.632,2.158]	[-26.560,85.872,19.132]	White L	94%	White L	94%	White L	94%	White L	94%	rostralanteriorcingulate L	G_and_S_cingul-Ant L	rostralanteriorcingulate L	N/A	N/A	N/A
+G5	[52.842,14.644,43.641]	[-16.423,39.079,1.734]	[-29.967,85.155,18.774]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+G6	[52.469,18.104,43.268]	[-20.267,38.526,1.311]	[-33.374,84.438,18.415]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+G7	[52.096,21.564,42.896]	[-24.110,37.973,0.887]	[-36.781,83.721,18.056]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+G8	[51.722,25.024,42.523]	[-27.954,37.420,0.464]	[-40.188,83.003,17.698]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+G9	[51.349,28.484,42.151]	[-31.797,36.867,0.041]	[-43.595,82.286,17.339]	White L	96%	White L	96%	White L	96%	White L	96%	parstriangularis L	Lat_Fis-ant-Horizont L	parstriangularis L	N/A	N/A	N/A
+G10	[50.976,31.945,41.778]	[-35.641,36.314,-0.383]	[-47.002,81.569,16.981]	White L	100%	White L	100%	White L	100%	White L	100%	parsorbitalis L	Lat_Fis-ant-Horizont L	parstriangularis L	N/A	N/A	N/A
+G11	[50.603,35.405,41.406]	[-39.484,35.761,-0.806]	[-50.409,80.852,16.622]	White L	94%	White L	94%	White L	94%	White L	94%	parstriangularis L	Lat_Fis-ant-Horizont L	parstriangularis L	BA45_exvivo L	N/A	N/A
+G12	[50.230,38.865,41.033]	[-43.328,35.208,-1.230]	[-53.816,80.134,16.263]	White L	66%	White L	66%	White L	66%	White L	66%	parstriangularis L	G_front_inf-Triangul L	parstriangularis L	BA45_exvivo L	BA45_exvivo L	N/A
+H1	[-21.037,12.420,33.080]	[-13.915,-41.565,-9.008]	[-20.340,12.024,7.208]	Cortex L	58%	Parahippocampal L	44%	Parahippocampal L	34%	G_oc-temp_med-Parahip L	33%	lingual L	G_oc-temp_med-Lingual L	lingual L	N/A	N/A	N/A
+H2	[-21.460,15.830,32.418]	[-17.703,-42.177,-9.768]	[-23.695,11.266,6.559]	White L	53%	White L	53%	White L	53%	White L	53%	parahippocampal L	G_oc-temp_med-Parahip L	parahippocampal L	N/A	N/A	N/A
+H3	[-21.882,19.241,31.756]	[-21.490,-42.789,-10.528]	[-27.049,10.509,5.910]	Cortex L	81%	Parahippocampal L	71%	Parahippocampal L	66%	S_oc-temp_med_and_Lingual L	75%	parahippocampal L	S_oc-temp_med_and_Lingual L	parahippocampal L	N/A	N/A	N/A
+H4	[-22.304,22.652,31.093]	[-25.278,-43.401,-11.288]	[-30.404,9.751,5.260]	Cortex L	90%	Fusiform L	48%	Fusiform L	48%	S_oc-temp_med_and_Lingual L	59%	fusiform L	G_oc-temp_lat-fusifor L	fusiform L	N/A	N/A	FG3 L
+H5	[-22.727,26.063,30.431]	[-29.066,-44.013,-12.048]	[-33.759,8.994,4.611]	Cortex L	62%	Fusiform L	58%	Fusiform L	58%	S_oc-temp_med_and_Lingual L	52%	fusiform L	S_oc-temp_med_and_Lingual L	fusiform L	N/A	N/A	FG3 L
+H6	[-23.149,29.473,29.769]	[-32.853,-44.625,-12.808]	[-37.114,8.236,3.962]	White L	90%	White L	90%	White L	90%	White L	90%	fusiform L	S_oc-temp_med_and_Lingual L	fusiform L	N/A	N/A	FG3 L
+H7	[-23.572,32.884,29.106]	[-36.641,-45.237,-13.568]	[-40.468,7.479,3.312]	Cortex L	52%	White L	46%	White L	46%	S_oc-temp_lat L	52%	fusiform L	S_oc-temp_lat L	fusiform L	N/A	N/A	FG4 L
+H8	[-23.994,36.295,28.444]	[-40.429,-45.849,-14.328]	[-43.823,6.721,2.663]	Cortex L	76%	Inferior temporal L	69%	Inferior temporal L	66%	S_oc-temp_lat L	75%	inferiortemporal L	S_oc-temp_lat L	inferiortemporal L	N/A	N/A	FG4 L
+H9	[-24.416,39.705,27.782]	[-44.216,-46.461,-15.088]	[-47.178,5.964,2.014]	Cortex L	51%	Inferior temporal L	51%	Inferior temporal L	51%	White L	49%	inferiortemporal L	S_oc-temp_lat L	inferiortemporal L	N/A	N/A	FG4 L
+H10	[-24.839,43.116,27.120]	[-48.004,-47.073,-15.848]	[-50.533,5.206,1.364]	White L	68%	White L	68%	White L	68%	White L	68%	inferiortemporal L	G_temporal_inf L	inferiortemporal L	N/A	N/A	FG4 L
+H11	[-25.261,46.527,26.457]	[-51.792,-47.685,-16.608]	[-53.888,4.449,0.715]	White L	66%	White L	66%	White L	66%	White L	66%	middletemporal L	G_temporal_middle L	middletemporal L	N/A	N/A	FG4 L
+H12	[-25.683,49.938,25.795]	[-55.580,-48.297,-17.368]	[-57.242,3.691,0.066]	Cortex L	85%	Middle temporal L	85%	Middle temporal L	84%	G_temporal_middle L	81%	middletemporal L	G_temporal_middle L	middletemporal L	N/A	N/A	N/A
+H13	[-26.106,53.348,25.133]	[-59.367,-48.908,-18.128]	[-60.597,2.934,-0.584]	Cortex L	44%	Middle temporal L	44%	Middle temporal L	33%	G_temporal_middle L	41%	middletemporal L	G_temporal_middle L	middletemporal L	N/A	N/A	N/A
+H14	[-26.528,56.759,24.470]	[-63.155,-49.520,-18.888]	[-63.952,2.176,-1.233]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+H15	[-26.950,60.170,23.808]	[-66.943,-50.132,-19.648]	[-67.307,1.419,-1.882]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+H16	[-27.373,63.580,23.146]	[-70.730,-50.744,-20.408]	[-70.661,0.661,-2.531]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+I1	[-21.087,7.631,67.110]	[-8.711,-40.565,30.634]	[-15.340,12.024,41.208]	White L	57%	White L	57%	White L	57%	White L	57%	isthmuscingulate L	S_subparietal L	isthmuscingulate L	N/A	N/A	N/A
+I2	[-21.622,11.026,66.448]	[-12.481,-41.299,29.876]	[-18.667,11.156,40.557]	White L	81%	White L	81%	White L	81%	White L	81%	isthmuscingulate L	S_subparietal L	isthmuscingulate L	N/A	N/A	N/A
+I3	[-22.157,14.420,65.786]	[-16.251,-42.033,29.119]	[-21.995,10.288,39.906]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+I4	[-22.692,17.815,65.123]	[-20.021,-42.767,28.361]	[-25.322,9.420,39.255]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+I5	[-23.227,21.210,64.461]	[-23.791,-43.501,27.603]	[-28.650,8.552,38.604]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+I6	[-23.762,24.605,63.798]	[-27.561,-44.235,26.845]	[-31.978,7.684,37.953]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+I7	[-24.297,28.000,63.136]	[-31.331,-44.969,26.088]	[-35.305,6.816,37.302]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+I8	[-24.832,31.395,62.474]	[-35.101,-45.704,25.330]	[-38.633,5.948,36.651]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+I9	[-25.367,34.789,61.811]	[-38.871,-46.438,24.572]	[-41.960,5.080,36.000]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+I10	[-25.902,38.184,61.149]	[-42.641,-47.172,23.814]	[-45.288,4.211,35.349]	White L	100%	White L	100%	White L	100%	White L	100%	supramarginal L	G_temp_sup-Plan_tempo L	supramarginal L	N/A	N/A	N/A
+J1	[2.857,9.040,41.778]	[-10.190,-15.186,0.617]	[-19.340,36.024,16.208]	Thalamus L	99%	Thalamus L	99%	Thalamus L	99%	Thalamus L	99%	N/A	N/A	N/A	N/A	N/A	N/A
+J2	[3.195,11.373,44.365]	[-12.790,-14.845,3.626]	[-21.677,36.091,18.813]	Thalamus L	100%	Thalamus L	100%	Thalamus L	100%	Thalamus L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+J3	[3.533,13.705,46.953]	[-15.391,-14.503,6.635]	[-24.014,36.158,21.417]	Thalamus L	85%	Thalamus L	85%	Thalamus L	85%	Thalamus L	85%	N/A	N/A	N/A	N/A	N/A	N/A
+J4	[3.872,16.038,49.540]	[-17.992,-14.161,9.644]	[-26.352,36.224,24.021]	White L	75%	White L	75%	White L	75%	White L	75%	N/A	N/A	N/A	N/A	N/A	N/A
+J5	[4.210,18.370,52.128]	[-20.593,-13.820,12.653]	[-28.689,36.291,26.626]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+J6	[4.548,20.703,54.715]	[-23.194,-13.478,15.661]	[-31.026,36.358,29.230]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+J7	[4.886,23.036,57.302]	[-25.795,-13.136,18.670]	[-33.363,36.425,31.834]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+J8	[5.225,25.368,59.890]	[-28.396,-12.795,21.679]	[-35.701,36.491,34.439]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+J9	[5.563,27.701,62.477]	[-30.997,-12.453,24.688]	[-38.038,36.558,37.043]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+J10	[5.901,30.033,65.064]	[-33.598,-12.111,27.697]	[-40.375,36.625,39.648]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+J11	[6.240,32.366,67.652]	[-36.199,-11.769,30.706]	[-42.712,36.692,42.252]	White L	100%	White L	100%	White L	100%	White L	100%	N/A	N/A	N/A	N/A	N/A	N/A
+J12	[6.578,34.699,70.239]	[-38.799,-11.428,33.715]	[-45.050,36.759,44.856]	White L	81%	White L	81%	White L	81%	White L	81%	precentral L	S_central L	precentral L	BA3a_exvivo L	BA3a_exvivo L	N/A
+J13	[6.916,37.031,72.827]	[-41.400,-11.086,36.724]	[-47.387,36.825,47.461]	Cortex L	49%	Precentral L	49%	Precentral L	49%	S_central L	49%	precentral L	S_central L	precentral L	BA4p_exvivo L	BA4p_exvivo L	N/A
+J14	[7.255,39.364,75.414]	[-44.001,-10.744,39.733]	[-49.724,36.892,50.065]	White L	63%	White L	63%	White L	63%	White L	63%	precentral L	S_central L	precentral L	BA4p_exvivo L	BA4p_exvivo L	N/A
+J15	[7.593,41.696,78.001]	[-46.602,-10.403,42.741]	[-52.061,36.959,52.669]	White L	48%	White L	48%	White L	48%	White L	48%	precentral L	S_central L	precentral L	BA4a_exvivo L	BA4a_exvivo L	N/A
+J16	[7.931,44.029,80.589]	[-49.203,-10.061,45.750]	[-54.399,37.026,55.274]	White L	62%	White L	62%	White L	62%	White L	62%	precentral L	G_precentral L	precentral L	BA6_exvivo L	BA4a_exvivo L	N/A

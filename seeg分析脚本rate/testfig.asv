@@ -1,0 +1,293 @@
+
+%% ===== 画图 =====
+plot_like_dislike_results(res, data_dir);  % <<< CHANGED
+
+
+
+%% ===== 画图函数 =====
+function plot_like_dislike_results(res, data_dir)
+freq_vec = res.freq_vec;
+t_vec    = res.t_vec;
+
+% 图1: F + 簇
+fig1 = figure('Position',[100 100 1200 500]);
+
+subplot(1,3,1);
+imagesc(t_vec, freq_vec, res.F_pref);
+axis xy; colorbar; colormap(gca, hot);
+xlabel('Time (ms)'); ylabel('Freq (Hz)');
+title('LME F-stat (like vs dislike)');
+
+subplot(1,3,2);
+p_plot = res.P_pref_clust;
+p_plot(p_plot==0) = min(p_plot(p_plot>0))/10;
+imagesc(t_vec, freq_vec, -log10(p_plot));
+axis xy; colorbar; colormap(gca, parula);
+xlabel('Time (ms)'); ylabel('Freq (Hz)');
+title('Cluster p (-log10)');
+
+subplot(1,3,3);
+% imagesc(t_vec, freq_vec, res.F_pref);
+% axis xy; colorbar; colormap(gca, hot);
+% hold on;
+mask = double(res.h_pref);
+mask(mask==0) = NaN;
+imagesc(t_vec, freq_vec, mask, 'AlphaData', 0.25);
+axis xy;   % 关键：再次强制 y 轴方向
+
+
+colormap(gca, hot);  % 注意别覆盖你的色图，可单独用 hold on 叠
+xlabel('Time (ms)'); ylabel('Freq (Hz)');
+title('F + sig clusters (p<0.05)');
+sgtitle('Preference effect: like vs dislike');
+
+saveas(fig1, fullfile(data_dir, 'LME_CBPT_2D_like_dislike_FreqTime_Fstats.png'));
+fprintf('✔ Figure saved: LME_CBPT_2D_like_dislike_FreqTime_Fstats.png\n');
+
+% 图2: 条件均值
+fig2 = figure('Position',[150 150 1200 500]);
+subplot(1,3,1);
+imagesc(t_vec, freq_vec, res.avg_pref.dislike);
+axis xy; colorbar; colormap(gca, jet);
+xlabel('Time (ms)'); ylabel('Freq (Hz)');
+title('Dislike - mean z');
+
+subplot(1,3,2);
+imagesc(t_vec, freq_vec, res.avg_pref.like);
+axis xy; colorbar; colormap(gca, jet);
+xlabel('Time (ms)'); ylabel('Freq (Hz)');
+title('Like - mean z');
+
+subplot(1,3,3);
+imagesc(t_vec, freq_vec, res.diff_map);
+axis xy; colorbar; colormap(gca, redblue);
+hold on;
+if any(res.h_pref(:))
+    contour(t_vec, freq_vec, double(res.h_pref), [0.5 0.5], ...
+        'LineColor','k','LineWidth',2);
+end
+xlabel('Time (ms)'); ylabel('Freq (Hz)');
+title('Like - Dislike (dir)');
+
+saveas(fig2, fullfile(data_dir, 'LME_CBPT_2D_like_dislike_FreqTime_Averages.png'));
+fprintf('✔ Figure saved: LME_CBPT_2D_like_dislike_FreqTime_Averages.png\n');
+
+% 打印簇信息
+if isfield(res,'clusterinfo_pref') && isfield(res.clusterinfo_pref,'pos_clusters')
+    fprintf('\n== Significant clusters (like vs dislike) ==\n');
+    ci = res.clusterinfo_pref;
+    for k = 1:numel(ci.pos_clusters)
+        if ci.pos_clusters(k).p < 0.05
+            mask = ci.pos_clusters(k).inds;
+            [fi, ti] = find(mask);
+            fprintf('  Cluster %d: p=%.4f, size=%d\n', ...
+                k, ci.pos_clusters(k).p, nnz(mask));
+            fprintf('    Freq: %.2f - %.2f Hz\n', ...
+                min(freq_vec(fi)), max(freq_vec(fi)));
+            fprintf('    Time: %.1f - %.1f ms\n', ...
+                min(t_vec(ti)), max(t_vec(ti)));
+            % 方向
+            mean_diff = mean(res.diff_map(mask),'omitnan');
+            if mean_diff > 0
+                fprintf('    Direction: LIKE > DISLIKE (%.3f)\n', mean_diff);
+            else
+                fprintf('    Direction: DISLIKE > LIKE (%.3f)\n', abs(mean_diff));
+            end
+        end
+    end
+end
+
+end
+
+
+%% ===== 简单红蓝图 =====
+function cmap = redblue(m)
+if nargin<1, m=256; end
+r = [ones(m/2,1); linspace(1,0,m/2)'];
+g = [linspace(0,1,m/2)'; linspace(1,0,m/2)'];
+b = [linspace(0,1,m/2)'; ones(m/2,1)];
+cmap = [r g b];
+end
+
+%% ===== 辅助：load 并检查字段 =====
+function S = load_assert(fname, fields)
+assert(isfile(fname), '文件不存在: %s', fname);
+S = load(fname, '-mat');
+for i = 1:numel(fields)
+    assert(isfield(S, fields{i}), '文件缺少变量 %s: %s', fields{i}, fname);
+end
+end
+
+
+function [h, p, clusterinfo] = cluster_test(datobs, datrnd, tail, alpha,...
+    clusteralpha, clusterstat)
+% CLUSTER_TEST performs a cluster-corrected test
+
+if nargin < 3 || isempty(tail)
+    tail = 0;
+end
+
+if nargin < 4 || isempty(alpha)
+    alpha = 0.05;
+end
+
+if nargin < 5 || isempty(clusteralpha)
+    clusteralpha = 0.05;
+end
+
+if nargin < 6 || isempty(clusterstat)
+    clusterstat = 'sum';
+end
+
+% which dimension contains the randomizations
+rndsiz = size(datrnd);
+rnddim = numel(rndsiz);
+numrnd = rndsiz(rnddim);
+
+if ~( all(size(datobs) == rndsiz(1:end-1)) ||...
+        isvector(datobs) && numel(datobs) == rndsiz(1) )
+    error('datobs and datrnd are not of compatible dimensionality');
+end
+
+cluster_stat_sum = strcmp(clusterstat, 'sum');
+cluster_stat_size = strcmp(clusterstat, 'size');
+if ~cluster_stat_sum && ~cluster_stat_size
+    error('unsupported clusterstat');
+end
+
+% determine thresholds for cluster candidates
+if tail == 0
+    clusteralpha = clusteralpha / 2;
+end
+cluster_threshold_neg = quantile(datrnd, clusteralpha, rnddim);
+cluster_threshold_pos = quantile(datrnd, 1-clusteralpha, rnddim);
+
+% cluster candidates for observed data
+[clus_observed_pos, clus_observed_neg, pos_inds, neg_inds] =...
+    find_and_characterize_clusters(datobs);
+
+% maximum and minimum cluster statistics for random data
+null_pos = nan(numrnd, 1);
+null_neg = nan(numrnd, 1);
+indvec(1:rnddim) = {':'};
+for k = 1:numrnd
+    if mod(k, round(numrnd/10)) == 0
+        fprintf('      processing permutation %d of %d...\n', k, numrnd);
+    end
+    
+    indvec{rnddim} = k;
+    [clus_rnd_pos, clus_rnd_neg] = find_and_characterize_clusters(...
+        datrnd(indvec{:}));
+    if ~isempty(clus_rnd_pos)
+        null_pos(k) = max(clus_rnd_pos);
+    end
+    if ~isempty(clus_rnd_neg)
+        null_neg(k) = min(clus_rnd_neg);
+    end
+end
+
+null_pos = null_pos(~isnan(null_pos));
+null_neg = null_neg(~isnan(null_neg));
+
+null_pos = sort(null_pos, 'descend');
+null_neg = sort(null_neg, 'ascend');
+
+% compare observed clusters to null
+clus_p_pos = ones(size(clus_observed_pos));
+for k = 1:numel(clus_observed_pos)
+    clus_p_pos(k) = (sum(null_pos > clus_observed_pos(k)) + 1) / (numrnd+1);
+end
+clus_p_neg = ones(size(clus_observed_neg));
+for k = 1:numel(clus_observed_neg)
+    clus_p_neg(k) = (sum(null_neg < clus_observed_neg(k)) + 1) / (numrnd+1);
+end
+
+% post-processing of output
+if nargout > 2
+    clusterinfo = [];
+end
+
+% convenient matrix of p-values
+p = ones(size(datobs));
+if tail >= 0
+    for k = 1:numel(clus_p_pos)
+        p(pos_inds{k}) = clus_p_pos(k);
+        
+        if nargout > 2
+            clusterinfo.pos_clusters(k).clusterstat = clus_observed_pos(k);
+            clusterinfo.pos_clusters(k).p = clus_p_pos(k);
+            clusterinfo.pos_clusters(k).inds = false(size(datobs));
+            clusterinfo.pos_clusters(k).inds(pos_inds{k}) = 1;
+            
+            if tail == 0
+                clusterinfo.pos_clusters(k).p = clusterinfo.pos_clusters(k).p * 2;
+            end
+        end
+    end
+end
+if tail <= 0
+    for k = 1:numel(clus_p_neg)
+        if clus_p_neg(k) < p(neg_inds{k}(1))
+            p(neg_inds{k}) = clus_p_neg(k);
+        end
+        
+        if nargout > 2
+            clusterinfo.neg_clusters(k).clusterstat = clus_observed_neg(k);
+            clusterinfo.neg_clusters(k).p = clus_p_neg(k);
+            clusterinfo.neg_clusters(k).inds = false(size(datobs));
+            clusterinfo.neg_clusters(k).inds(neg_inds{k}) = 1;
+        end
+        
+        if tail == 0
+            clusterinfo.neg_clusters(k).p = clusterinfo.neg_clusters(k).p * 2;
+        end
+    end
+end
+if tail == 0
+    p = min(1, p .* 2);
+end
+
+% result of the hypothesis test
+h = p < alpha;
+
+%% nested helper functions
+function [clus_stats_pos, clus_stats_neg, pos_inds, neg_inds] = ...
+    find_and_characterize_clusters(dat)
+    if tail >= 0
+        [clus_stats_pos, pos_inds] = compute_cluster_stats(dat,...
+            dat >= cluster_threshold_pos);
+    end
+    if tail <= 0
+        [clus_stats_neg, neg_inds] = compute_cluster_stats(dat,...
+            dat <= cluster_threshold_neg);
+    end
+
+    if tail == -1
+        clus_stats_pos = [];
+        pos_inds = [];
+    elseif tail == 1
+        clus_stats_neg = [];
+        neg_inds = [];
+    end
+end
+
+function [clus_stats, inds] = compute_cluster_stats(dat, clus_cand)
+    % label the binary masks and compute cluster statistics
+    connected = bwconncomp(clus_cand);
+    inds = connected.PixelIdxList;
+    if cluster_stat_sum
+        lens = cellfun(@numel, inds);
+        inds = inds(lens > 1);
+        clus_stats = zeros(numel(inds),1);
+        for l = 1:numel(inds)
+            clus_stats(l) = sum(dat(inds{l}));
+        end
+    elseif cluster_stat_size
+        clus_stats = zeros(numel(inds),1);
+        for l = 1:connected.NumObjects
+            clus_stats(l) = numel(connected.PixelIdxList{l});
+        end
+    end
+end
+
+end

@@ -1,0 +1,119 @@
+Channel	SCS	MNI	World	ASEG	ASEG_prob	DKT	DKT_prob	Desikan-Killiany	Desikan-Killiany_prob	Destrieux	Destrieux_prob	white_268179V:DKT	white_268179V:Destrieux	white_268179V:Desikan-Killiany	white_268179V:Brodmann	white_268179V:Brodmann-thresh	white_268179V:vcAtlas
+A1	[9.260,-24.011,23.772]	[24.251,-9.274,-21.403]	[8.095,54.212,-5.948]	Amygdala R	81%	Amygdala R	81%	Amygdala R	81%	Amygdala R	81%	N/A	N/A	N/A	N/A	N/A	N/A
+A2	[10.710,-27.129,24.426]	[27.411,-7.793,-20.694]	[11.154,55.695,-5.114]	Amygdala R	91%	Amygdala R	91%	Amygdala R	91%	Amygdala R	91%	N/A	N/A	N/A	N/A	N/A	N/A
+A3	[12.161,-30.246,25.080]	[30.572,-6.313,-19.986]	[14.212,57.178,-4.280]	Amygdala R	99%	Amygdala R	99%	Amygdala R	99%	Amygdala R	99%	N/A	N/A	N/A	N/A	N/A	N/A
+A4	[13.611,-33.364,25.734]	[33.732,-4.833,-19.278]	[17.271,58.661,-3.446]	White R	67%	White R	67%	White R	67%	White R	67%	N/A	N/A	N/A	N/A	N/A	N/A
+A5	[15.061,-36.481,26.388]	[36.893,-3.352,-18.570]	[20.329,60.144,-2.611]	White R	100%	White R	100%	White R	100%	White R	100%	insula R	S_circular_insula_inf R	insula R	N/A	N/A	N/A
+A6	[16.511,-39.599,27.042]	[40.053,-1.872,-17.862]	[23.388,61.627,-1.777]	White R	56%	White R	56%	White R	56%	White R	56%	superiortemporal R	S_circular_insula_inf R	insula R	N/A	N/A	N/A
+A7	[17.962,-42.716,27.696]	[43.214,-0.392,-17.154]	[26.447,63.110,-0.943]	White R	49%	White R	49%	White R	49%	White R	49%	superiortemporal R	S_circular_insula_inf R	superiortemporal R	N/A	N/A	N/A
+A8	[19.412,-45.834,28.350]	[46.374,1.089,-16.445]	[29.505,64.593,-0.109]	Cortex R	56%	White R	43%	White R	43%	S_temporal_sup R	56%	superiortemporal R	S_temporal_sup R	superiortemporal R	N/A	N/A	N/A
+A9	[20.862,-48.952,29.004]	[49.534,2.569,-15.737]	[32.564,66.076,0.725]	Cortex R	86%	Middle temporal R	47%	Middle temporal R	47%	S_temporal_sup R	54%	middletemporal R	G_temporal_middle R	middletemporal R	N/A	N/A	N/A
+A10	[22.312,-52.069,29.658]	[52.695,4.050,-15.029]	[35.622,67.559,1.559]	Cortex R	78%	Middle temporal R	77%	Middle temporal R	77%	G_temporal_middle R	77%	middletemporal R	G_temporal_middle R	middletemporal R	N/A	N/A	N/A
+B1	[-0.016,-25.607,23.128]	[25.874,-19.430,-21.931]	[10.095,45.212,-7.948]	Hippocampus R	95%	Hippocampus R	95%	Hippocampus R	95%	Hippocampus R	95%	N/A	N/A	N/A	N/A	N/A	N/A
+B2	[-0.787,-28.871,24.128]	[29.181,-20.364,-20.787]	[13.405,44.456,-7.097]	Hippocampus R	94%	Hippocampus R	94%	Hippocampus R	94%	Hippocampus R	94%	N/A	N/A	N/A	N/A	N/A	N/A
+B3	[-1.559,-32.136,25.127]	[32.489,-21.298,-19.643]	[16.714,43.699,-6.246]	Hippocampus R	65%	Hippocampus R	65%	Hippocampus R	65%	Hippocampus R	65%	parahippocampal R	G_oc-temp_med-Parahip R	insula R	N/A	N/A	N/A
+B4	[-2.331,-35.400,26.126]	[35.797,-22.231,-18.499]	[20.024,42.943,-5.395]	White R	49%	White R	49%	White R	49%	White R	49%	parahippocampal R	G_oc-temp_med-Parahip R	parahippocampal R	N/A	N/A	N/A
+B5	[-3.103,-38.664,27.125]	[39.104,-23.165,-17.355]	[23.333,42.186,-4.544]	Cortex R	54%	White R	43%	White R	43%	G_oc-temp_med-Parahip R	47%	entorhinal R	G_oc-temp_med-Parahip R	parahippocampal R	MT_exvivo R	N/A	N/A
+B6	[-3.875,-41.929,28.124]	[42.412,-24.099,-16.211]	[26.643,41.430,-3.693]	White R	70%	White R	70%	White R	70%	White R	70%	fusiform R	S_collat_transv_ant R	fusiform R	MT_exvivo R	N/A	FG4 R
+B7	[-4.647,-45.193,29.124]	[45.720,-25.032,-15.067]	[29.953,40.673,-2.842]	White R	86%	White R	86%	White R	86%	White R	86%	fusiform R	S_collat_transv_ant R	fusiform R	MT_exvivo R	N/A	N/A
+B8	[-5.418,-48.457,30.123]	[49.027,-25.966,-13.923]	[33.262,39.917,-1.991]	White R	95%	White R	95%	White R	95%	White R	95%	inferiortemporal R	S_temporal_inf R	inferiortemporal R	N/A	N/A	N/A
+B9	[-6.190,-51.722,31.122]	[52.335,-26.900,-12.779]	[36.572,39.160,-1.140]	White R	51%	White R	51%	White R	51%	White R	51%	inferiortemporal R	G_temporal_inf R	inferiortemporal R	N/A	N/A	N/A
+B10	[-6.962,-54.986,32.121]	[55.643,-27.833,-11.635]	[39.881,38.404,-0.289]	Cortex R	60%	Inferior temporal R	60%	Inferior temporal R	60%	G_temporal_inf R	60%	inferiortemporal R	G_temporal_inf R	inferiortemporal R	N/A	N/A	N/A
+B11	[-7.734,-58.250,33.121]	[58.950,-28.767,-10.490]	[43.191,37.647,0.562]	Cortex R	59%	Inferior temporal R	59%	Inferior temporal R	59%	G_temporal_inf R	59%	inferiortemporal R	G_temporal_inf R	inferiortemporal R	N/A	N/A	N/A
+A11	[23.762,-55.187,30.312]	[55.855,5.530,-14.321]	[38.681,69.042,2.394]	Cortex R	56%	Middle temporal R	56%	Middle temporal R	56%	G_temporal_middle R	56%	middletemporal R	G_temporal_middle R	middletemporal R	N/A	N/A	N/A
+A12	[25.213,-58.304,30.966]	[59.016,7.010,-13.613]	[41.740,70.525,3.228]	Cortex R	76%	Middle temporal R	76%	Middle temporal R	76%	G_temporal_middle R	76%	middletemporal R	G_temporal_middle R	middletemporal R	N/A	N/A	N/A
+B12	[-8.506,-61.515,34.120]	[62.258,-29.701,-9.346]	[46.501,36.891,1.413]	Cortex R	61%	Inferior temporal R	61%	Inferior temporal R	61%	G_temporal_inf R	61%	inferiortemporal R	G_temporal_inf R	inferiortemporal R	N/A	N/A	N/A
+B13	[-9.278,-64.779,35.119]	[65.566,-30.634,-8.202]	[49.810,36.134,2.264]	Cortex R	11%	Inferior temporal R	11%	Inferior temporal R	11%	G_temporal_inf R	11%	N/A	N/A	N/A	N/A	N/A	N/A
+B14	[-10.050,-68.043,36.118]	[68.874,-31.568,-7.058]	[53.120,35.378,3.116]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+B15	[-10.821,-71.307,37.117]	[72.181,-32.502,-5.914]	[56.429,34.621,3.967]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+B16	[-11.593,-74.572,38.117]	[75.489,-33.435,-4.770]	[59.739,33.865,4.818]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+C1	[-31.774,-15.862,44.910]	[15.880,-53.151,3.268]	[2.095,10.212,9.052]	Cortex R	54%	Lingual R	54%	Lingual R	54%	S_calcarine R	49%	lingual R	S_calcarine R	lingual R	V2_exvivo R	V2_exvivo R	hOc2 R
+C2	[-34.760,-17.564,45.570]	[17.603,-56.445,4.075]	[3.938,7.243,9.257]	White R	76%	White R	76%	White R	76%	White R	76%	lingual R	G_oc-temp_med-Lingual R	lingual R	V2_exvivo R	V2_exvivo R	hOc2 R
+C3	[-37.747,-19.265,46.230]	[19.327,-59.739,4.882]	[5.780,4.275,9.461]	White R	76%	White R	76%	White R	76%	White R	76%	lingual R	G_oc-temp_med-Lingual R	lingual R	V2_exvivo R	V1_exvivo R	hOc1 R
+C4	[-40.734,-20.966,46.890]	[21.050,-63.033,5.690]	[7.623,1.306,9.666]	White R	75%	White R	75%	White R	75%	White R	75%	lingual R	S_oc-temp_med_and_Lingual R	lingual R	V2_exvivo R	V2_exvivo R	FG1 R
+C5	[-43.720,-22.668,47.549]	[22.773,-66.327,6.497]	[9.465,-1.663,9.871]	White R	57%	White R	57%	White R	57%	White R	57%	lingual R	S_collat_transv_post R	lingual R	V2_exvivo R	N/A	hOc4v R
+C6	[-46.707,-24.369,48.209]	[24.496,-69.621,7.304]	[11.308,-4.631,10.076]	White R	68%	White R	68%	White R	68%	White R	68%	lingual R	S_collat_transv_post R	lingual R	V2_exvivo R	N/A	hOc4v R
+C7	[-49.694,-26.070,48.869]	[26.220,-72.914,8.112]	[13.151,-7.600,10.280]	White R	67%	White R	67%	White R	67%	White R	67%	lateraloccipital R	S_collat_transv_post R	lateraloccipital R	V2_exvivo R	V2_exvivo R	hOc4v R
+C8	[-52.680,-27.772,49.529]	[27.943,-76.208,8.919]	[14.993,-10.569,10.485]	White R	55%	White R	55%	White R	55%	White R	55%	lateraloccipital R	Pole_occipital R	lateraloccipital R	V2_exvivo R	V2_exvivo R	hOc2 R
+C9	[-55.667,-29.473,50.188]	[29.666,-79.502,9.726]	[16.836,-13.537,10.690]	Cortex R	65%	Lateral occipital R	65%	Lateral occipital R	65%	Pole_occipital R	65%	lateraloccipital R	Pole_occipital R	lateraloccipital R	V2_exvivo R	V2_exvivo R	hOc2 R
+C10	[-58.654,-31.174,50.848]	[31.390,-82.796,10.534]	[18.678,-16.506,10.895]	Cortex R	59%	Lateral occipital R	59%	Lateral occipital R	59%	Pole_occipital R	59%	lateraloccipital R	Pole_occipital R	lateraloccipital R	V2_exvivo R	V2_exvivo R	hOc2 R
+D1	[-9.848,-21.954,37.688]	[22.096,-29.681,-5.327]	[7.095,33.212,5.052]	White R	55%	White R	55%	White R	55%	White R	55%	N/A	N/A	N/A	N/A	N/A	N/A
+D2	[-11.629,-24.967,37.727]	[25.153,-31.724,-5.243]	[10.185,31.586,4.808]	White R	43%	White R	43%	White R	43%	White R	43%	lateraloccipital R	S_oc_middle_and_Lunatus R	lateraloccipital R	MT_exvivo R	N/A	N/A
+D3	[-13.410,-27.979,37.766]	[28.210,-33.766,-5.160]	[13.274,29.960,4.564]	Cortex R	94%	Lateral occipital R	94%	Lateral occipital R	94%	S_oc_middle_and_Lunatus R	94%	lateraloccipital R	S_oc_middle_and_Lunatus R	lateraloccipital R	MT_exvivo R	N/A	N/A
+D4	[-15.191,-30.992,37.805]	[31.267,-35.809,-5.076]	[16.364,28.334,4.320]	Cortex R	55%	Lateral occipital R	49%	Lateral occipital R	49%	White R	44%	lateraloccipital R	S_oc_middle_and_Lunatus R	lateraloccipital R	N/A	N/A	N/A
+D5	[-16.972,-34.005,37.844]	[34.324,-37.851,-4.992]	[19.454,26.707,4.076]	White R	61%	White R	61%	White R	61%	White R	61%	lateraloccipital R	G_occipital_middle R	lateraloccipital R	MT_exvivo R	N/A	N/A
+D6	[-18.753,-37.018,37.883]	[37.381,-39.894,-4.909]	[22.543,25.081,3.832]	Cortex R	70%	Lateral occipital R	69%	Lateral occipital R	69%	G_occipital_middle R	68%	lateraloccipital R	G_occipital_middle R	lateraloccipital R	MT_exvivo R	N/A	N/A
+D7	[-20.534,-40.030,37.922]	[40.439,-41.936,-4.825]	[25.633,23.455,3.588]	White R	49%	White R	49%	White R	49%	White R	49%	lateraloccipital R	G_occipital_middle R	lateraloccipital R	MT_exvivo R	N/A	FG2 R
+D8	[-22.315,-43.043,37.961]	[43.496,-43.979,-4.741]	[28.723,21.829,3.345]	White R	67%	White R	67%	White R	67%	White R	67%	lateraloccipital R	G_and_S_occipital_inf R	lateraloccipital R	MT_exvivo R	N/A	FG2 R
+D9	[-24.096,-46.056,38.000]	[46.553,-46.022,-4.658]	[31.812,20.203,3.101]	Cortex R	77%	Lateral occipital R	77%	Lateral occipital R	77%	G_and_S_occipital_inf R	77%	lateraloccipital R	G_and_S_occipital_inf R	lateraloccipital R	MT_exvivo R	N/A	FG2 R
+D10	[-25.877,-49.069,38.039]	[49.610,-48.064,-4.574]	[34.902,18.577,2.857]	Cortex R	42%	Lateral occipital R	42%	Lateral occipital R	42%	G_and_S_occipital_inf R	42%	lateraloccipital R	G_and_S_occipital_inf R	lateraloccipital R	MT_exvivo R	N/A	N/A
+D11	[-27.658,-52.081,38.078]	[52.667,-50.107,-4.491]	[37.992,16.951,2.613]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+D12	[-29.439,-55.094,38.117]	[55.724,-52.149,-4.407]	[41.081,15.324,2.369]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+E1	[-21.406,-4.046,63.509]	[3.800,-41.061,23.989]	[-9.905,17.212,29.052]	Cortex R	69%	Isthmus cingulate R	69%	Isthmus cingulate R	69%	S_pericallosal R	38%	isthmuscingulate R	S_pericallosal R	isthmuscingulate R	N/A	N/A	N/A
+E2	[-24.127,-5.802,64.838]	[5.575,-44.053,25.546]	[-8.011,14.412,29.958]	Cortex R	53%	Isthmus cingulate R	53%	Isthmus cingulate R	53%	G_cingul-Post-dorsal R	48%	isthmuscingulate R	G_cingul-Post-dorsal R	isthmuscingulate R	N/A	N/A	N/A
+E3	[-26.847,-7.557,66.168]	[7.349,-47.045,27.102]	[-6.117,11.612,30.864]	Cortex R	61%	Isthmus cingulate R	61%	Isthmus cingulate R	60%	G_cingul-Post-dorsal R	58%	isthmuscingulate R	G_cingul-Post-dorsal R	isthmuscingulate R	N/A	N/A	N/A
+E4	[-29.567,-9.312,67.498]	[9.124,-50.037,28.659]	[-4.222,8.811,31.770]	Cortex R	65%	Isthmus cingulate R	34%	Precuneus R	37%	S_subparietal R	30%	precuneus R	G_precuneus R	precuneus R	N/A	N/A	N/A
+E5	[-32.288,-11.068,68.828]	[10.899,-53.029,30.215]	[-2.328,6.011,32.676]	Cortex R	49%	Precuneus R	49%	Precuneus R	49%	White R	39%	precuneus R	G_precuneus R	precuneus R	N/A	N/A	N/A
+E6	[-35.008,-12.823,70.157]	[12.674,-56.020,31.771]	[-0.434,3.211,33.582]	White R	81%	White R	81%	White R	81%	White R	81%	precuneus R	S_parieto_occipital R	precuneus R	N/A	N/A	N/A
+E7	[-37.728,-14.578,71.487]	[14.449,-59.012,33.328]	[1.460,0.411,34.488]	White R	66%	White R	66%	White R	66%	White R	66%	precuneus R	S_parieto_occipital R	precuneus R	N/A	N/A	N/A
+E8	[-40.449,-16.334,72.817]	[16.224,-62.004,34.884]	[3.355,-2.389,35.394]	Cortex R	57%	Precuneus R	56%	Precuneus R	56%	S_parieto_occipital R	57%	precuneus R	S_parieto_occipital R	precuneus R	N/A	N/A	N/A
+E9	[-43.169,-18.089,74.147]	[17.999,-64.996,36.441]	[5.249,-5.190,36.300]	Cortex R	42%	Cuneus R	39%	Cuneus R	37%	S_parieto_occipital R	34%	cuneus R	S_parieto_occipital R	cuneus R	N/A	N/A	N/A
+E10	[-45.890,-19.844,75.477]	[19.773,-67.988,37.997]	[7.143,-7.990,37.206]	Cortex R	47%	Cuneus R	47%	Superior parietal R	34%	G_cuneus R	28%	cuneus R	G_cuneus R	superiorparietal R	N/A	N/A	N/A
+E11	[-48.610,-21.600,76.806]	[21.548,-70.980,39.554]	[9.037,-10.790,38.111]	Cortex R	20%	Cuneus R	11%	Superior parietal R	20%	G_occipital_sup R	15%	cuneus R	G_occipital_sup R	superiorparietal R	N/A	N/A	N/A
+E12	[-51.330,-23.355,78.136]	[23.323,-73.972,41.110]	[10.932,-13.590,39.017]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+F1	[-21.397,-18.293,47.445]	[18.334,-41.901,5.905]	[4.095,20.212,13.052]	White R	70%	White R	70%	White R	70%	White R	70%	isthmuscingulate R	G_cingul-Post-ventral R	lateraloccipital R	V2_exvivo R	N/A	N/A
+F2	[-23.665,-20.594,48.793]	[20.663,-44.419,7.473]	[6.514,17.882,14.038]	White R	60%	White R	60%	White R	60%	White R	60%	isthmuscingulate R	S_oc_middle_and_Lunatus R	isthmuscingulate R	V2_exvivo R	N/A	N/A
+F3	[-25.932,-22.895,50.141]	[22.991,-46.936,9.041]	[8.933,15.553,15.023]	Cortex R	53%	Isthmus cingulate R	41%	Isthmus cingulate R	41%	S_calcarine R	41%	lateraloccipital R	S_oc_middle_and_Lunatus R	lateraloccipital R	V2_exvivo R	N/A	N/A
+F4	[-28.199,-25.195,51.489]	[25.319,-49.454,10.608]	[11.352,13.223,16.009]	White R	35%	White R	35%	White R	35%	White R	35%	lateraloccipital R	S_oc_sup_and_transversal R	lateraloccipital R	V2_exvivo R	N/A	N/A
+F5	[-30.466,-27.496,52.836]	[27.647,-51.972,12.176]	[13.771,10.894,16.994]	White R	52%	White R	52%	White R	52%	White R	52%	lateraloccipital R	S_oc_sup_and_transversal R	lateraloccipital R	N/A	N/A	N/A
+F6	[-32.733,-29.797,54.184]	[29.976,-54.490,13.743]	[16.191,8.564,17.980]	White R	88%	White R	88%	White R	88%	White R	88%	lateraloccipital R	S_oc_sup_and_transversal R	lateraloccipital R	N/A	N/A	N/A
+F7	[-35.000,-32.098,55.532]	[32.304,-57.008,15.311]	[18.610,6.235,18.965]	White R	89%	White R	89%	White R	89%	White R	89%	lateraloccipital R	S_oc_sup_and_transversal R	lateraloccipital R	V2_exvivo R	N/A	N/A
+F8	[-37.267,-34.399,56.880]	[34.632,-59.526,16.878]	[21.029,3.905,19.951]	White R	48%	White R	48%	White R	48%	White R	48%	lateraloccipital R	Pole_occipital R	lateraloccipital R	V2_exvivo R	N/A	N/A
+F9	[-39.534,-36.700,58.228]	[36.961,-62.044,18.446]	[23.448,1.576,20.936]	Cortex R	25%	Lateral occipital R	25%	Lateral occipital R	25%	Pole_occipital R	15%	lateraloccipital R	Pole_occipital R	lateraloccipital R	V2_exvivo R	N/A	N/A
+F10	[-41.801,-39.000,59.575]	[39.289,-64.562,20.013]	[25.867,-0.754,21.922]	Cortex R	10%	Lateral occipital R	10%	Lateral occipital R	10%	G_occipital_sup R	10%	N/A	N/A	N/A	N/A	N/A	N/A
+F11	[-44.068,-41.301,60.923]	[41.617,-67.080,21.581]	[28.286,-3.083,22.908]	Cortex R	1%	Lateral occipital R	1%	Lateral occipital R	1%	G_occipital_sup R	1%	N/A	N/A	N/A	N/A	N/A	N/A
+F12	[-46.335,-43.602,62.271]	[43.946,-69.598,23.148]	[30.705,-5.413,23.893]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+G1	[-3.982,-31.905,60.150]	[32.086,-23.174,19.857]	[17.095,36.212,28.052]	White R	100%	White R	100%	White R	100%	White R	100%	insula R	Lat_Fis-post R	insula R	N/A	N/A	N/A
+G2	[-6.022,-34.457,61.405]	[34.669,-25.457,21.316]	[19.753,34.132,28.977]	White R	52%	White R	52%	White R	52%	White R	52%	insula R	Lat_Fis-post R	insula R	N/A	N/A	N/A
+G3	[-8.063,-37.009,62.660]	[37.253,-27.739,22.774]	[22.412,32.051,29.901]	Cortex R	83%	Supramarginal R	52%	Insula R	52%	Lat_Fis-post R	83%	insula R	Lat_Fis-post R	insula R	N/A	N/A	N/A
+G4	[-10.103,-39.560,63.914]	[39.836,-30.022,24.232]	[25.070,29.971,30.826]	Cortex R	58%	Supramarginal R	58%	Supramarginal R	58%	Lat_Fis-post R	58%	supramarginal R	Lat_Fis-post R	supramarginal R	N/A	N/A	N/A
+G5	[-12.144,-42.112,65.169]	[42.420,-32.304,25.690]	[27.728,27.890,31.751]	White R	62%	White R	62%	White R	62%	White R	62%	supramarginal R	G_temp_sup-Plan_tempo R	supramarginal R	N/A	N/A	N/A
+G6	[-14.184,-44.664,66.424]	[45.003,-34.587,27.148]	[30.387,25.810,32.675]	Cortex R	71%	Supramarginal R	56%	Supramarginal R	44%	G_temp_sup-Plan_tempo R	49%	supramarginal R	G_pariet_inf-Supramar R	superiortemporal R	N/A	N/A	N/A
+G7	[-16.225,-47.216,67.679]	[47.587,-36.869,28.607]	[33.045,23.729,33.600]	White R	54%	White R	54%	White R	54%	White R	54%	superiortemporal R	G_pariet_inf-Supramar R	superiortemporal R	N/A	N/A	N/A
+G8	[-18.265,-49.768,68.934]	[50.170,-39.151,30.065]	[35.703,21.649,34.524]	Cortex R	46%	Inferior parietal R	46%	Inferior parietal R	46%	White R	45%	inferiorparietal R	S_temporal_sup R	inferiorparietal R	N/A	N/A	N/A
+G9	[-20.306,-52.320,70.188]	[52.754,-41.434,31.523]	[38.362,19.568,35.449]	Cortex R	62%	Inferior parietal R	62%	Inferior parietal R	62%	S_temporal_sup R	47%	inferiorparietal R	S_temporal_sup R	inferiorparietal R	N/A	N/A	N/A
+G10	[-22.346,-54.871,71.443]	[55.337,-43.716,32.981]	[41.020,17.488,36.374]	Cortex R	58%	Inferior parietal R	58%	Inferior parietal R	58%	G_pariet_inf-Angular R	40%	inferiorparietal R	G_pariet_inf-Angular R	inferiorparietal R	N/A	N/A	N/A
+H1	[-8.370,-7.530,70.714]	[7.300,-26.855,31.833]	[-6.905,29.212,38.052]	Cortex R	73%	Posterior cingulate R	53%	Isthmus cingulate R	53%	S_pericallosal R	46%	posteriorcingulate R	G_cingul-Post-dorsal R	isthmuscingulate R	N/A	N/A	N/A
+H2	[-8.619,-8.033,74.169]	[7.794,-27.070,35.729]	[-6.342,28.488,41.430]	White R	60%	White R	60%	White R	60%	White R	60%	posteriorcingulate R	G_cingul-Post-dorsal R	isthmuscingulate R	N/A	N/A	N/A
+H3	[-8.867,-8.536,77.624]	[8.287,-27.284,39.626]	[-5.779,27.764,44.807]	White R	54%	White R	54%	White R	54%	White R	54%	precuneus R	S_subparietal R	posteriorcingulate R	N/A	N/A	N/A
+H4	[-9.116,-9.038,81.079]	[8.781,-27.498,43.523]	[-5.216,27.041,48.185]	White R	73%	White R	73%	White R	73%	White R	73%	precuneus R	G_precuneus R	precuneus R	N/A	N/A	N/A
+H5	[-9.365,-9.541,84.533]	[9.274,-27.713,47.420]	[-4.653,26.317,51.563]	Cortex R	71%	Precuneus R	71%	Precuneus R	71%	G_precuneus R	71%	precuneus R	G_precuneus R	precuneus R	N/A	N/A	N/A
+H6	[-9.614,-10.044,87.988]	[9.768,-27.927,51.317]	[-4.090,25.593,54.941]	Cortex R	35%	Precuneus R	35%	Precuneus R	35%	G_precuneus R	30%	precuneus R	G_precuneus R	precuneus R	N/A	N/A	N/A
+H7	[-9.862,-10.547,91.443]	[10.262,-28.142,55.214]	[-3.527,24.869,58.318]	Cortex R	70%	Precuneus R	70%	Precuneus R	70%	G_precuneus R	54%	precuneus R	G_precuneus R	precuneus R	N/A	N/A	N/A
+H8	[-10.111,-11.049,94.898]	[10.755,-28.356,59.111]	[-2.964,24.145,61.696]	Cortex R	68%	Precuneus R	68%	Precuneus R	68%	G_precuneus R	68%	precuneus R	G_precuneus R	precuneus R	N/A	N/A	N/A
+H9	[-10.360,-11.552,98.352]	[11.249,-28.570,63.008]	[-2.401,23.422,65.074]	White R	46%	White R	46%	White R	46%	White R	46%	precuneus R	G_precuneus R	precuneus R	N/A	N/A	N/A
+H10	[-10.609,-12.055,101.807]	[11.742,-28.785,66.905]	[-1.838,22.698,68.452]	White R	66%	White R	66%	White R	66%	White R	66%	postcentral R	S_postcentral R	superiorparietal R	BA2_exvivo R	N/A	N/A
+H11	[-10.857,-12.558,105.262]	[12.236,-28.999,70.802]	[-1.275,21.974,71.829]	Cortex R	46%	Postcentral R	44%	Superior parietal R	44%	G_and_S_paracentral R	32%	postcentral R	G_and_S_paracentral R	superiorparietal R	BA2_exvivo R	N/A	N/A
+H12	[-11.106,-13.061,108.717]	[12.729,-29.213,74.699]	[-0.712,21.250,75.207]	Cortex R	40%	Superior parietal R	22%	Superior parietal R	38%	G_parietal_sup R	22%	superiorparietal R	G_parietal_sup R	superiorparietal R	N/A	N/A	N/A
+I1	[-22.562,-18.354,39.531]	[18.435,-43.339,-2.985]	[4.095,20.212,5.052]	Cortex R	74%	Parahippocampal R	43%	Parahippocampal R	53%	G_oc-temp_med-Parahip R	68%	parahippocampal R	G_oc-temp_med-Parahip R	parahippocampal R	N/A	N/A	N/A
+I2	[-24.976,-20.664,40.574]	[20.774,-46.023,-1.757]	[6.525,17.782,5.715]	Cortex R	60%	Parahippocampal R	33%	Parahippocampal R	48%	G_oc-temp_med-Parahip R	49%	parahippocampal R	G_oc-temp_med-Parahip R	parahippocampal R	N/A	N/A	N/A
+I3	[-27.390,-22.974,41.617]	[23.112,-48.708,-0.529]	[8.955,15.352,6.378]	White R	58%	White R	58%	White R	58%	White R	58%	isthmuscingulate R	S_calcarine R	parahippocampal R	N/A	N/A	N/A
+I4	[-29.804,-25.283,42.660]	[25.451,-51.392,0.698]	[11.385,12.922,7.040]	White R	71%	White R	71%	White R	71%	White R	71%	isthmuscingulate R	S_calcarine R	isthmuscingulate R	N/A	N/A	FG3 R
+I5	[-32.218,-27.593,43.703]	[27.790,-54.077,1.926]	[13.815,10.492,7.703]	White R	98%	White R	98%	White R	98%	White R	98%	lingual R	S_oc-temp_med_and_Lingual R	lingual R	N/A	N/A	FG3 R
+I6	[-34.632,-29.903,44.747]	[30.128,-56.761,3.153]	[16.245,8.061,8.366]	White R	82%	White R	82%	White R	82%	White R	82%	lingual R	S_oc-temp_med_and_Lingual R	lingual R	V2_exvivo R	N/A	FG3 R
+I7	[-37.046,-32.212,45.790]	[32.467,-59.446,4.381]	[18.676,5.631,9.029]	White R	88%	White R	88%	White R	88%	White R	88%	fusiform R	S_oc-temp_med_and_Lingual R	fusiform R	V2_exvivo R	N/A	FG3 R
+I8	[-39.460,-34.522,46.833]	[34.806,-62.130,5.608]	[21.106,3.201,9.691]	White R	97%	White R	97%	White R	97%	White R	97%	lateraloccipital R	S_oc_middle_and_Lunatus R	lateraloccipital R	V2_exvivo R	N/A	hOc3v R
+I9	[-41.874,-36.832,47.876]	[37.145,-64.815,6.836]	[23.536,0.771,10.354]	White R	61%	White R	61%	White R	61%	White R	61%	lateraloccipital R	S_oc_middle_and_Lunatus R	lateraloccipital R	V2_exvivo R	N/A	hOc3v R
+I10	[-44.288,-39.141,48.919]	[39.483,-67.499,8.063]	[25.966,-1.659,11.017]	Cortex R	55%	Lateral occipital R	55%	Lateral occipital R	55%	G_occipital_middle R	43%	lateraloccipital R	G_occipital_middle R	lateraloccipital R	V2_exvivo R	N/A	hOc4v R
+I11	[-46.702,-41.451,49.963]	[41.822,-70.184,9.291]	[28.396,-4.089,11.680]	Cortex R	66%	Lateral occipital R	66%	Lateral occipital R	66%	G_occipital_middle R	63%	lateraloccipital R	G_occipital_middle R	lateraloccipital R	V2_exvivo R	N/A	hOc4v R
+I12	[-49.116,-43.761,51.006]	[44.161,-72.868,10.519]	[30.826,-6.519,12.342]	Cortex R	53%	Lateral occipital R	53%	Lateral occipital R	53%	G_occipital_middle R	53%	lateraloccipital R	G_occipital_middle R	lateraloccipital R	V2_exvivo R	N/A	hOc4v R
+J1	[-26.865,-12.712,70.444]	[12.560,-47.156,31.923]	[-0.905,11.212,35.052]	White R	52%	White R	52%	White R	52%	White R	52%	precuneus R	S_subparietal R	precuneus R	N/A	N/A	N/A
+J2	[-28.370,-15.327,72.218]	[15.206,-48.847,33.953]	[1.800,9.589,36.567]	White R	66%	White R	66%	White R	66%	White R	66%	precuneus R	S_subparietal R	precuneus R	N/A	N/A	N/A
+J3	[-29.875,-17.943,73.991]	[17.851,-50.538,35.984]	[4.506,7.965,38.082]	White R	90%	White R	90%	White R	90%	White R	90%	precuneus R	S_subparietal R	precuneus R	N/A	N/A	N/A
+J4	[-31.380,-20.559,75.764]	[20.497,-52.229,38.015]	[7.211,6.342,39.597]	White R	53%	White R	53%	White R	53%	White R	53%	superiorparietal R	G_parietal_sup R	superiorparietal R	N/A	N/A	N/A
+J5	[-32.885,-23.174,77.537]	[23.142,-53.921,40.046]	[9.917,4.719,41.112]	Cortex R	84%	Superior parietal R	83%	Superior parietal R	84%	G_parietal_sup R	63%	superiorparietal R	G_parietal_sup R	superiorparietal R	N/A	N/A	N/A
+J6	[-34.389,-25.790,79.311]	[25.788,-55.612,42.077]	[12.622,3.096,42.627]	Cortex R	14%	Superior parietal R	14%	Superior parietal R	14%	G_occipital_sup R	12%	N/A	N/A	N/A	N/A	N/A	N/A
+J7	[-35.894,-28.405,81.084]	[28.434,-57.303,44.108]	[15.328,1.472,44.142]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+J8	[-37.399,-31.021,82.857]	[31.079,-58.994,46.139]	[18.033,-0.151,45.657]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+J9	[-38.904,-33.636,84.630]	[33.725,-60.685,48.170]	[20.739,-1.774,47.172]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+J10	[-40.409,-36.252,86.404]	[36.371,-62.376,50.201]	[23.444,-3.398,48.688]	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A

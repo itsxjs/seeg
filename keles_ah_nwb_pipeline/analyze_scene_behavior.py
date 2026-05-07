@@ -5,6 +5,23 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 
+# Publication-style Chinese figure settings
+sns.set_theme(style="whitegrid", context="paper")
+plt.rcParams["font.sans-serif"] = [
+    "Arial Unicode MS",
+    "Heiti TC",
+    "Songti SC",
+    "PingFang SC",
+    "SimHei",
+    "DejaVu Sans",
+]
+plt.rcParams["axes.unicode_minus"] = False
+plt.rcParams["font.size"] = 12
+plt.rcParams["axes.labelsize"] = 14
+plt.rcParams["xtick.labelsize"] = 11
+plt.rcParams["ytick.labelsize"] = 11
+plt.rcParams["legend.fontsize"] = 11
+
 # Paths
 data_dir = Path('/Users/defanive/Desktop/Diploma/SEEG_behavior')
 output_dir = Path('/Volumes/rmhyw/result/behavior_analysis/scene')
@@ -82,8 +99,62 @@ subject_order = summary['subject'].tolist()
 print("\nScene Behavior Summary (Accuracy = Response matches Column 5):")
 print(summary)
 
-# Visualizations
-plt.style.use('seaborn-v0_8-muted')
+# Publication preview-layout figure: a accuracy, b RT distribution
+fig, axes = plt.subplots(1, 2, figsize=(11.5, 3.6), constrained_layout=True)
+palette_acc = sns.color_palette("rocket", n_colors=len(subject_order))
+
+sns.barplot(
+    data=summary,
+    x='subject',
+    y='accuracy',
+    order=subject_order,
+    palette=palette_acc,
+    hue='subject',
+    dodge=False,
+    ax=axes[0],
+)
+axes[0].axhline(1 / 3, color='0.55', linestyle='--', linewidth=1.2, alpha=0.7)
+axes[0].set_xlabel('被试')
+axes[0].set_ylabel('正确率')
+axes[0].set_ylim(0, 1.05)
+axes[0].legend([], frameon=False)
+axes[0].tick_params(axis='x', rotation=0)
+
+df_resp_only = df_all[df_all['responded'] == 1]
+sns.violinplot(
+    data=df_resp_only,
+    x='subject',
+    y='rt',
+    inner='quart',
+    color='#9ecae1',
+    linewidth=1.0,
+    order=subject_order,
+    ax=axes[1],
+)
+axes[1].set_xlabel('被试')
+axes[1].set_ylabel('反应时 (s)')
+axes[1].tick_params(axis='x', rotation=0)
+
+for label, ax in zip(['a', 'b'], axes):
+    ax.text(
+        -0.08,
+        1.06,
+        label,
+        transform=ax.transAxes,
+        fontsize=18,
+        fontweight='bold',
+        va='bottom',
+        ha='left',
+        fontfamily='DejaVu Serif',
+    )
+    ax.spines['top'].set_visible(True)
+    ax.spines['right'].set_visible(True)
+    ax.grid(axis='y', color='0.88', linewidth=0.8)
+    ax.grid(axis='x', visible=False)
+
+fig.savefig(output_dir / 'study1_behavior_publication.png', dpi=300, bbox_inches='tight')
+fig.savefig(output_dir / 'study1_behavior_publication.pdf', bbox_inches='tight')
+plt.close(fig)
 
 # Plot 1: Accuracy by Subject
 plt.figure(figsize=(10, 6))
@@ -106,7 +177,6 @@ plt.savefig(output_dir / 'scene_response_rate.png')
 
 # Plot 2: Reaction Time Distribution (Violin + Swarm)
 plt.figure(figsize=(12, 6))
-df_resp_only = df_all[df_all['responded'] == 1]
 sns.violinplot(data=df_resp_only, x='subject', y='rt', inner='quart', color='#98c1d9', order=subject_order)
 plt.title('Scene Experiment: Reaction Time (RT) Distribution per Subject')
 plt.ylabel('Reaction Time (s)')
