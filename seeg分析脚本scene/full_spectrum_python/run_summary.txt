@@ -1,0 +1,6 @@
+set_files=6
+processed=3
+skipped=3
+  sub004_valence_epoch_clean.set :: ROI channels missing
+  sub007_valence_epoch_clean.set :: ROI channels missing
+  sub009_valence_epoch_clean.set :: ROI channels missing

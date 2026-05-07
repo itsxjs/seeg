@@ -1,0 +1,195 @@
+Channel	other_name	SCS	MNI	World	DKT	DKT_prob	BNA_DBS_brain_area_name	BNA_DBS_brain_area_name_checked
+A1	AMMC1	[8.016/15.749/26.919]	[-16.238/-10.749/-18.401]	[-24.292/37.422/-3.728]	Hippocampus L	73%	Hippocampus left	Hippocampus left
+A2	AMMC2	[9.940/20.675/26.818]	[-21.264/-8.857/-18.522]	[-29.230/39.190/-3.042]	Amygdala L	81%	Hippocampus left	Hippocampus left
+A3	AMMC3	[11.962/25.372/27.025]	[-26.018/-6.759/-18.277]	[-33.928/40.959/-2.042]	Amygdala L	100%	Hippocampus left	Hippocampus left
+A4	AMMC4	[13.665/29.814/26.292]	[-30.461/-4.943/-19.063]	[-38.404/42.727/-2.042]	Amygdala L	83%	Amygdala left	Amygdala left
+A5	AMMC5	[15.317/34.367/25.573]	[-35.044/-3.187/-19.933]	[-42.991/44.440/-2.042]	White L	100%	Amygdala left	Amygdala left
+A6	AMMC6	[17.602/39.225/25.685]	[-40.005/-0.611/-19.860]	[-47.854/46.485/-1.042]	White L	60%	Superior Temporal Gyrus left	Superior Temporal Gyrus left
+B1	BMMC1	[7.866/22.855/29.548]	[-23.553/-11.179/-15.453]	[-31.292/36.318/-1.042]	Amygdala L	55%	Hippocampus left	Hippocampus left
+B2	BMMC2	[6.767/28.481/29.102]	[-29.322/-12.457/-15.788]	[-36.925/35.318/-1.622]	Hippocampus L	58%	Hippocampus left	Hippocampus left
+B3	BMMC3	[5.584/33.362/27.825]	[-34.361/-13.716/-17.129]	[-41.843/34.517/-3.042]	White L	47%	Hippocampus left	Hippocampus left
+B4	BMMC4	[6.138/38.322/27.460]	[-39.500/-13.071/-17.703]	[-46.817/35.069/-3.042]	White L	100%	Fusiform Gyrus left	Fusiform Gyrus left
+B5	BMMC5	[5.235/42.785/26.884]	[-44.079/-13.983/-18.469]	[-51.294/34.318/-3.722]	White L	100%	white	white
+B6	BMMC6	[5.141/47.742/26.328]	[-49.204/-14.048/-19.241]	[-56.267/34.318/-4.109]	White L	87%	Middle Temporal Gyrus left	Middle Temporal Gyrus left
+C1	CSDE1	[25.986/34.232/42.047]	[-35.100/8.689/-2.685]	[-42.292/49.318/16.958]	White L	74%	Insular Gyrus left	Insular Gyrus left
+C2	CSDE2	[27.943/37.088/42.558]	[-38.100/10.831/-2.167]	[-45.139/50.960/18.162]	Insula L	94%	Insular Gyrus left	Insular Gyrus left
+C3	CSDE3	[29.900/39.945/43.068]	[-41.105/12.984/-1.575]	[-47.985/52.602/19.367]	Insula L	60%	Insular Gyrus left	Insular Gyrus left
+C4	CSDE4	[31.857/42.801/43.578]	[-44.093/15.152/-0.788]	[-50.832/54.245/20.571]	Pars triangularis L	60%	Inferior Frontal Gyrus left	Inferior Frontal Gyrus left
+C5	CSDE5	[33.814/45.658/44.089]	[-47.024/17.328/0.160]	[-53.678/55.887/21.775]	Pars triangularis L	72%	Inferior Frontal Gyrus left	Inferior Frontal Gyrus left
+C6	CSDE6	[35.771/48.514/44.599]	[-49.899/19.504/1.116]	[-56.525/57.529/22.980]	Pars triangularis L	52%	Inferior Frontal Gyrus left	Inferior Frontal Gyrus left
+C7	CSDE7	[37.729/51.371/45.109]	[-52.788/21.637/2.014]	[-59.371/59.171/24.184]	White L	55%	Inferior Frontal Gyrus left	Inferior Frontal Gyrus left
+C8	CSDE8	[39.686/54.227/45.620]	[-55.773/23.701/2.778]	[-62.218/60.814/25.388]	Pars triangularis L	55%	Inferior Frontal Gyrus left	Inferior Frontal Gyrus left
+D1	DMMA1	[30.762/9.067/38.959]	[-9.164/14.343/-6.010]	[-17.292/55.273/14.692]	Accumbens L	92%	nucleus accumbens left	nucleus accumbens left
+D2	DMMA2	[35.192/9.098/40.463]	[-9.037/19.177/-4.398]	[-17.292/58.994/17.529]	White L	42%	nucleus accumbens left	nucleus accumbens left
+D3	DMMA3	[40.137/10.139/42.292]	[-10.042/24.414/-2.229]	[-18.292/63.081/20.872]	White L	80%	Basal Ganglia left	Basal Ganglia left
+D4	DMMA4	[44.775/10.171/43.847]	[-10.325/29.206/-0.065]	[-18.292/66.983/23.823]	White L	100%	white	white
+D5	DMMA5	[48.833/11.195/45.398]	[-11.665/33.261/2.158]	[-19.280/70.318/26.619]	White L	100%	white	white
+D6	DMMA6	[53.651/11.410/47.295]	[-12.130/38.146/4.831]	[-19.452/74.278/29.958]	White L	92%	Cingulate Gyrus left	Cingulate Gyrus left
+E1	EMMA1	[34.014/8.455/23.390]	[-8.652/17.786/-23.405]	[-17.292/63.318/0.958]	White L	49%	SCC25 left	Orbital Gyrus left
+E2	EMMA2	[36.336/12.655/24.792]	[-12.703/20.159/-21.644]	[-21.450/64.999/3.169]	Lateral orbitofrontal L	45%	SCC25 left	Orbital Gyrus left
+E3	EMMA3	[38.658/16.856/26.194]	[-16.868/22.583/-19.806]	[-25.607/66.679/5.381]	Lateral orbitofrontal L	56%	Orbital Gyrus left	Orbital Gyrus left
+E4	EMMA4	[40.980/21.056/27.596]	[-21.072/25.067/-18.018]	[-29.765/68.360/7.592]	Lateral orbitofrontal L	70%	Orbital Gyrus left	Orbital Gyrus left
+E5	EMMA5	[43.302/25.256/28.999]	[-25.377/27.610/-16.381]	[-33.922/70.041/9.804]	Lateral orbitofrontal L	76%	Orbital Gyrus left	Orbital Gyrus left
+E6	EMMA6	[45.624/29.456/30.401]	[-29.878/30.090/-14.731]	[-38.080/71.721/12.015]	White L	56%	Orbital Gyrus left	Orbital Gyrus left
+F1	FSDE1	[22.962/6.065/37.747]	[-6.279/6.009/-7.336]	[-14.292/48.318/10.958]	Accumbens L	99%	BNST left	BNST left
+F2	FSDE2	[24.822/8.146/39.858]	[-8.262/7.946/-5.029]	[-16.302/49.373/13.622]	Accumbens L	66%	Basal Ganglia left	nucleus accumbens left
+F3	FSDE3	[26.683/10.227/41.969]	[-10.208/9.875/-2.693]	[-18.313/50.429/16.285]	Caudate L	70%	Basal Ganglia left	vALIC left
+F4	FSDE4	[28.543/12.309/44.081]	[-12.187/11.762/-0.383]	[-20.323/51.484/18.949]	Caudate L	90%	Basal Ganglia left	Basal Ganglia left
+F5	FSDE5	[30.404/14.390/46.192]	[-14.262/13.592/1.925]	[-22.333/52.540/21.612]	Caudate L	81%	Basal Ganglia left	Basal Ganglia left
+F6	FSDE6	[32.264/16.471/48.303]	[-16.450/15.393/4.246]	[-24.343/53.595/24.276]	Caudate L	69%	Basal Ganglia left	Basal Ganglia left
+F7	FSDE7	[34.125/18.552/50.414]	[-18.707/17.208/6.602]	[-26.354/54.650/26.940]	Caudate L	56%	Basal Ganglia left	Basal Ganglia left
+F8	FSDE8	[35.986/20.633/52.525]	[-21.007/19.077/9.023]	[-28.364/55.706/29.603]	White L	88%	Basal Ganglia left	Basal Ganglia left
+F9	FSDE9	[37.846/22.714/54.637]	[-23.259/21.042/11.511]	[-30.374/56.761/32.267]	White L	100%	white	white
+F10	FSDE10	[39.707/24.796/56.748]	[-25.511/23.059/14.003]	[-32.385/57.817/34.931]	White L	100%	Inferior Frontal Gyrus left	Inferior Frontal Gyrus left
+F11	FSDE11	[41.567/26.877/58.859]	[-27.744/25.104/16.525]	[-34.395/58.872/37.594]	White L	100%	white	white
+F12	FSDE12	[43.428/28.958/60.970]	[-29.938/27.175/19.096]	[-36.405/59.927/40.258]	White L	100%	Middle Frontal Gyrus left	Middle Frontal Gyrus left
+F13	FSDE13	[45.288/31.039/63.081]	[-32.174/29.273/21.739]	[-38.415/60.983/42.921]	White L	100%	Middle Frontal Gyrus left	Middle Frontal Gyrus left
+F14	FSDE14	[47.149/33.120/65.193]	[-34.390/31.376/24.435]	[-40.426/62.038/45.585]	White L	83%	Middle Frontal Gyrus left	Middle Frontal Gyrus left
+F15	FSDE15	[49.009/35.201/67.304]	[-36.523/33.463/27.139]	[-42.436/63.094/48.249]	White L	77%	Middle Frontal Gyrus left	Middle Frontal Gyrus left
+F16	FSDE16	[50.870/37.283/69.415]	[-38.602/35.530/29.831]	[-44.446/64.149/50.912]	White L	59%	Middle Frontal Gyrus left	Middle Frontal Gyrus left
+G1	GSDE1	[14.088/2.193/39.814]	[-2.285/-3.602/-4.972]	[-10.292/39.318/9.958]	VentralDC L	53%	Thalamus left	ITP left
+G2	GSDE2	[15.423/4.592/41.985]	[-4.723/-2.308/-2.705]	[-12.614/39.850/12.522]	White L	52%	Thalamus left	ITP left
+G3	GSDE3	[16.758/6.991/44.157]	[-7.167/-1.021/-0.420]	[-14.936/40.382/15.086]	White L	66%	Thalamus left	ITP left
+G4	GSDE4	[18.092/9.390/46.328]	[-9.577/0.265/1.834]	[-17.258/40.914/17.650]	White L	74%	Thalamus left	vALIC left
+G5	GSDE5	[19.427/11.788/48.499]	[-11.941/1.550/4.085]	[-19.581/41.447/20.214]	White L	91%	Thalamus left	dALIC left
+G6	GSDE6	[20.762/14.187/50.671]	[-14.322/2.815/6.346]	[-21.903/41.979/22.778]	White L	100%	VALIC left	dALIC left
+G7	GSDE7	[22.096/16.586/52.842]	[-16.738/4.109/8.615]	[-24.225/42.511/25.342]	White L	100%	VALIC left	dALIC left
+G8	GSDE8	[23.431/18.984/55.014]	[-19.169/5.448/10.882]	[-26.547/43.043/27.906]	White L	100%	vcvs left	dALIC left
+G9	GSDE9	[24.766/21.383/57.185]	[-21.551/6.860/13.213]	[-28.869/43.575/30.470]	White L	100%	vcvs left	dALIC left
+G10	GSDE10	[26.101/23.782/59.356]	[-23.929/8.307/15.634]	[-31.191/44.107/33.034]	White L	100%	white	white
+G11	GSDE11	[27.435/26.180/61.528]	[-26.364/9.767/17.982]	[-33.514/44.640/35.599]	White L	100%	white	white
+G12	GSDE12	[28.770/28.579/63.699]	[-28.715/11.245/20.290]	[-35.836/45.172/38.163]	White L	100%	white	white
+G13	GSDE13	[30.105/30.978/65.871]	[-30.968/12.731/22.694]	[-38.158/45.704/40.727]	White L	100%	Middle Frontal Gyrus left	Middle Frontal Gyrus left
+G14	GSDE14	[31.439/33.376/68.042]	[-33.287/14.239/25.330]	[-40.480/46.236/43.291]	White L	100%	Middle Frontal Gyrus left	Middle Frontal Gyrus left
+G15	GSDE15	[32.774/35.775/70.213]	[-35.769/15.777/28.241]	[-42.802/46.768/45.855]	White L	100%	Middle Frontal Gyrus left	Middle Frontal Gyrus left
+G16	GSDE16	[34.109/38.174/72.385]	[-38.302/17.280/31.159]	[-45.124/47.300/48.419]	White L	99%	Middle Frontal Gyrus left	Middle Frontal Gyrus left
+H1	HSDE1	[2.379/3.010/33.164]	[-3.282/-16.308/-11.275]	[-11.292/30.318/-0.042]	VentralDC L	95%	white	MFB left
+H2	HSDE2	[3.722/4.698/35.921]	[-4.920/-14.938/-8.390]	[-12.881/30.685/3.055]	VentralDC L	96%	Thalamus left	MFB left
+H3	HSDE3	[5.065/6.385/38.678]	[-6.556/-13.622/-5.544]	[-14.470/31.051/6.152]	Thalamus L	53%	Thalamus left	Thalamus left
+H4	HSDE4	[6.408/8.072/41.434]	[-8.172/-12.358/-2.719]	[-16.059/31.418/9.248]	Thalamus L	100%	Thalamus left	Thalamus left
+H5	HSDE5	[7.751/9.760/44.191]	[-9.794/-11.090/0.085]	[-17.649/31.785/12.345]	Thalamus L	100%	Thalamus left	Thalamus left
+H6	HSDE6	[9.094/11.447/46.947]	[-11.551/-9.750/2.815]	[-19.238/32.152/15.442]	Thalamus L	91%	Thalamus left	Thalamus left
+H7	HSDE7	[10.438/13.134/49.704]	[-13.290/-8.406/5.601]	[-20.827/32.518/18.539]	Thalamus L	66%	Thalamus left	Thalamus left
+H8	HSDE8	[11.781/14.822/52.461]	[-14.986/-7.078/8.465]	[-22.416/32.885/21.636]	White L	84%	Thalamus left	Thalamus left
+H9	HSDE9	[13.124/16.509/55.217]	[-16.689/-5.709/11.354]	[-24.005/33.252/24.732]	White L	100%	Thalamus left	Thalamus left
+H10	HSDE10	[14.467/18.197/57.974]	[-18.393/-4.283/14.265]	[-25.594/33.619/27.829]	White L	100%	white	white
+H11	HSDE11	[15.810/19.884/60.730]	[-20.035/-2.827/17.218]	[-27.183/33.985/30.926]	White L	98%	Basal Ganglia left	Basal Ganglia left
+H12	HSDE12	[17.153/21.571/63.487]	[-21.696/-1.377/20.202]	[-28.773/34.352/34.023]	White L	90%	Basal Ganglia left	Basal Ganglia left
+H13	HSDE13	[18.497/23.259/66.243]	[-23.434/0.064/23.234]	[-30.362/34.719/37.120]	White L	100%	white	white
+H14	HSDE14	[19.840/24.946/69.000]	[-25.127/1.532/26.352]	[-31.951/35.085/40.216]	White L	100%	white	white
+H15	HSDE15	[21.183/26.633/71.757]	[-26.802/3.052/29.548]	[-33.540/35.452/43.313]	White L	100%	white	white
+H16	HSDE16	[22.526/28.321/74.513]	[-28.534/4.645/32.814]	[-35.129/35.819/46.410]	White L	100%	Middle Frontal Gyrus left	Middle Frontal Gyrus left
+I1	ISDE1	[-5.206/-0.484/45.341]	[0.282/-25.241/2.350]	[-7.292/19.318/8.958]	3rd-Ventricle	51%	Thalamus left	LHb left
+I2	ISDE2	[-4.818/2.331/47.385]	[-2.535/-24.969/4.478]	[-10.029/18.986/11.114]	Thalamus L	53%	Thalamus left	LHb left
+I3	ISDE3	[-4.430/5.145/49.429]	[-5.344/-24.677/6.571]	[-12.766/18.655/13.271]	Thalamus L	83%	Thalamus left	LHb left
+I4	ISDE4	[-4.041/7.959/51.473]	[-8.141/-24.351/8.664]	[-15.503/18.323/15.427]	Thalamus L	100%	Thalamus left	Thalamus left
+I5	ISDE5	[-3.653/10.774/53.517]	[-10.945/-23.980/10.779]	[-18.239/17.991/17.583]	Thalamus L	100%	Thalamus left	Thalamus left
+I6	ISDE6	[-3.264/13.588/55.561]	[-13.753/-23.565/12.890]	[-20.976/17.659/19.740]	Thalamus L	100%	Thalamus left	Thalamus left
+I7	ISDE7	[-2.876/16.403/57.605]	[-16.614/-23.056/15.022]	[-23.713/17.328/21.896]	Thalamus L	92%	Thalamus left	Thalamus left
+I8	ISDE8	[-2.488/19.217/59.649]	[-19.615/-22.439/17.278]	[-26.450/16.996/24.052]	White L	87%	Thalamus left	Thalamus left
+I9	ISDE9	[-2.099/22.032/61.693]	[-22.652/-21.811/19.551]	[-29.187/16.664/26.208]	White L	100%	white	white
+I10	ISDE10	[-1.711/24.846/63.737]	[-25.664/-21.215/21.830]	[-31.924/16.332/28.365]	White L	100%	white	white
+I11	ISDE11	[-1.323/27.660/65.781]	[-28.636/-20.656/24.077]	[-34.660/16.001/30.521]	White L	100%	white	white
+I12	ISDE12	[-0.934/30.475/67.825]	[-31.546/-20.122/26.281]	[-37.397/15.669/32.677]	White L	100%	white	white
+I13	ISDE13	[-0.546/33.289/69.869]	[-34.377/-19.596/28.473]	[-40.134/15.337/34.834]	White L	100%	white	white
+I14	ISDE14	[-0.157/36.104/71.913]	[-37.159/-19.117/30.638]	[-42.871/15.005/36.990]	White L	100%	white	white
+I15	ISDE15	[0.231/38.918/73.957]	[-39.940/-18.700/32.873]	[-45.608/14.674/39.146]	White L	86%	Postcentral Gyrus left	Postcentral Gyrus left
+I16	ISDE16	[0.619/41.732/76.001]	[-42.695/-18.287/35.283]	[-48.345/14.342/41.303]	White L	63%	Postcentral Gyrus left	Postcentral Gyrus left
+J1	JMMC1	[13.286/-21.339/26.155]	[21.098/-4.173/-19.910]	[12.708/43.318/-4.042]	Amygdala R	100%	Amygdala right	Amygdala right
+J2	JMMC2	[13.132/-26.313/25.668]	[26.168/-4.380/-20.295]	[17.661/43.415/-4.722]	Amygdala R	99%	Amygdala right	Amygdala right
+J3	JMMC3	[12.978/-31.287/25.182]	[31.222/-4.533/-20.688]	[22.613/43.512/-5.402]	Amygdala R	73%	Amygdala right	Amygdala right
+J4	JMMC4	[12.825/-36.261/24.696]	[36.382/-4.737/-21.142]	[27.566/43.609/-6.081]	White R	100%	Amygdala right	Amygdala right
+J5	JMMC5	[12.671/-41.235/24.209]	[41.515/-4.880/-21.530]	[32.518/43.706/-6.761]	White R	100%	Superior Temporal Gyrus right	Superior Temporal Gyrus right
+J6	JMMC6	[12.517/-46.209/23.723]	[46.657/-4.936/-21.797]	[37.471/43.804/-7.441]	White R	55%	Superior Temporal Gyrus right	Superior Temporal Gyrus right
+K1	KMMC1	[3.469/-23.315/25.303]	[23.271/-14.933/-20.081]	[14.708/34.318/-8.042]	Hippocampus R	100%	Hippocampus right	Hippocampus right
+K2	KMMC2	[4.250/-28.234/25.738]	[28.258/-14.127/-19.678]	[19.636/35.008/-7.549]	Hippocampus R	100%	Hippocampus right	Hippocampus right
+K3	KMMC3	[5.032/-33.153/26.173]	[33.240/-13.343/-19.248]	[24.563/35.698/-7.056]	Hippocampus R	97%	Hippocampus right	Hippocampus right
+K4	KMMC4	[5.814/-38.073/26.608]	[38.295/-12.552/-18.831]	[29.491/36.388/-6.564]	White R	82%	Hippocampus right	Hippocampus right
+K5	KMMC5	[6.596/-42.992/27.043]	[43.272/-11.731/-18.375]	[34.418/37.077/-6.071]	White R	100%	Superior Temporal Gyrus right	Superior Temporal Gyrus right
+K6	KMMC6	[7.377/-47.911/27.478]	[48.318/-10.848/-17.812]	[39.346/37.767/-5.578]	White R	81%	Middle Temporal Gyrus right	Middle Temporal Gyrus right
+L1	LSDE1	[26.226/-32.650/46.492]	[32.973/9.631/2.418]	[24.708/49.318/18.958]	White R	58%	Insular Gyrus right	Insular Gyrus right
+L2	LSDE2	[28.036/-35.416/47.644]	[35.764/11.561/3.857]	[27.504/50.716/20.531]	Insula R	48%	Insular Gyrus right	Insular Gyrus right
+L3	LSDE3	[29.846/-38.181/48.796]	[38.530/13.486/5.302]	[30.301/52.114/22.104]	Pars opercularis R	62%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+L4	LSDE4	[31.656/-40.946/49.948]	[41.277/15.431/6.782]	[33.098/53.513/23.677]	Pars opercularis R	72%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+L5	LSDE5	[33.465/-43.712/51.100]	[43.985/17.409/8.346]	[35.894/54.911/25.250]	White R	58%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+L6	LSDE6	[35.275/-46.477/52.252]	[46.663/19.409/9.924]	[38.691/56.309/26.823]	White R	70%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+L7	LSDE7	[37.085/-49.243/53.404]	[49.351/21.421/11.441]	[41.487/57.708/28.396]	White R	65%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+L8	LSDE8	[38.895/-52.008/54.556]	[52.068/23.398/12.908]	[44.284/59.106/29.969]	White R	90%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+L9	LSDE9	[40.705/-54.774/55.708]	[54.811/25.312/14.323]	[47.080/60.504/31.542]	White R	49%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+L10	LSDE10	[42.514/-57.539/56.860]	[57.478/27.210/15.740]	[49.877/61.902/33.115]	Pars triangularis R	60%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+M1	MMMA1	[34.888/-6.311/29.962]	[5.935/19.196/-16.153]	[-2.292/62.318/6.958]	Medial orbitofrontal R	57%	SCC25 right	SCC25 right
+M2	MMMA2	[39.068/-7.214/32.554]	[6.853/23.656/-13.162]	[-1.316/65.472/10.713]	Rostral ant cing R	51%	SCC25 right	SCC25 right
+M3	MMMA3	[43.247/-8.117/35.145]	[7.787/28.100/-10.031]	[-0.339/68.626/14.468]	White R	75%	Orbital Gyrus right	Orbital Gyrus right
+M4	MMMA4	[47.427/-9.020/37.736]	[8.892/32.402/-6.728]	[0.637/71.780/18.223]	White R	87%	Orbital Gyrus right	Orbital Gyrus right
+M5	MMMA5	[51.607/-9.923/40.327]	[10.070/36.560/-3.354]	[1.613/74.934/21.977]	White R	98%	Cingulate Gyrus right	Cingulate Gyrus right
+M6	MMMA6	[55.787/-10.826/42.919]	[11.209/40.737/-0.049]	[2.589/78.088/25.732]	White R	72%	Cingulate Gyrus right	Cingulate Gyrus right
+N1	NMMA1	[31.080/-5.602/21.716]	[5.042/15.149/-25.341]	[-3.292/61.318/-2.042]	Medial orbitofrontal R	47%	SCC25 right	Orbital Gyrus right
+N2	NMMA2	[32.272/-10.222/23.211]	[9.702/16.574/-23.640]	[1.374/62.055/-0.405]	Medial orbitofrontal R	56%	SCC25 right	Orbital Gyrus right
+N3	NMMA3	[33.464/-14.842/24.705]	[14.416/17.813/-21.915]	[6.041/62.792/1.233]	White R	70%	SCC25 right	Orbital Gyrus right
+N4	NMMA4	[34.657/-19.462/26.200]	[19.129/19.032/-19.916]	[10.707/63.528/2.870]	Lateral orbitofrontal R	63%	Orbital Gyrus right	Orbital Gyrus right
+N5	NMMA5	[35.849/-24.082/27.694]	[23.834/20.206/-17.886]	[15.374/64.265/4.507]	White R	78%	Orbital Gyrus right	Orbital Gyrus right
+N6	NMMA6	[37.041/-28.702/29.189]	[28.544/21.534/-15.952]	[20.040/65.002/6.145]	White R	66%	Orbital Gyrus right	Orbital Gyrus right
+O1	OSDE1	[20.976/-8.009/35.756]	[7.899/4.298/-9.899]	[-0.292/47.318/7.958]	Medial orbitofrontal R	58%	nucleus accumbens right	nucleus accumbens right
+O2	OSDE2	[22.352/-10.319/37.997]	[10.216/5.782/-7.556]	[2.093/47.951/10.440]	Accumbens R	84%	nucleus accumbens right	nucleus accumbens right
+O3	OSDE3	[23.728/-12.628/40.238]	[12.545/7.218/-5.128]	[4.478/48.583/12.923]	White R	78%	Basal Ganglia right	vALIC right
+O4	OSDE4	[25.104/-14.938/42.479]	[14.871/8.580/-2.619]	[6.863/49.216/15.405]	White R	72%	Basal Ganglia right	vALIC right
+O5	OSDE5	[26.480/-17.247/44.720]	[17.188/9.903/-0.089]	[9.248/49.849/17.887]	White R	58%	vcvs right	dALIC right
+O6	OSDE6	[27.856/-19.557/46.961]	[19.425/11.211/2.477]	[11.633/50.482/20.369]	White R	57%	vcvs right	dALIC right
+O7	OSDE7	[29.232/-21.866/49.202]	[21.671/12.552/5.009]	[14.018/51.114/22.852]	White R	67%	vcvs right	dALIC right
+O8	OSDE8	[30.608/-24.176/51.443]	[23.922/13.930/7.590]	[16.403/51.747/25.334]	White R	67%	vcvs right	dALIC  right
+O9	OSDE9	[31.985/-26.485/53.685]	[26.146/15.371/10.297]	[18.787/52.380/27.816]	White R	100%	vcvs right	white
+O10	OSDE10	[33.361/-28.795/55.926]	[28.401/16.835/12.934]	[21.172/53.013/30.299]	White R	100%	Insular Gyrus right	Insular Gyrus right
+O11	OSDE11	[34.737/-31.104/58.167]	[30.728/18.365/15.373]	[23.557/53.645/32.781]	White R	98%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+O12	OSDE12	[36.113/-33.414/60.408]	[32.941/19.942/17.941]	[25.942/54.278/35.263]	White R	100%	white	white
+O13	OSDE13	[37.489/-35.723/62.649]	[35.092/21.541/20.684]	[28.327/54.911/37.745]	White R	100%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+O14	OSDE14	[38.865/-38.033/64.890]	[37.328/23.129/23.627]	[30.712/55.544/40.228]	White R	90%	Inferior Frontal Gyrus right	Inferior Frontal Gyrus right
+O15	OSDE15	[40.241/-40.342/67.131]	[39.612/24.617/26.505]	[33.097/56.176/42.710]	White R	90%	Middle Frontal Gyrus right	Middle Frontal Gyrus right
+O16	OSDE16	[41.617/-42.652/69.372]	[41.912/26.048/29.305]	[35.482/56.809/45.192]	White R	78%	Middle Frontal Gyrus right	Middle Frontal Gyrus right
+P1	PSDE1	[13.711/-7.833/39.247]	[7.684/-3.696/-5.850]	[-0.292/39.318/8.958]	VentralDC R	98%	ITP right	ITP right
+P2	PSDE2	[14.900/-9.926/41.788]	[9.880/-2.462/-3.259]	[1.889/39.674/11.673]	VentralDC R	43%	Thalamus right	vALIC right
+P3	PSDE3	[16.089/-12.018/44.330]	[12.068/-1.268/-0.663]	[4.069/40.030/14.387]	White R	81%	vcvs right	vALIC right
+P4	PSDE4	[17.278/-14.110/46.871]	[14.222/-0.101/1.980]	[6.250/40.386/17.102]	White R	58%	vcvs right	vALIC right
+P5	PSDE5	[18.466/-16.203/49.412]	[16.310/1.043/4.728]	[8.430/40.742/19.816]	White R	82%	vcvs right	dALIC right
+P6	PSDE6	[19.655/-18.295/51.954]	[18.291/2.191/7.587]	[10.611/41.098/22.531]	White R	100%	vcvs right	dALIC right
+P7	PSDE7	[20.844/-20.388/54.495]	[20.229/3.374/10.474]	[12.791/41.454/25.245]	White R	99%	vcvs right	dALIC right
+P8	PSDE8	[22.033/-22.480/57.036]	[22.197/4.596/13.354]	[14.972/41.810/27.960]	White R	99%	vcvs right	dALIC right
+P9	PSDE9	[23.222/-24.572/59.578]	[24.268/5.811/16.233]	[17.152/42.166/30.674]	White R	99%	white	white
+P10	PSDE10	[24.411/-26.665/62.119]	[26.434/7.041/19.176]	[19.333/42.522/33.389]	White R	100%	white	white
+P11	PSDE11	[25.600/-28.757/64.660]	[28.527/8.335/22.131]	[21.513/42.878/36.103]	White R	100%	white	white
+P12	PSDE12	[26.789/-30.850/67.202]	[30.557/9.676/25.054]	[23.694/43.234/38.818]	White R	99%	Middle Frontal Gyrus right	Middle Frontal Gyrus right
+P13	PSDE13	[27.978/-32.942/69.743]	[32.649/11.065/28.060]	[25.874/43.590/41.532]	White R	52%	Middle Frontal Gyrus right	Middle Frontal Gyrus right
+P14	PSDE14	[29.167/-35.034/72.284]	[34.761/12.418/31.118]	[28.055/43.946/44.247]	Caudal mid front R	77%	Middle Frontal Gyrus right	Middle Frontal Gyrus right
+P15	PSDE15	[30.356/-37.127/74.826]	[36.813/13.710/34.237]	[30.235/44.302/46.961]	Caudal mid front R	63%	Middle Frontal Gyrus right	Middle Frontal Gyrus right
+P16	PSDE16	[31.545/-39.219/77.367]	[38.836/14.966/37.406]	[32.416/44.658/49.676]	Caudal mid front R	53%	Middle Frontal Gyrus right	Middle Frontal Gyrus right
+Q1	QSDE1	[2.319/-6.982/33.545]	[6.922/-16.243/-10.832]	[-1.292/30.318/-0.042]	VentralDC R	100%	white	MFB right
+Q2	QSDE2	[3.602/-8.138/36.590]	[8.085/-14.940/-7.653]	[-0.029/30.586/3.211]	VentralDC R	96%	Thalamus right	MFB right
+Q3	QSDE3	[4.884/-9.293/39.634]	[9.249/-13.618/-4.571]	[1.234/30.854/6.464]	Thalamus R	66%	Thalamus right	Thalamus right
+Q4	QSDE4	[6.167/-10.449/42.679]	[10.462/-12.278/-1.570]	[2.497/31.122/9.717]	Thalamus R	99%	Thalamus right	Thalamus right
+Q5	QSDE5	[7.449/-11.604/45.724]	[11.681/-10.954/1.456]	[3.760/31.390/12.971]	Thalamus R	100%	Thalamus right	Thalamus right
+Q6	QSDE6	[8.731/-12.760/48.769]	[12.825/-9.647/4.537]	[5.023/31.658/16.224]	Thalamus R	100%	Thalamus right	Thalamus right
+Q7	QSDE7	[10.014/-13.916/51.813]	[13.972/-8.328/7.662]	[6.286/31.925/19.477]	Thalamus R	90%	Thalamus right	Thalamus right
+Q8	QSDE8	[11.296/-15.071/54.858]	[15.108/-7.038/10.880]	[7.549/32.193/22.730]	White R	51%	Thalamus right	Thalamus right
+Q9	QSDE9	[12.579/-16.227/57.903]	[16.243/-5.716/14.175]	[8.812/32.461/25.983]	White R	94%	Thalamus right	Thalamus right
+Q10	QSDE10	[13.861/-17.382/60.947]	[17.360/-4.397/17.505]	[10.075/32.729/29.236]	White R	68%	Basal Ganglia right	Basal Ganglia right
+Q11	QSDE11	[15.143/-18.538/63.992]	[18.521/-3.075/20.829]	[11.338/32.997/32.490]	Caudate R	67%	Basal Ganglia right	Basal Ganglia right
+Q12	QSDE12	[16.426/-19.693/67.037]	[19.653/-1.732/24.191]	[12.601/33.265/35.743]	Caudate R	58%	Basal Ganglia right	Basal Ganglia right
+Q13	QSDE13	[17.708/-20.849/70.081]	[20.831/-0.356/27.688]	[13.864/33.533/38.996]	White R	91%	white	white
+Q14	QSDE14	[18.991/-22.005/73.126]	[22.025/1.046/31.323]	[15.127/33.801/42.249]	White R	100%	white	white
+Q15	QSDE15	[20.273/-23.160/76.171]	[23.198/2.447/34.911]	[16.390/34.069/45.502]	White R	100%	white	white
+Q16	QSDE16	[21.555/-24.316/79.215]	[24.362/3.849/38.450]	[17.653/34.337/48.755]	White R	100%	white	white
+R1	RSDE1	[-6.809/-3.532/43.878]	[3.336/-26.841/0.890]	[-4.292/18.318/6.958]	CSF	63%	Thalamus right	LHb right
+R2	RSDE2	[-5.971/-6.480/45.569]	[6.364/-26.058/2.701]	[-1.287/18.627/8.726]	Thalamus R	55%	Thalamus right	LHb right
+R3	RSDE3	[-5.132/-9.428/47.259]	[9.330/-25.248/4.398]	[1.718/18.937/10.493]	Thalamus R	100%	Thalamus right	Thalamus right
+R4	RSDE4	[-4.294/-12.376/48.950]	[12.291/-24.343/6.005]	[4.723/19.246/12.261]	Thalamus R	100%	Thalamus right	Thalamus right
+R5	RSDE5	[-3.456/-15.323/50.640]	[15.245/-23.384/7.596]	[7.728/19.555/14.029]	Thalamus R	100%	Thalamus right	Thalamus right
+R6	RSDE6	[-2.617/-18.271/52.331]	[18.210/-22.369/9.179]	[10.733/19.865/15.796]	Thalamus R	100%	Thalamus right	Thalamus right
+R7	RSDE7	[-1.779/-21.219/54.021]	[21.188/-21.336/10.814]	[13.738/20.174/17.564]	Thalamus R	87%	Thalamus right	Thalamus right
+R8	RSDE8	[-0.941/-24.167/55.712]	[24.106/-20.365/12.584]	[16.743/20.483/19.331]	White R	74%	Thalamus right	Thalamus right
+R9	RSDE9	[-0.103/-27.115/57.402]	[26.967/-19.433/14.417]	[19.748/20.793/21.099]	White R	100%	white	white
+R10	RSDE10	[0.736/-30.062/59.093]	[29.886/-18.534/16.237]	[22.753/21.102/22.867]	White R	99%	Insular Gyrus right	Insular Gyrus right
+R11	RSDE11	[1.574/-33.010/60.783]	[32.924/-17.680/17.961]	[25.758/21.411/24.634]	White R	66%	Insular Gyrus right	Insular Gyrus right
+R12	RSDE12	[2.412/-35.958/62.474]	[35.961/-16.829/19.570]	[28.763/21.721/26.402]	Insula R	69%	Insular Gyrus right	Insular Gyrus right
+R13	RSDE13	[3.251/-38.906/64.164]	[38.944/-15.971/21.203]	[31.768/22.030/28.170]	Postcentral R	45%	Insular Gyrus right	Insular Gyrus right
+R14	RSDE14	[4.089/-41.853/65.855]	[41.864/-15.128/22.948]	[34.773/22.339/29.937]	Postcentral R	44%	Postcentral Gyrus right	Postcentral Gyrus right
+R15	RSDE15	[4.927/-44.801/67.545]	[44.766/-14.315/24.836]	[37.777/22.649/31.705]	White R	84%	white	white
+R16	RSDE16	[5.766/-47.749/69.236]	[47.644/-13.510/26.839]	[40.782/22.958/33.472]	White R	100%	Postcentral Gyrus right	Postcentral Gyrus right

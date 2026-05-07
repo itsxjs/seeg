@@ -2,10 +2,28 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import matplotlib
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.io import loadmat, savemat
 from scipy.stats import ttest_rel
+
+plt.rcParams["font.sans-serif"] = [
+    "Arial Unicode MS",
+    "Heiti TC",
+    "Songti SC",
+    "PingFang SC",
+    "SimHei",
+    "DejaVu Sans",
+]
+plt.rcParams["axes.unicode_minus"] = False
+plt.rcParams["font.size"] = 13
+plt.rcParams["axes.labelsize"] = 15
+plt.rcParams["xtick.labelsize"] = 12
+plt.rcParams["ytick.labelsize"] = 12
+plt.rcParams["legend.fontsize"] = 12
 
 
 def _interp_coh_to_ref(
@@ -337,6 +355,99 @@ def summarize_full_spectrum_group(
     fig3.savefig(combo_png, bbox_inches='tight')
     plt.close(fig3)
 
+    # Plot 3b: split coherence panel for manuscript layout
+    fig_coh, ax_coh = plt.subplots(figsize=(5.2, 4.2), dpi=220)
+    im_coh = ax_coh.imshow(
+        group_coh,
+        aspect='auto',
+        origin='lower',
+        extent=extent,
+        cmap='viridis',
+        interpolation='gaussian',
+    )
+    ax_coh.set_title('A  相干性 (A-H)', loc='left', fontsize=17, fontweight='bold')
+    ax_coh.set_xlabel('时间 (s)', fontsize=15)
+    ax_coh.set_ylabel('频率 (Hz)', fontsize=15)
+    cbar_coh = fig_coh.colorbar(im_coh, ax=ax_coh, fraction=0.046, pad=0.04)
+    cbar_coh.set_label('相干性', fontsize=14)
+    fig_coh.tight_layout()
+    coh_panel_png = out_dir / 'group_fullspectrum_coherence_panel.png'
+    coh_panel_pdf = out_dir / 'group_fullspectrum_coherence_panel.pdf'
+    fig_coh.savefig(coh_panel_png, bbox_inches='tight')
+    fig_coh.savefig(coh_panel_pdf, bbox_inches='tight')
+    plt.close(fig_coh)
+
+    # Plot 3c: direction-specific sGC panels plus overall overlay, matching the requested figure layout.
+    fig_sgc = plt.figure(figsize=(12.6, 6.2), dpi=220)
+    gs_sgc = fig_sgc.add_gridspec(
+        2,
+        2,
+        width_ratios=[1.05, 3.45],
+        height_ratios=[1, 1],
+        wspace=0.24,
+        hspace=0.42,
+        left=0.07,
+        right=0.98,
+        bottom=0.12,
+        top=0.91,
+    )
+
+    ax_a = fig_sgc.add_subplot(gs_sgc[0, 0])
+    ax_h = fig_sgc.add_subplot(gs_sgc[1, 0])
+    ax_overlay = fig_sgc.add_subplot(gs_sgc[:, 1])
+
+    def _style_sgc_axis(ax, show_ylabel: bool = True) -> None:
+        ax.set_xlim(2, 45)
+        ax.set_ylim(0.16, 1.62)
+        ax.set_xlabel('频率 (Hz)', fontsize=13)
+        if show_ylabel:
+            ax.set_ylabel('格兰杰指数', fontsize=13)
+        ax.grid(alpha=0.25)
+
+    ax_a.plot(ref_freqs_gc, group_gc_a, color='#4d4d4d', lw=2.0)
+    ax_a.fill_between(ref_freqs_gc, group_gc_a - gc_a_sem, group_gc_a + gc_a_sem, color='#4d4d4d', alpha=0.18)
+    ax_a.plot(ref_freqs_gc, perm_thr_a, color='#4d4d4d', lw=1.1, ls='--', alpha=0.9)
+    ax_a.set_title('A→H', fontsize=14, fontweight='bold')
+    _style_sgc_axis(ax_a)
+
+    ax_h.plot(ref_freqs_gc, group_gc_h, color='#2f6fbd', lw=2.0)
+    ax_h.fill_between(ref_freqs_gc, group_gc_h - gc_h_sem, group_gc_h + gc_h_sem, color='#2f6fbd', alpha=0.18)
+    ax_h.plot(ref_freqs_gc, perm_thr_h, color='#2f6fbd', lw=1.1, ls='--', alpha=0.9)
+    ax_h.set_title('H→A', fontsize=14, fontweight='bold')
+    _style_sgc_axis(ax_h)
+
+    for lo, hi in sig_spans:
+        ax_overlay.axvspan(lo, hi, color='#ef476f', alpha=0.18, lw=0)
+    ax_overlay.plot(ref_freqs_gc, group_gc_a, color='#4d4d4d', lw=2.2, label='A→H')
+    ax_overlay.fill_between(ref_freqs_gc, group_gc_a - gc_a_sem, group_gc_a + gc_a_sem, color='#4d4d4d', alpha=0.18)
+    ax_overlay.plot(ref_freqs_gc, perm_thr_a, color='#4d4d4d', lw=1.2, ls='--', alpha=0.9, label='A→H 置换 99.9%')
+    ax_overlay.plot(ref_freqs_gc, group_gc_h, color='#2f6fbd', lw=2.2, label='H→A')
+    ax_overlay.fill_between(ref_freqs_gc, group_gc_h - gc_h_sem, group_gc_h + gc_h_sem, color='#2f6fbd', alpha=0.18)
+    ax_overlay.plot(ref_freqs_gc, perm_thr_h, color='#2f6fbd', lw=1.2, ls='--', alpha=0.9, label='H→A 置换 99.9%')
+    _style_sgc_axis(ax_overlay)
+    ax_overlay.set_title('谱格兰杰因果总体比较', fontsize=16, fontweight='bold', pad=10)
+    ax_overlay.legend(frameon=False, loc='center', bbox_to_anchor=(0.47, 0.55))
+
+    for label, ax in zip(('a', 'b', 'c'), (ax_a, ax_h, ax_overlay)):
+        ax.text(
+            -0.14,
+            1.08,
+            label,
+            transform=ax.transAxes,
+            fontsize=20,
+            fontweight='bold',
+            va='bottom',
+            ha='left',
+            fontfamily='DejaVu Serif',
+            clip_on=False,
+        )
+
+    sgc_layout_png = out_dir / 'group_fullspectrum_sgc_direction_overlay_layout.png'
+    sgc_layout_pdf = out_dir / 'group_fullspectrum_sgc_direction_overlay_layout.pdf'
+    fig_sgc.savefig(sgc_layout_png, bbox_inches='tight')
+    fig_sgc.savefig(sgc_layout_pdf, bbox_inches='tight')
+    plt.close(fig_sgc)
+
     summary_txt = out_dir / 'group_fullspectrum_summary.txt'
     with summary_txt.open('w', encoding='utf-8') as f:
         f.write(f'total_mat_files={len(used_files) + len(skipped_files)}\n')
@@ -407,12 +518,21 @@ def summarize_full_spectrum_group(
     print(f'saved {gc_png}')
     print(f'saved {sig_png}')
     print(f'saved {combo_png}')
+    print(f'saved {coh_panel_png}')
+    print(f'saved {sgc_layout_png}')
     print(f'saved {group_mat}')
     print(f'saved {summary_txt}')
 
 
 def main() -> None:
-    summarize_full_spectrum_group(Path('/Volumes/rmhyw/keles_ah_nwb_pipeline/results/full_spectrum_batch'))
+    out_dir = Path('/Volumes/rmhyw/keles_ah_nwb_pipeline/results/full_spectrum_batch')
+    summary_path = out_dir / 'run_full_spectrum_nwb_summary.txt'
+    skipped_runs: list[str] = []
+    if summary_path.exists():
+        for line in summary_path.read_text(encoding='utf-8').splitlines():
+            if '::' in line:
+                skipped_runs.append(line.strip())
+    summarize_full_spectrum_group(out_dir, skipped_runs=skipped_runs)
 
 
 if __name__ == '__main__':

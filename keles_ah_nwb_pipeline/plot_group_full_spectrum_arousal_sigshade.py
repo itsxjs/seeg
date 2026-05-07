@@ -8,6 +8,17 @@ import numpy as np
 from scipy.io import loadmat
 from scipy.stats import ttest_rel
 
+plt.rcParams["font.sans-serif"] = [
+    "Arial Unicode MS",
+    "Heiti TC",
+    "Songti SC",
+    "PingFang SC",
+    "SimHei",
+    "Noto Sans CJK SC",
+    "DejaVu Sans",
+]
+plt.rcParams["axes.unicode_minus"] = False
+
 
 def _fdr_bh(pvals: np.ndarray, alpha: float = 0.05) -> np.ndarray:
     p = np.asarray(pvals, dtype=float)
@@ -179,19 +190,18 @@ def main() -> None:
     fig, ax = plt.subplots(figsize=(8.6, 5.4), dpi=220)
     ax.plot(ref_freqs_gc, group_gc_a, color="#4d4d4d", lw=2.4, label="A→H")
     ax.fill_between(ref_freqs_gc, group_gc_a - gc_a_sem, group_gc_a + gc_a_sem, color="#4d4d4d", alpha=0.18)
-    ax.plot(ref_freqs_gc, perm_thr_a, color="#4d4d4d", lw=1.2, ls="--", alpha=0.9, label="A→H perm 99.9%")
+    ax.plot(ref_freqs_gc, perm_thr_a, color="#4d4d4d", lw=1.2, ls="--", alpha=0.9, label="A→H 置换 99.9%")
     ax.plot(ref_freqs_gc, group_gc_h, color="#2f6fbd", lw=2.4, label="H→A")
     ax.fill_between(ref_freqs_gc, group_gc_h - gc_h_sem, group_gc_h + gc_h_sem, color="#2f6fbd", alpha=0.18)
-    ax.plot(ref_freqs_gc, perm_thr_h, color="#2f6fbd", lw=1.2, ls="--", alpha=0.9, label="H→A perm 99.9%")
+    ax.plot(ref_freqs_gc, perm_thr_h, color="#2f6fbd", lw=1.2, ls="--", alpha=0.9, label="H→A 置换 99.9%")
     for lo, hi in sig_spans:
         ax.axvspan(lo, hi, color="#ef476f", alpha=0.18, lw=0)
-    ax.set_title(f"Group full-spectrum arousal connectivity (n={len(used)} runs)")
-    ax.set_xlabel("Frequency (Hz)")
-    ax.set_ylabel("Granger index")
+    ax.set_xlabel("频率 (Hz)", fontsize=13)
+    ax.set_ylabel("格兰杰指数", fontsize=13)
     ax.set_xlim(2, 45)
+    ax.tick_params(axis="both", labelsize=11)
     ax.grid(alpha=0.25)
-    ax.legend(frameon=False, loc="upper right")
-    ax.text(0.02, 0.98, "Shaded: A→H vs H→A, paired t-test FDR q<0.05", transform=ax.transAxes, va="top", fontsize=9)
+    ax.legend(frameon=False, loc="center", bbox_to_anchor=(0.44, 0.58), fontsize=11)
 
     fig.savefig(output_png, bbox_inches="tight")
     plt.close(fig)

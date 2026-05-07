@@ -1,0 +1,205 @@
+edfchannel	other_name	ASEG	ASEG_prob	DKT	DKT_prob	AAL3 (MNI-linear)	AAL3 (MNI-linear)_prob
+A1	R-Amyg-MMa1	Amygdala R	97%	Amygdala R	97%	ParaHippocampal R	95%
+A2	R-Amyg-MMa2	Amygdala R	100%	Amygdala R	100%	Hippocampus R	56%
+A3	R-Amyg-MMa3	Amygdala R	100%	Amygdala R	100%	Hippocampus R	54%
+A4	R-Amyg-MMa4	White R	57%	White R	57%	Amygdala R	70%
+R10	R-Amyg-MMa5	White R	100%	White R	100%	Amygdala R	44%
+R11	R-Amyg-MMa6	White R	100%	White R	100%		
+B1	R-Hip-BF1	Hippocampus R	100%	Hippocampus R	100%	Hippocampus R	96%
+B2	R-Hip-BF2	Hippocampus R	98%	Hippocampus R	98%	Hippocampus R	97%
+B3	R-Hip-BF3	White R	65%	White R	65%	Hippocampus R	99%
+B4	R-Hip-BF4	White R	100%	White R	100%	Hippocampus R	19%
+B5	R-Hip-BF5	White R	100%	White R	100%	Temporal_Inf R	11%
+B6	R-Hip-BF6	White R	88%	White R	88%	Temporal_Inf R	47%
+B7	R-Hip-BF7	Cortex R	51%	Middle temporal R	51%	Temporal_Mid R	78%
+B8	R-Hip-BF8	Cortex R	69%	Middle temporal R	69%	Temporal_Mid R	100%
+C1	R-Cing-MMa1	Cortex R	71%	Scc R	39%	Olfactory R	72%
+C2	R-Cing-MMa2	Cortex R	72%	Scc R	72%	ACC_sub R	44%
+C3	R-Cing-MMa3	White R	76%	White R	76%	ACC_sub R	70%
+C4	R-Cing-MMa4	White R	87%	White R	87%	ACC_sub R	59%
+C5	R-Cing-MMa5	White R	69%	White R	69%	ACC_sup R	54%
+C6	R-Cing-MMa6	Cortex R	78%	Superior frontal R	43%	ACC_pre R	96%
+D1	R-LH-MMc1	Brainstem	42%	Brainstem R	42%	Thal_PuM R	27%
+D2	R-LH-MMc2	Thalamus R	100%	Thalamus R	100%	Thal_PuM R	81%
+D3	R-LH-MMc3	Thalamus R	100%	Thalamus R	100%	Thal_PuA R	44%
+D4	R-LH-MMc4	Thalamus R	95%	Thalamus R	95%	Thal_VPL R	98%
+D5	R-LH-MMc5	White R	99%	White R	99%	Thal_VPL R	1%
+D6	R-LH-MMc6	White R	87%	White R	87%	Putamen R	5%
+E1	L-Amyg-MMa1	Amygdala L	22%	Amygdala L	22%	ParaHippocampal L	72%
+E2	L-Amyg-MMa2	Amygdala L	94%	Amygdala L	94%	Hippocampus L	58%
+E3	L-Amyg-MMa3	Amygdala L	99%	Amygdala L	99%	Amygdala L	82%
+E4	L-Amyg-MMa4	Amygdala L	76%	Amygdala L	76%	Amygdala L	100%
+E5	L-Amyg-MMa5	White L	35%	White L	35%	Amygdala L	81%
+E6	L-Amyg-MMa6	White L	62%	White L	62%	Temporal_Pole_Sup L	9%
+F1	L-Hip-BF1	Hippocampus L	100%	Hippocampus L	100%	Hippocampus L	100%
+F2	L-Hip-BF2	Hippocampus L	78%	Hippocampus L	78%	Hippocampus L	100%
+F3	L-Hip-BF3	White L	92%	White L	92%	Hippocampus L	39%
+F4	L-Hip-BF4	White L	100%	White L	100%	Temporal_Sup L	2%
+F5	L-Hip-BF5	White L	97%	White L	97%	Temporal_Mid L	41%
+F6	L-Hip-BF6	Cortex L	61%	Superior temporal L	33%	Temporal_Mid L	100%
+F7	L-Hip-BF7	Cortex L	61%	Middle temporal L	61%	Temporal_Mid L	100%
+F8	L-Hip-BF8	White L	71%	White L	71%	Temporal_Mid L	100%
+G1	L-Cing-MMa1	Cortex L	72%	Scc L	72%	Olfactory L	74%
+G2	L-Cing-MMa2	Cortex L	58%	Scc L	55%	Olfactory L	63%
+G3	L-Cing-MMa3	White L	73%	White L	73%	Olfactory L	47%
+G4	L-Cing-MMa4	White L	100%	White L	100%	Olfactory L	14%
+G5	L-Cing-MMa5	White L	100%	White L	100%		
+G6	L-Cing-MMa6	White L	100%	White L	100%		
+H1	L-LH-MMc1	3rd-Ventricle	38%	3rd-Ventricle L	38%		
+H2	L-LH-MMc2	Thalamus L	86%	Thalamus L	86%	Thal_MDm L	12%
+H3	L-LH-MMc3	Thalamus L	100%	Thalamus L	100%	Thal_PuM L	69%
+H4	L-LH-MMc4	Thalamus L	100%	Thalamus L	100%	Thal_PuA L	58%
+H5	L-LH-MMc5	Thalamus L	99%	Thalamus L	99%	Thal_VPL L	96%
+H6	L-LH-MMc6	White L	98%	White L	98%	Thal_VPL L	38%
+I1	R-insul-Hua1	Cortex R	99%	Insula R	99%	Putamen R	8%
+I2	R-insul-Hua2	Cortex R	76%	Insula R	76%	Putamen R	14%
+I3	R-insul-Hua3	Cortex R	68%	Insula R	68%	Insula R	18%
+I4	R-insul-Hua4	Cortex R	60%	Pars opercularis R	37%	Insula R	86%
+I5	R-insul-Hua5	Cortex R	73%	Pars opercularis R	73%	Insula R	92%
+I6	R-insul-Hua6	White R	68%	White R	68%	Insula R	84%
+I7	R-insul-Hua7	White R	95%	White R	95%	Insula R	57%
+I8	R-insul-Hua8	White R	100%	White R	100%	Frontal_Inf_Tri R	9%
+I9	R-insul-Hua9	White R	100%	White R	100%	Frontal_Mid_2 R	23%
+I10	R-insul-Hua10	White R	99%	White R	99%	Frontal_Inf_Tri R	51%
+I11	R-insul-Hua11	Cortex R	46%	Rostral mid front R	46%	Frontal_Inf_Tri R	97%
+I12	R-insul-Hua12	Cortex R	61%	Rostral mid front R	61%	Frontal_Mid_2 R	68%
+I13	R-insul-Hua13	Cortex R	61%	Rostral mid front R	61%	Frontal_Mid_2 R	100%
+I14	R-insul-Hua14	Cortex R	84%	Rostral mid front R	84%	Frontal_Mid_2 R	100%
+I15	R-insul-Hua15	Cortex R	18%	Rostral mid front R	18%	Frontal_Mid_2 R	100%
+I16	R-insul-Hua16					Frontal_Mid_2 R	90%
+J1	R-OFC-Hua1	Cortex R	34%	Lateral orbitofrontal R	34%	Rectus R	18%
+J2	R-OFC-Hua2	Cortex R	51%	Lateral orbitofrontal R	51%	OFCmed R	27%
+J3	R-OFC-Hua3	Cortex R	52%	Lateral orbitofrontal R	52%	OFCmed R	66%
+J4	R-OFC-Hua4	Cortex R	57%	Lateral orbitofrontal R	57%	OFCmed R	90%
+J5	R-OFC-Hua5	Cortex R	45%	Lateral orbitofrontal R	45%	OFCmed R	99%
+J6	R-OFC-Hua6	Cortex R	54%	Lateral orbitofrontal R	54%	OFCmed R	95%
+J7	R-OFC-Hua7	Cortex R	83%	Lateral orbitofrontal R	83%	OFCant R	45%
+J8	R-OFC-Hua8	Cortex R	76%	Lateral orbitofrontal R	76%	OFCpost R	94%
+J9	R-OFC-Hua9	Cortex R	39%	Pars orbitalis R	26%	OFCant R	52%
+J10	R-OFC-Hua10	Cortex R	80%	Pars orbitalis R	80%	OFCant R	88%
+J11	R-OFC-Hua11	Cortex R	66%	Pars orbitalis R	66%	OFCant R	54%
+J12	R-OFC-Hua12	Cortex R	72%	Pars orbitalis R	72%	OFClat R	75%
+K1	R-Nac-Hua1	VentralDC R	27%	VentralDC R	27%		
+K2	R-Nac-Hua2	Accumbens R	52%	Accumbens R	52%	N_Acc R	4%
+K3	R-Nac-Hua3	Accumbens R	63%	Accumbens R	63%	N_Acc R	25%
+K4	R-Nac-Hua4	White R	72%	valic or vcvs R	72%	Pallidum R	39%
+K5	R-Nac-Hua5	White R	80%	valic or vcvs R	80%	Pallidum R	31%
+K6	R-Nac-Hua6	White R	83%	valic or vcvs R	83%	Caudate R	33%
+K7	R-Nac-Hua7	White R	80%	valic or vcvs R	80%	Caudate R	76%
+K8	R-Nac-Hua8	White R	89%	valic or vcvs R	89%	Caudate R	86%
+K9	R-Nac-Hua9	White R	100%	White R	100%	Caudate R	86%
+K10	R-Nac-Hua10	White R	99%	White R	99%	Caudate R	14%
+K11	R-Nac-Hua11	White R	97%	White R	97%		
+K12	R-Nac-Hua12	White R	100%	White R	100%		
+K13	R-Nac-Hua13	White R	99%	White R	99%		
+K14	R-Nac-Hua14	White R	81%	White R	81%	Frontal_Mid_2 R	18%
+K15	R-Nac-Hua15	White R	78%	White R	78%	Frontal_Mid_2 R	90%
+K16	R-Nac-Hua16	White R	56%	White R	56%	Frontal_Mid_2 R	100%
+L1	R-BNST-Hua1	VentralDC R	66%	BNST R	66%		
+L2	R-BNST-Hua2	VentralDC R	55%	BNST R	55%	Thal_VA R	13%
+L3	R-BNST-Hua3	White R	74%	ITP R	74%	Thal_VA R	43%
+L4	R-BNST-Hua4	White R	80%	valic or vcvs R	80%	Thal_VA R	87%
+L5	R-BNST-Hua5	White R	91%	valic or vcvs R	91%	Thal_VA R	71%
+L6	R-BNST-Hua6	White R	98%	White R	98%	Caudate R	39%
+L7	R-BNST-Hua7	White R	81%	White R	81%	Caudate R	80%
+L8	R-BNST-Hua8	White R	66%	White R	66%	Caudate R	92%
+L9	R-BNST-Hua9	White R	75%	White R	75%	Caudate R	96%
+L10	R-BNST-Hua10	White R	100%	White R	100%	Caudate R	56%
+L11	R-BNST-Hua11	White R	100%	White R	100%		
+L12	R-BNST-Hua12	White R	100%	White R	100%		
+L13	R-BNST-Hua13	White R	100%	White R	100%	Frontal_Inf_Oper R	27%
+L14	R-BNST-Hua14	White R	97%	White R	97%	Frontal_Inf_Oper R	15%
+L15	R-BNST-Hua15	White R	80%	White R	80%	Frontal_Mid_2 R	12%
+L16	R-BNST-Hua16	White R	95%	White R	95%	Frontal_Mid_2 R	58%
+M1	R-MFB-Hua1	VentralDC R	100%	Thalamus R	100%	Red_N R	49%
+M2	R-MFB-Hua2	VentralDC R	100%	Thalamus R	100%	Red_N R	49%
+M3	R-MFB-Hua3	VentralDC R	100%	Thalamus R	100%	Thal_IL R	11%
+M4	R-MFB-Hua4	VentralDC R	72%	Thalamus R	72%	Thal_VL R	63%
+M5	R-MFB-Hua5	Thalamus R	86%	Thalamus R	86%	Thal_VL R	100%
+M6	R-MFB-Hua6	Thalamus R	78%	Thalamus R	78%	Thal_VL R	100%
+M7	R-MFB-Hua7	White R	72%	White R	72%	Thal_VL R	100%
+M8	R-MFB-Hua8	White R	96%	White R	96%	Thal_VL R	72%
+M9	R-MFB-Hua9	White R	100%	White R	100%	Caudate R	46%
+M10	R-MFB-Hua10	White R	92%	White R	92%	Caudate R	90%
+M11	R-MFB-Hua11	White R	100%	White R	100%	Caudate R	54%
+M12	R-MFB-Hua12	White R	100%	White R	100%	Caudate R	5%
+M13	R-MFB-Hua13	White R	100%	White R	100%		
+M14	R-MFB-Hua14	White R	100%	White R	100%		
+M15	R-MFB-Hua15	White R	100%	White R	100%		
+M16	R-MFB-Hua16	White R	99%	White R	99%	Frontal_Mid_2 R	3%
+N1	L-insul-Hua1	Cortex L	59%	Insula L	59%	Insula L	63%
+N2	L-insul-Hua2	Cortex L	82%	Insula L	82%	Insula L	99%
+N3	L-insul-Hua3	Cortex L	80%	Insula L	80%	Insula L	98%
+N4	L-insul-Hua4	Cortex L	85%	Insula L	75%	Insula L	89%
+N5	L-insul-Hua5	Cortex L	71%	Pars opercularis L	44%	Insula L	99%
+N6	L-insul-Hua6	Cortex L	49%	Pars opercularis L	46%	Frontal_Inf_Oper L	51%
+N7	L-insul-Hua7	Cortex L	46%	Pars opercularis L	37%	Frontal_Inf_Oper L	87%
+N8	L-insul-Hua8	Cortex L	59%	Pars opercularis L	59%	Frontal_Inf_Oper L	89%
+N9	L-insul-Hua9	White L	98%	White L	98%	Frontal_Inf_Oper L	71%
+N10	L-insul-Hua10	Cortex L	53%	White L	44%	Frontal_Inf_Tri L	70%
+N11	L-insul-Hua11	Cortex L	55%	Rostral mid front L	49%	Frontal_Inf_Tri L	86%
+N12	L-insul-Hua12	White L	99%	White L	99%	Frontal_Inf_Tri L	74%
+N13	L-insul-Hua13	White L	84%	White L	84%	Frontal_Mid_2 L	89%
+N14	L-insul-Hua14	White L	56%	White L	56%	Frontal_Mid_2 L	100%
+N15	L-insul-Hua15	White L	58%	White L	58%	Frontal_Mid_2 L	100%
+N16	L-insul-Hua16	Cortex L	75%	Rostral mid front L	75%	Frontal_Mid_2 L	100%
+O1	L-OFC-Hua1	Cortex L	65%	White L	65%	Rectus L	47%
+O2	L-OFC-Hua2	Cortex L	71%	Lateral orbitofrontal L	49%	OFCmed L	75%
+O3	L-OFC-Hua3	Cortex L	65%	Lateral orbitofrontal L	65%	OFCmed L	97%
+O4	L-OFC-Hua4	Cortex L	60%	Lateral orbitofrontal L	60%	OFCmed L	100%
+O5	L-OFC-Hua5	Cortex L	82%	Lateral orbitofrontal L	82%	OFCmed L	61%
+O6	L-OFC-Hua6	Cortex L	82%	Lateral orbitofrontal L	82%	OFCant L	80%
+O7	L-OFC-Hua7	Cortex L	87%	Lateral orbitofrontal L	87%	OFCant L	75%
+O8	L-OFC-Hua8	Cortex L	73%	Lateral orbitofrontal L	73%	OFCant L	73%
+O9	L-OFC-Hua9	Cortex L	65%	Lateral orbitofrontal L	44%	OFCant L	54%
+O10	L-OFC-Hua10	Cortex L	76%	Rostral mid front L	51%	Frontal_Inf_Orb_2 L	48%
+O11	L-OFC-Hua11	Cortex L	61%	Rostral mid front L	42%	Frontal_Inf_Orb_2 L	70%
+O12	L-OFC-Hua12	Cortex L	55%	Pars orbitalis L	33%	Frontal_Inf_Orb_2 L	77%
+P1	L-Nac-Hua1	Cortex L	99%	Medial orbitofrontal L	98%	N_Acc L	38%
+P2	L-Nac-Hua2	Cortex L	51%	Medial orbitofrontal L	51%	N_Acc L	80%
+P3	L-Nac-Hua3	Accumbens L	88%	Accumbens L	88%	N_Acc L	63%
+P4	L-Nac-Hua4	Accumbens L	61%	Accumbens L	61%	Caudate L	45%
+P5	L-Nac-Hua5	Caudate L	99%	Caudate L	99%	Caudate L	53%
+P6	L-Nac-Hua6	Caudate L	95%	Caudate L	95%	Caudate L	51%
+P7	L-Nac-Hua7	Caudate L	84%	Caudate L	84%	Caudate L	71%
+P8	L-Nac-Hua8	White L	60%	White L	60%	Caudate L	62%
+P9	L-Nac-Hua9	White L	100%	White L	100%	Caudate L	14%
+P10	L-Nac-Hua10	White L	100%	White L	100%		
+P11	L-Nac-Hua11	White L	100%	White L	100%	Insula L	14%
+P12	L-Nac-Hua12	White L	100%	White L	100%		
+P13	L-Nac-Hua13	White L	100%	White L	100%	Frontal_Mid_2 L	1%
+P14	L-Nac-Hua14	White L	95%	White L	95%	Frontal_Inf_Tri L	35%
+P15	L-Nac-Hua15	White L	54%	White L	54%	Frontal_Inf_Tri L	51%
+P16	L-Nac-Hua16	Cortex L	56%	Rostral mid front L	56%	Frontal_Mid_2 L	83%
+Q1	L-BNST-Hua1	Cortex L	38%	BNST L	38%		
+Q2	L-BNST-Hua2	White L	81%	BNST L	81%		
+Q3	L-BNST-Hua3	White L	85%	BNST L	85%	Pallidum L	10%
+Q4	L-BNST-Hua4	White L	74%	valic or vcvs L	74%	Pallidum L	31%
+Q5	L-BNST-Hua5	White L	90%	valic or vcvs L	90%	Pallidum L	19%
+Q6	L-BNST-Hua6	White L	96%	valic or vcvs L	96%	Caudate L	20%
+Q7	L-BNST-Hua7	White L	84%	valic or vcvs L	84%	Caudate L	34%
+Q8	L-BNST-Hua8	White L	95%	valic or vcvs L	95%	Putamen L	44%
+Q9	L-BNST-Hua9	White L	100%	White L	100%	Putamen L	5%
+Q10	L-BNST-Hua10	White L	100%	White L	100%		
+Q11	L-BNST-Hua11	White L	100%	White L	100%		
+Q12	L-BNST-Hua12	White L	100%	White L	100%		
+Q13	L-BNST-Hua13	White L	90%	White L	90%	Frontal_Inf_Oper L	12%
+Q14	L-BNST-Hua14	White L	84%	White L	84%	Frontal_Inf_Oper L	58%
+Q15	L-BNST-Hua15	White L	100%	White L	100%	Frontal_Mid_2 L	84%
+Q16	L-BNST-Hua16	White L	70%	White L	70%	Frontal_Mid_2 L	96%
+R1	L-MFB-Hua1	VentralDC L	72%	Thalamus L	72%	Red_N L	35%
+R2	L-MFB-Hua2	VentralDC L	100%	Thalamus L	100%	Red_N L	53%
+R3	L-MFB-Hua3	VentralDC L	99%	Thalamus L	99%	Thal_IL L	19%
+R4	L-MFB-Hua4	VentralDC L	78%	Thalamus L	78%	Thal_VL L	44%
+R5	L-MFB-Hua5	Thalamus L	57%	Thalamus L	57%	Thal_VL L	99%
+R6	L-MFB-Hua6	White L	74%	White L	74%	Thal_VL L	99%
+R7	L-MFB-Hua7	White L	94%	White L	94%	Thal_VL L	99%
+R8	L-MFB-Hua8	White L	99%	White L	99%	Thal_VL L	70%
+R9	L-MFB-Hua9	White L	94%	White L	94%	Putamen L	11%
+A5	L-MFB-Hua10	White L	97%	White L	97%	Putamen L	11%
+A6	L-MFB-Hua11	White L	100%	White L	100%		
+R12	L-MFB-Hua12	White L	100%	White L	100%		
+R13	L-MFB-Hua13	White L	100%	White L	100%		
+R14	L-MFB-Hua14	White L	100%	White L	100%		
+R15	L-MFB-Hua15	White L	100%	White L	100%		
+R16	L-MFB-Hua16	White L	70%	White L	70%	Precentral L	31%

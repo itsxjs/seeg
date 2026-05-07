@@ -20,6 +20,17 @@ from ah_pipeline.connectivity_stats import _pick_region_pairs
 from ah_pipeline.nwb_io import load_subject_lfp_from_nwb
 from ah_pipeline.preprocessing import epoch_subject, preprocess_signal, run_hybrid_qc
 
+plt.rcParams["font.sans-serif"] = [
+    "Arial Unicode MS",
+    "Heiti TC",
+    "Songti SC",
+    "PingFang SC",
+    "SimHei",
+    "Noto Sans CJK SC",
+    "DejaVu Sans",
+]
+plt.rcParams["axes.unicode_minus"] = False
+
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
@@ -179,32 +190,39 @@ def _plot(stats: dict[str, dict[str, object]], sig_fdr: dict[str, bool], output_
     a_sem = [stats[b]["A_to_H_sem"] for b in bands]
     h_sem = [stats[b]["H_to_A_sem"] for b in bands]
 
-    fig, ax = plt.subplots(figsize=(9.2, 5.6), dpi=200)
-    ax.bar(x - width / 2, a_mean, width=width, yerr=a_sem, capsize=4, color="#c44e52", alpha=0.9, label="A->H")
-    ax.bar(x + width / 2, h_mean, width=width, yerr=h_sem, capsize=4, color="#4c72b0", alpha=0.9, label="H->A")
+    fig, ax = plt.subplots(figsize=(9.6, 5.8), dpi=220)
+    ax.bar(x - width / 2, a_mean, width=width, yerr=a_sem, capsize=5, color="#c44e52", alpha=0.9, label="A→H")
+    ax.bar(x + width / 2, h_mean, width=width, yerr=h_sem, capsize=5, color="#4c72b0", alpha=0.9, label="H→A")
 
     y_max = np.nanmax(np.array(a_mean + h_mean, dtype=float) + np.array(a_sem + h_sem, dtype=float))
     if not np.isfinite(y_max):
         y_max = 1.0
+    y_step = y_max * 0.08
     for i, band in enumerate(bands):
-        p_val = stats[band]["paired_p"]
-        p_txt = "p=n/a" if p_val is None else f"p={p_val:.3g}"
-        star = "*" if sig_fdr.get(band, False) else ""
+        left = x[i] - width / 2
+        right = x[i] + width / 2
+        bar_top = max(
+            float(a_mean[i] or 0) + float(a_sem[i] or 0),
+            float(h_mean[i] or 0) + float(h_sem[i] or 0),
+        )
+        y = bar_top + y_step
+        tick = y_step * 0.18
+        ax.plot([left, left, right, right], [y - tick, y, y, y - tick], color="black", lw=1.2)
         ax.text(
             x[i],
-            y_max * 1.06,
-            f"n={stats[band]['n_subjects']}\n{p_txt}{star}",
+            y + y_step * 0.08,
+            "*" if sig_fdr.get(band, False) else "n.s.",
             ha="center",
             va="bottom",
-            fontsize=9,
+            fontsize=15,
         )
     ax.set_xticks(x)
-    ax.set_xticklabels(["theta (4-8 Hz)", "beta (13-30 Hz)"])
-    ax.set_ylabel("Granger causality F (subject mean)")
-    ax.set_title("Arousal segments: A-H directional sGC")
+    ax.set_xticklabels(["θ频段 (4-8 Hz)", "β频段 (13-30 Hz)"], fontsize=14)
+    ax.set_ylabel("谱格兰杰因果值", fontsize=15)
+    ax.tick_params(axis="y", labelsize=13)
     ax.grid(axis="y", alpha=0.22)
-    ax.legend(frameon=False, loc="upper right")
-    ax.set_ylim(0, y_max * 1.25)
+    ax.legend(frameon=False, loc="upper right", fontsize=13)
+    ax.set_ylim(0, y_max * 1.28)
     fig.tight_layout()
     fig.savefig(output_png, bbox_inches="tight")
     plt.close(fig)

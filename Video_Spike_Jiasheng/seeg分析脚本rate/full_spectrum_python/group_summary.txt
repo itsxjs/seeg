@@ -1,0 +1,3 @@
+used_runs=2
+  sub001_fullspectrum.mat
+  sub004_fullspectrum.mat

@@ -6,6 +6,23 @@ import seaborn as sns
 from pathlib import Path
 import os
 
+# Publication-style Chinese figure settings
+sns.set_theme(style="whitegrid", context="paper")
+plt.rcParams["font.sans-serif"] = [
+    "Arial Unicode MS",
+    "Heiti TC",
+    "Songti SC",
+    "PingFang SC",
+    "SimHei",
+    "DejaVu Sans",
+]
+plt.rcParams["axes.unicode_minus"] = False
+plt.rcParams["font.size"] = 12
+plt.rcParams["axes.labelsize"] = 14
+plt.rcParams["xtick.labelsize"] = 11
+plt.rcParams["ytick.labelsize"] = 11
+plt.rcParams["legend.fontsize"] = 11
+
 # Paths
 data_dir = Path('/Users/defanive/Desktop/Diploma/SEEG_behavior')
 output_dir = Path('/Volumes/rmhyw/result/behavior_analysis')
@@ -84,8 +101,70 @@ df_binary = df_all.groupby('subject').agg({
     'is_dislike': 'sum'
 }).reset_index()
 
+# Publication preview-layout figure: a like/dislike trial counts, b ratings
+subject_order = sub_summary['subject'].tolist()
+df_binary_melt = df_binary.melt(
+    id_vars='subject',
+    value_vars=['is_like', 'is_dislike'],
+    var_name='Category',
+    value_name='Trial Count',
+)
+df_binary_melt['类别'] = df_binary_melt['Category'].map({
+    'is_like': '喜欢',
+    'is_dislike': '不喜欢',
+})
+
+fig, axes = plt.subplots(1, 2, figsize=(11.5, 3.6), constrained_layout=True)
+sns.barplot(
+    data=df_binary_melt,
+    x='subject',
+    y='Trial Count',
+    hue='类别',
+    order=subject_order,
+    palette={'喜欢': '#1f8aa5', '不喜欢': '#d95b7d'},
+    ax=axes[0],
+)
+axes[0].set_xlabel('被试')
+axes[0].set_ylabel('试次数')
+axes[0].tick_params(axis='x', rotation=45)
+axes[0].set_ylim(0, df_binary_melt['Trial Count'].max() * 1.30)
+axes[0].legend(title='类别', frameon=False, loc='upper right', bbox_to_anchor=(0.98, 0.98))
+
+sns.boxplot(
+    data=df_all,
+    x='subject',
+    y='rating',
+    order=subject_order,
+    palette=sns.color_palette("Set3", n_colors=len(subject_order)),
+    width=0.65,
+    ax=axes[1],
+)
+axes[1].set_xlabel('被试')
+axes[1].set_ylabel('评分')
+axes[1].tick_params(axis='x', rotation=0)
+
+for label, ax in zip(['a', 'b'], axes):
+    ax.text(
+        -0.08,
+        1.06,
+        label,
+        transform=ax.transAxes,
+        fontsize=18,
+        fontweight='bold',
+        va='bottom',
+        ha='left',
+        fontfamily='DejaVu Serif',
+    )
+    ax.spines['top'].set_visible(True)
+    ax.spines['right'].set_visible(True)
+    ax.grid(axis='y', color='0.88', linewidth=0.8)
+    ax.grid(axis='x', visible=False)
+
+fig.savefig(output_dir / 'study2_behavior_publication.png', dpi=300, bbox_inches='tight')
+fig.savefig(output_dir / 'study2_behavior_publication.pdf', bbox_inches='tight')
+plt.close(fig)
+
 plt.figure(figsize=(10, 6))
-df_binary_melt = df_binary.melt(id_vars='subject', value_vars=['is_like', 'is_dislike'], var_name='Category', value_name='Trial Count')
 sns.barplot(data=df_binary_melt, x='subject', y='Trial Count', hue='Category', palette=['#ef476f', '#118ab2'])
 plt.title('Number of Like vs Dislike Trials per Subject')
 plt.xticks(rotation=45)
