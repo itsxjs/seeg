@@ -1,0 +1,927 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/o7kocf",
+    "id": "o7kocf",
+    "slide": 6,
+    "layoutId": "2329afa4-4c1e-4b17-a0cb-e8fb9fc74fd3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "42599b19-8c2f-4bbb-8ad3-5d9cf1934524",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "2329afa4-4c1e-4b17-a0cb-e8fb9fc74fd3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "42599b19-8c2f-4bbb-8ad3-5d9cf1934524",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "42599b19-8c2f-4bbb-8ad3-5d9cf1934524",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l87ed8ba",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5F7F6",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ahoza1gv",
+      "id": "2",
+      "bbox": [
+        0,
+        0,
+        1280,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#126C75",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/32lszqtc",
+      "id": "3",
+      "bbox": [
+        54,
+        24,
+        330,
+        24
+      ],
+      "geometry": "rect",
+      "text": "研究二｜单神经元放电",
+      "textPreview": "研究二｜单神经元放电",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "研究二｜单神经元放电"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "研究二｜单神经元放电",
+          "runs": [
+            {
+              "index": 1,
+              "text": "研究二｜单神经元放电",
+              "fontSize": 15,
+              "typeface": "PingFang SC",
+              "color": "#126C75",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/szqtcj6t",
+      "id": "4",
+      "bbox": [
+        54,
+        52,
+        1040,
+        46
+      ],
+      "geometry": "rect",
+      "text": "偏好相关放电呈现相反响应类型，并集中在早期与中期时间窗",
+      "textPreview": "偏好相关放电呈现相反响应类型，并集中在早期与中期时间窗",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "偏好相关放电呈现相反响应类型，并集中在早期与中期时间窗"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "偏好相关放电呈现相反响应类型，并集中在早期与中期时间窗",
+          "runs": [
+            {
+              "index": 1,
+              "text": "偏好相关放电呈现相反响应类型，并集中在早期与中期时间窗",
+              "fontSize": 30,
+              "typeface": "PingFang SC",
+              "color": "#11272B",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lkjm1cfa",
+      "id": "5",
+      "bbox": [
+        54,
+        112,
+        1172,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6E0DE",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/3ylc7u54",
+      "id": "6",
+      "bbox": [
+        1115,
+        28,
+        106,
+        34
+      ],
+      "alt": "Zhejiang University logo",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "8b8a61bc-b71c-4cc8-924a-513e1b8b92b0",
+        "contentType": "image/png",
+        "byteLength": 51013
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ex0nuxc",
+      "id": "7",
+      "bbox": [
+        58,
+        143,
+        718,
+        442
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#CAD7D5",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 8,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/hgn29gr2",
+      "id": "8",
+      "bbox": [
+        72,
+        157,
+        690,
+        394
+      ],
+      "alt": "核心结果图：喜欢/不喜欢条件下的 antagonistic clusters",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "ca2c6d4a-c3a2-4eb4-9f11-ad9cd2ab8c72",
+        "contentType": "image/png",
+        "byteLength": 285246
+      }
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/loj2t83i",
+      "id": "9",
+      "bbox": [
+        76,
+        557,
+        682,
+        18
+      ],
+      "geometry": "rect",
+      "text": "核心结果图：喜欢/不喜欢条件下的 antagonistic clusters",
+      "textPreview": "核心结果图：喜欢/不喜欢条件下的 antagonistic clusters",
+      "resolvedFontSize": 12.51,
+      "resolvedTextStyle": {
+        "fontSize": 12.51,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "核心结果图：喜欢/不喜欢条件下的 antagonistic clusters"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "核心结果图：喜欢/不喜欢条件下的 antagonistic clusters",
+          "runs": [
+            {
+              "index": 1,
+              "text": "核心结果图：喜欢/不喜欢条件下的 antagonistic clusters",
+              "fontSize": 12.51,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9knih4by",
+      "id": "10",
+      "bbox": [
+        822,
+        154,
+        300,
+        72
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D6E0DE",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kzupwb2h",
+      "id": "11",
+      "bbox": [
+        836,
+        165,
+        272,
+        18
+      ],
+      "geometry": "rect",
+      "text": "可分析单元",
+      "textPreview": "可分析单元",
+      "resolvedFontSize": 13.51,
+      "resolvedTextStyle": {
+        "fontSize": 13.51,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "可分析单元"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "可分析单元",
+          "runs": [
+            {
+              "index": 1,
+              "text": "可分析单元",
+              "fontSize": 13.51,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/re1w7mp0",
+      "id": "12",
+      "bbox": [
+        836,
+        185,
+        272,
+        38
+      ],
+      "geometry": "rect",
+      "text": "45 units",
+      "textPreview": "45 units",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "45 units"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "45 units",
+          "runs": [
+            {
+              "index": 1,
+              "text": "45 units",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#B65B3D",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2t83itgf",
+      "id": "13",
+      "bbox": [
+        822,
+        242,
+        300,
+        72
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D6E0DE",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9w3m94fu",
+      "id": "14",
+      "bbox": [
+        836,
+        253,
+        272,
+        18
+      ],
+      "geometry": "rect",
+      "text": "聚类规模",
+      "textPreview": "聚类规模",
+      "resolvedFontSize": 13.51,
+      "resolvedTextStyle": {
+        "fontSize": 13.51,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "聚类规模"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "聚类规模",
+          "runs": [
+            {
+              "index": 1,
+              "text": "聚类规模",
+              "fontSize": 13.51,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kb6xkf6d",
+      "id": "15",
+      "bbox": [
+        836,
+        273,
+        272,
+        38
+      ],
+      "geometry": "rect",
+      "text": "n = 22 / 23",
+      "textPreview": "n = 22 / 23",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "n = 22 / 23"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "n = 22 / 23",
+          "runs": [
+            {
+              "index": 1,
+              "text": "n = 22 / 23",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#126C75",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rqd4vmtw",
+      "id": "16",
+      "bbox": [
+        822,
+        330,
+        300,
+        72
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D6E0DE",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/25kb6xkf",
+      "id": "17",
+      "bbox": [
+        836,
+        341,
+        272,
+        18
+      ],
+      "geometry": "rect",
+      "text": "显著时间窗",
+      "textPreview": "显著时间窗",
+      "resolvedFontSize": 13.51,
+      "resolvedTextStyle": {
+        "fontSize": 13.51,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "显著时间窗"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "显著时间窗",
+          "runs": [
+            {
+              "index": 1,
+              "text": "显著时间窗",
+              "fontSize": 13.51,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/94fu18jq",
+      "id": "18",
+      "bbox": [
+        836,
+        361,
+        272,
+        38
+      ],
+      "geometry": "rect",
+      "text": "0.20–0.70 s；1.25–1.65 s",
+      "textPreview": "0.20–0.70 s；1.25–1.65 s",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "0.20–0.70 s；1.25–1.65 s"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "0.20–0.70 s；1.25–1.65 s",
+          "runs": [
+            {
+              "index": 1,
+              "text": "0.20–0.70 s；1.25–1.65 s",
+              "fontSize": 18,
+              "typeface": "PingFang SC",
+              "color": "#B65B3D",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kjm1cfa9",
+      "id": "19",
+      "bbox": [
+        822,
+        445,
+        8,
+        8
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#126C75",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfyxobm5",
+      "id": "20",
+      "bbox": [
+        840,
+        436,
+        324,
+        34
+      ],
+      "geometry": "rect",
+      "text": "喜欢条件放电较低，不喜欢条件较高",
+      "textPreview": "喜欢条件放电较低，不喜欢条件较高",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "喜欢条件放电较低，不喜欢条件较高"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "喜欢条件放电较低，不喜欢条件较高",
+          "runs": [
+            {
+              "index": 1,
+              "text": "喜欢条件放电较低，不喜欢条件较高",
+              "fontSize": 18,
+              "typeface": "PingFang SC",
+              "color": "#11272B"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l0rqd4vm",
+      "id": "21",
+      "bbox": [
+        822,
+        479,
+        8,
+        8
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#126C75",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8bat47",
+      "id": "22",
+      "bbox": [
+        840,
+        470,
+        324,
+        34
+      ],
+      "geometry": "rect",
+      "text": "效应主要集中于海马单元",
+      "textPreview": "效应主要集中于海马单元",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "效应主要集中于海马单元"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "效应主要集中于海马单元",
+          "runs": [
+            {
+              "index": 1,
+              "text": "效应主要集中于海马单元",
+              "fontSize": 18,
+              "typeface": "PingFang SC",
+              "color": "#11272B"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7u54zido",
+      "id": "23",
+      "bbox": [
+        822,
+        513,
+        8,
+        8
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#126C75",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wra5gbq1",
+      "id": "24",
+      "bbox": [
+        840,
+        504,
+        324,
+        34
+      ],
+      "geometry": "rect",
+      "text": "与 LFP 结果共同支持偏好调制",
+      "textPreview": "与 LFP 结果共同支持偏好调制",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "与 LFP 结果共同支持偏好调制"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "与 LFP 结果共同支持偏好调制",
+          "runs": [
+            {
+              "index": 1,
+              "text": "与 LFP 结果共同支持偏好调制",
+              "fontSize": 18,
+              "typeface": "PingFang SC",
+              "color": "#11272B"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lc7u54zi",
+      "id": "25",
+      "bbox": [
+        1160,
+        668,
+        60,
+        22
+      ],
+      "geometry": "rect",
+      "text": "06",
+      "textPreview": "06",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "PingFang SC",
+        "alignment": "right"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "06",
+          "runs": [
+            {
+              "index": 1,
+              "text": "06",
+              "fontSize": 14,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

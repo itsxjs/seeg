@@ -1,0 +1,41 @@
+# Upload these files/folders for Study 2 5-s HCP run.
+
+hcp_study2_5s/run_study2_5s_hcp.m
+hcp_study2_5s/BOSC_tf_power.m
+hcp_study2_5s/README_upload_dependencies.md
+# Optional local-only verification script. HCP formal run does not need it.
+hcp_study2_5s/run_study2_5s_smoke_test.m
+
+# EEGLAB does not need to be uploaded; the script uses the teacher's path:
+/public/home/u0018083/sEEG_Chenglu/EEGLAB
+
+# Put these data files directly under /public/home/u0018083/seeg_xjs on HCP,
+# or edit data_dir in the script if you use another folder.
+
+# 2-s clean epochs used as the QC trial whitelist.
+sub001_4bin_epoch_clean.set
+sub001_4bin_epoch_clean.fdt
+sub004_4bin_epoch_clean.set
+sub004_4bin_epoch_clean.fdt
+sub005_4bin_epoch_clean.set
+sub005_4bin_epoch_clean.fdt
+sub007_4bin_epoch_clean.set
+sub007_4bin_epoch_clean.fdt
+sub008_4bin_epoch_clean.set
+sub008_4bin_epoch_clean.fdt
+sub009_4bin_epoch_clean.set
+sub009_4bin_epoch_clean.fdt
+
+# Continuous/preprocessed data used to cut the longer 5-s epochs.
+sub001_rate_preproc.set
+sub001_rate_preproc.fdt
+sub004_rate_preproc.set
+sub004_rate_preproc.fdt
+sub005_rate_preproc.set
+sub005_rate_preproc.fdt
+sub007_rate_preproc.set
+sub007_rate_preproc.fdt
+sub008_rate_preproc.set
+sub008_rate_preproc.fdt
+sub009_rate.set
+sub009_rate.fdt

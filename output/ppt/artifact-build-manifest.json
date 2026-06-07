@@ -1,0 +1,128 @@
+{
+  "output": "/Volumes/rmhyw/output/ppt/短视频观看诱发的颅内脑电研究_10min答辩_含结果图版.pptx",
+  "outputBytes": 1955052,
+  "slideCount": 11,
+  "slideSize": {
+    "width": 1280,
+    "height": 720
+  },
+  "previewDir": "/Volumes/rmhyw/outputs/defense-ppt-results/preview",
+  "previewPaths": [
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-01.png",
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-02.png",
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-03.png",
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-04.png",
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-05.png",
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-06.png",
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-07.png",
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-08.png",
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-09.png",
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-10.png",
+    "/Volumes/rmhyw/outputs/defense-ppt-results/preview/slide-11.png"
+  ],
+  "layoutDir": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final",
+  "layoutResults": [
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-01.layout.json"
+    },
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-02.layout.json"
+    },
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-03.layout.json"
+    },
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-04.layout.json"
+    },
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-05.layout.json"
+    },
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-06.layout.json"
+    },
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-07.layout.json"
+    },
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-08.layout.json"
+    },
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-09.layout.json"
+    },
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-10.layout.json"
+    },
+    {
+      "layoutPath": "/Volumes/rmhyw/outputs/defense-ppt-results/layout/final/slide-11.layout.json"
+    }
+  ],
+  "contactSheet": "/Volumes/rmhyw/outputs/defense-ppt-results/preview/contact-sheet.png",
+  "slides": [
+    {
+      "index": 1,
+      "requestedSlideNumber": 1,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-01.mjs",
+      "exportName": "slide01"
+    },
+    {
+      "index": 2,
+      "requestedSlideNumber": 2,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-02.mjs",
+      "exportName": "slide02"
+    },
+    {
+      "index": 3,
+      "requestedSlideNumber": 3,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-03.mjs",
+      "exportName": "slide03"
+    },
+    {
+      "index": 4,
+      "requestedSlideNumber": 4,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-04.mjs",
+      "exportName": "slide04"
+    },
+    {
+      "index": 5,
+      "requestedSlideNumber": 5,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-05.mjs",
+      "exportName": "slide05"
+    },
+    {
+      "index": 6,
+      "requestedSlideNumber": 6,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-06.mjs",
+      "exportName": "slide06"
+    },
+    {
+      "index": 7,
+      "requestedSlideNumber": 7,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-07.mjs",
+      "exportName": "slide07"
+    },
+    {
+      "index": 8,
+      "requestedSlideNumber": 8,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-08.mjs",
+      "exportName": "slide08"
+    },
+    {
+      "index": 9,
+      "requestedSlideNumber": 9,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-09.mjs",
+      "exportName": "slide09"
+    },
+    {
+      "index": 10,
+      "requestedSlideNumber": 10,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-10.mjs",
+      "exportName": "slide10"
+    },
+    {
+      "index": 11,
+      "requestedSlideNumber": 11,
+      "modulePath": "/Volumes/rmhyw/outputs/defense-ppt-results/slides/slide-11.mjs",
+      "exportName": "slide11"
+    }
+  ]
+}
