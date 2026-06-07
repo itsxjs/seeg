@@ -1,5 +1,8 @@
-function run_LME_CBPT_valence_neutral_pairwise_nperm500()
+function run_LME_CBPT_valence_neutral_pairwise_nperm500(replot_only)
 %% Pairwise LME + CBPT for study-1 valence-neutral contrasts.
+if nargin < 1
+    replot_only = false;
+end
 data_dir = fileparts(mfilename('fullpath'));
 subs = {'sub001', 'sub004', 'sub005', 'sub007', 'sub008', 'sub009'};
 nperm = 500;
@@ -17,18 +20,24 @@ contrasts = {
            'sg_prefix','负性与中性图片比较')
 };
 
-if isempty(gcp('nocreate'))
+if ~replot_only && isempty(gcp('nocreate'))
     parpool('local');
 end
 
 for r = 1:numel(rois)
     for c = 1:numel(contrasts)
         fprintf('\n===== %s: %s =====\n', rois(r).name, contrasts{c}.code);
-        res = run_one_pair(data_dir, subs, rois(r), contrasts{c}, nperm);
         out_prefix = sprintf('LME_%s_CBPT_2D_%s_FreqTime_nperm500', rois(r).prefix, contrasts{c}.code);
         out_mat = fullfile(data_dir, [out_prefix '.mat']);
-        save(out_mat, 'res', '-v7.3');
-        fprintf('Saved: %s\n', out_mat);
+        if replot_only
+            S = load(out_mat, 'res');
+            res = S.res;
+            fprintf('Loaded existing result: %s\n', out_mat);
+        else
+            res = run_one_pair(data_dir, subs, rois(r), contrasts{c}, nperm);
+            save(out_mat, 'res', '-v7.3');
+            fprintf('Saved: %s\n', out_mat);
+        end
         plot_pair_results(res, data_dir, out_prefix);
     end
 end
@@ -241,16 +250,18 @@ yticks = 2 * 2.^(0:floor(log2(fmax/2)));
 yticks = yticks(yticks >= fmin & yticks <= fmax);
 set_logy = @() set(gca, 'YScale','log', 'YLim',ylim_plot, 'YTick',yticks);
 
-fig1 = figure('Position',[100 100 1200 500]);
-subplot(1,3,1);
+layout = make_appendix_layout();
+
+fig1 = figure('Position',[100 100 1700 520]);
+axes('Position', [layout.x3(1) layout.y layout.width layout.height]);
 surf(TT, FF, F_plot, 'EdgeColor','none'); view(2);
-set_logy(); axis tight; colorbar; colormap(gca, hot);
+set_logy(); axis tight; colormap(gca, hot);
 style_tf_axes(gca);
 title('线性混合模型F值', 'FontSize', 14, 'FontWeight', 'bold');
-squash_y(0.25);
 caxF = caxis;
+add_fixed_colorbar(gca, layout);
 
-subplot(1,3,2);
+axes('Position', [layout.x3(2) layout.y layout.width layout.height]);
 p_plot = P_clust2;
 if any(p_plot(:) > 0)
     p_plot(p_plot==0) = min(p_plot(p_plot>0))/10;
@@ -258,57 +269,63 @@ else
     p_plot(:) = 1;
 end
 surf(TT, FF, gauss2d(-log10(p_plot), sigma_vis), 'EdgeColor','none'); view(2);
-set_logy(); axis tight; colorbar; colormap(gca, parula);
+set_logy(); axis tight; colormap(gca, parula);
 style_tf_axes(gca);
 title('簇校正p值 (-log10)', 'FontSize', 14, 'FontWeight', 'bold');
-squash_y(0.25);
+add_fixed_colorbar(gca, layout);
 
-subplot(1,3,3);
+axes('Position', [layout.x3(3) layout.y layout.width layout.height]);
 hF = surf(TT, FF, F_plot, 'EdgeColor','none'); view(2);
-set_logy(); axis tight; colorbar; colormap(gca, hot); caxis(caxF);
+set_logy(); axis tight; colormap(gca, hot); caxis(caxF);
 style_tf_axes(gca);
 title('显著簇内F值 (p<0.05)', 'FontSize', 14, 'FontWeight', 'bold');
-squash_y(0.25);
 sig = h_val2 > 0;
 A = zeros(size(sig)); A(sig) = 1;
 set(hF, 'FaceAlpha','flat', 'AlphaData', A, 'AlphaDataMapping','none');
+add_fixed_colorbar(gca, layout);
 sgtitle(sprintf('%s：%s', res.roi, res.contrast.sg_prefix), ...
     'FontSize', 16, 'FontWeight', 'bold');
 saveas(fig1, fullfile(data_dir, [out_prefix '_Fstats.png']));
 close(fig1);
 
-fig2 = figure('Position',[150 150 1600 500]);
-subplot(1,4,1);
+fig2 = figure('Position',[150 150 1700 520]);
+avg_lims = [min([a_plot(:); b_plot(:)], [], 'omitnan'), ...
+    max([a_plot(:); b_plot(:)], [], 'omitnan')];
+if any(~isfinite(avg_lims)) || avg_lims(1) == avg_lims(2)
+    avg_lims = [avg_lims(1)-1 avg_lims(2)+1];
+end
+
+axes('Position', [layout.x4(1) layout.y layout.width layout.height]);
 surf(TT, FF, a_plot, 'EdgeColor','none'); view(2);
-set_logy(); axis tight; colorbar; colormap(gca, jet);
+set_logy(); axis tight; colormap(gca, jet); caxis(avg_lims);
 style_tf_axes(gca);
 title([res.contrast.a_title '：平均z功率'], 'FontSize', 14, 'FontWeight', 'bold');
-squash_y(0.25);
+add_fixed_colorbar(gca, layout, 1);
 
-subplot(1,4,2);
+axes('Position', [layout.x4(2) layout.y layout.width layout.height]);
 surf(TT, FF, b_plot, 'EdgeColor','none'); view(2);
-set_logy(); axis tight; colorbar; colormap(gca, jet);
+set_logy(); axis tight; colormap(gca, jet); caxis(avg_lims);
 style_tf_axes(gca);
 title([res.contrast.b_title '：平均z功率'], 'FontSize', 14, 'FontWeight', 'bold');
-squash_y(0.25);
+add_fixed_colorbar(gca, layout, 1);
 
 mx = max(abs(diff2(:)), [], 'omitnan');
 if isempty(mx) || mx == 0, mx = 1; end
-subplot(1,4,3);
+axes('Position', [layout.x4(3) layout.y layout.width layout.height]);
 surf(TT, FF, diff_plot, 'EdgeColor','none'); view(2);
-set_logy(); axis tight; colorbar; colormap(gca, flipud(redblue)); caxis([-mx mx]);
+set_logy(); axis tight; colormap(gca, flipud(redblue)); caxis([-mx mx]);
 style_tf_axes(gca);
 title([res.contrast.diff_title ' (未掩膜)'], 'FontSize', 14, 'FontWeight', 'bold');
-squash_y(0.25);
+add_fixed_colorbar(gca, layout, 1);
 
-subplot(1,4,4);
+axes('Position', [layout.x4(4) layout.y layout.width layout.height]);
 hD = surf(TT, FF, diff_plot, 'EdgeColor','none'); view(2);
-set_logy(); axis tight; colorbar; colormap(gca, flipud(redblue)); caxis([-mx mx]);
+set_logy(); axis tight; colormap(gca, flipud(redblue)); caxis([-mx mx]);
 style_tf_axes(gca);
 title([res.contrast.diff_title ' (显著簇)'], 'FontSize', 14, 'FontWeight', 'bold');
-squash_y(0.25);
 A = zeros(size(sig)); A(sig) = 1;
 set(hD, 'FaceAlpha','flat', 'AlphaData', A, 'AlphaDataMapping','none');
+add_fixed_colorbar(gca, layout, 1);
 sgtitle(sprintf('%s：%s条件均值与差异图', res.roi, res.contrast.sg_prefix), ...
     'FontSize', 16, 'FontWeight', 'bold');
 saveas(fig2, fullfile(data_dir, [out_prefix '_Averages.png']));
@@ -343,6 +360,35 @@ for k = 1:numel(ci.pos_clusters)
         else
             fprintf('    Direction: %s > %s (%.3f)\n', res.contrast.b, res.contrast.a, abs(mean_diff));
         end
+    end
+end
+end
+
+function layout = make_appendix_layout()
+layout.left = 0.095;
+layout.width = 0.165;
+layout.gap = 0.050;
+layout.cb_gap = 0.008;
+layout.cb_width = 0.014;
+layout.y = 0.22;
+layout.height = 0.58;
+layout.x4 = layout.left + (0:3) * (layout.width + layout.gap);
+layout.x3 = layout.left + [0 1 2] * (layout.width + layout.gap);
+end
+
+function add_fixed_colorbar(ax, layout, tick_step)
+if nargin < 3
+    tick_step = [];
+end
+pos = ax.Position;
+cb = colorbar(ax);
+cb.Position = [pos(1)+pos(3)+layout.cb_gap pos(2) layout.cb_width pos(4)];
+cb.FontSize = 12;
+if ~isempty(tick_step)
+    lims = get(ax, 'CLim');
+    ticks = ceil(lims(1)/tick_step)*tick_step:tick_step:floor(lims(2)/tick_step)*tick_step;
+    if numel(ticks) >= 2
+        cb.Ticks = ticks;
     end
 end
 end

@@ -1,0 +1,1112 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/4fomlc",
+    "id": "4fomlc",
+    "slide": 2,
+    "layoutId": "2329afa4-4c1e-4b17-a0cb-e8fb9fc74fd3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "42599b19-8c2f-4bbb-8ad3-5d9cf1934524",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "2329afa4-4c1e-4b17-a0cb-e8fb9fc74fd3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "42599b19-8c2f-4bbb-8ad3-5d9cf1934524",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "42599b19-8c2f-4bbb-8ad3-5d9cf1934524",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7mp0bi9s",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5F7F6",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7mp0bi9",
+      "id": "2",
+      "bbox": [
+        0,
+        0,
+        1280,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#126C75",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psfil0rq",
+      "id": "3",
+      "bbox": [
+        54,
+        24,
+        330,
+        24
+      ],
+      "geometry": "rect",
+      "text": "研究框架",
+      "textPreview": "研究框架",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "研究框架"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "研究框架",
+          "runs": [
+            {
+              "index": 1,
+              "text": "研究框架",
+              "fontSize": 15,
+              "typeface": "PingFang SC",
+              "color": "#126C75",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/epkzupwb",
+      "id": "4",
+      "bbox": [
+        54,
+        52,
+        1040,
+        46
+      ],
+      "geometry": "rect",
+      "text": "用三类自然观看信息拆解短视频诱发的杏仁核-海马动态",
+      "textPreview": "用三类自然观看信息拆解短视频诱发的杏仁核-海马动态",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "用三类自然观看信息拆解短视频诱发的杏仁核-海马动态"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "用三类自然观看信息拆解短视频诱发的杏仁核-海马动态",
+          "runs": [
+            {
+              "index": 1,
+              "text": "用三类自然观看信息拆解短视频诱发的杏仁核-海马动态",
+              "fontSize": 30,
+              "typeface": "PingFang SC",
+              "color": "#11272B",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7adsji5s",
+      "id": "5",
+      "bbox": [
+        54,
+        112,
+        1172,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6E0DE",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/xobm58z2",
+      "id": "6",
+      "bbox": [
+        1115,
+        28,
+        106,
+        34
+      ],
+      "alt": "Zhejiang University logo",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "d07e4ed3-5413-47d6-b53e-0ddf46e62857",
+        "contentType": "image/png",
+        "byteLength": 51013
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pg3ex0nu",
+      "id": "7",
+      "bbox": [
+        72,
+        165,
+        336,
+        390
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#B65B3D",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/eloj2t83",
+      "id": "8",
+      "bbox": [
+        96,
+        190,
+        88,
+        30
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#B65B3D",
+      "lineWidth": 1.4
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36hcrmhk",
+      "id": "9",
+      "bbox": [
+        108,
+        196,
+        64,
+        18
+      ],
+      "geometry": "rect",
+      "text": "研究一",
+      "textPreview": "研究一",
+      "resolvedFontSize": 13.51,
+      "resolvedTextStyle": {
+        "fontSize": 13.51,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "研究一"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "研究一",
+          "runs": [
+            {
+              "index": 1,
+              "text": "研究一",
+              "fontSize": 13.51,
+              "typeface": "PingFang SC",
+              "color": "#B65B3D",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fil0rqd4",
+      "id": "10",
+      "bbox": [
+        96,
+        242,
+        280,
+        38
+      ],
+      "geometry": "rect",
+      "text": "情绪效价",
+      "textPreview": "情绪效价",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "fontSize": 31,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "情绪效价"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "情绪效价",
+          "runs": [
+            {
+              "index": 1,
+              "text": "情绪效价",
+              "fontSize": 31,
+              "typeface": "PingFang SC",
+              "color": "#B65B3D",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qxs72x4n",
+      "id": "11",
+      "bbox": [
+        96,
+        293,
+        280,
+        26
+      ],
+      "geometry": "rect",
+      "text": "标准化图片刺激",
+      "textPreview": "标准化图片刺激",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "标准化图片刺激"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "标准化图片刺激",
+          "runs": [
+            {
+              "index": 1,
+              "text": "标准化图片刺激",
+              "fontSize": 19,
+              "typeface": "PingFang SC",
+              "color": "#11272B",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xobm58z2",
+      "id": "12",
+      "bbox": [
+        96,
+        355,
+        276,
+        100
+      ],
+      "geometry": "rect",
+      "text": "正性/负性情绪是否在内侧颞叶产生可分辨的时间-频率响应？",
+      "textPreview": "正性/负性情绪是否在内侧颞叶产生可分辨的时间-频率响应？",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "正性/负性情绪是否在内侧颞叶"
+          },
+          {
+            "index": 2,
+            "text": "产生可分辨的时间-频率响应"
+          },
+          {
+            "index": 3,
+            "text": "？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "正性/负性情绪是否在内侧颞叶产生可分辨的时间-频率响应？",
+          "runs": [
+            {
+              "index": 1,
+              "text": "正性/负性情绪是否在内侧颞叶产生可分辨的时间-频率响应？",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#11272B"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/83itgfml",
+      "id": "13",
+      "bbox": [
+        96,
+        495,
+        288,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#B65B3D",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fu18jqh0",
+      "id": "14",
+      "bbox": [
+        464,
+        165,
+        336,
+        390
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#126C75",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m94fu18j",
+      "id": "15",
+      "bbox": [
+        488,
+        190,
+        88,
+        30
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#126C75",
+      "lineWidth": 1.4
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0nuxc3y",
+      "id": "16",
+      "bbox": [
+        500,
+        196,
+        64,
+        18
+      ],
+      "geometry": "rect",
+      "text": "研究二",
+      "textPreview": "研究二",
+      "resolvedFontSize": 13.51,
+      "resolvedTextStyle": {
+        "fontSize": 13.51,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "研究二"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "研究二",
+          "runs": [
+            {
+              "index": 1,
+              "text": "研究二",
+              "fontSize": 13.51,
+              "typeface": "PingFang SC",
+              "color": "#126C75",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4fu18jqh",
+      "id": "17",
+      "bbox": [
+        488,
+        242,
+        280,
+        38
+      ],
+      "geometry": "rect",
+      "text": "主观偏好",
+      "textPreview": "主观偏好",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "fontSize": 31,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "主观偏好"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "主观偏好",
+          "runs": [
+            {
+              "index": 1,
+              "text": "主观偏好",
+              "fontSize": 31,
+              "typeface": "PingFang SC",
+              "color": "#126C75",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f6dcbulw",
+      "id": "18",
+      "bbox": [
+        488,
+        293,
+        280,
+        26
+      ],
+      "geometry": "rect",
+      "text": "真实短视频",
+      "textPreview": "真实短视频",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "真实短视频"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "真实短视频",
+          "runs": [
+            {
+              "index": 1,
+              "text": "真实短视频",
+              "fontSize": 19,
+              "typeface": "PingFang SC",
+              "color": "#11272B",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mlkjm1cf",
+      "id": "19",
+      "bbox": [
+        488,
+        355,
+        276,
+        100
+      ],
+      "geometry": "rect",
+      "text": "个体喜欢/不喜欢是否调制 LFP 与单神经元放电？",
+      "textPreview": "个体喜欢/不喜欢是否调制 LFP 与单神经元放电？",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "个体喜欢/不喜欢是否调制"
+          },
+          {
+            "index": 2,
+            "text": "LFP 与单神经元放电？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "个体喜欢/不喜欢是否调制 LFP 与单神经元放电？",
+          "runs": [
+            {
+              "index": 1,
+              "text": "个体喜欢/不喜欢是否调制 LFP 与单神经元放电？",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#11272B"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upwb2hwf",
+      "id": "20",
+      "bbox": [
+        488,
+        495,
+        288,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#126C75",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nap4r65w",
+      "id": "21",
+      "bbox": [
+        856,
+        165,
+        336,
+        390
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#6D8A52",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cvixczed",
+      "id": "22",
+      "bbox": [
+        880,
+        190,
+        88,
+        30
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#6D8A52",
+      "lineWidth": 1.4
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gbq1ory",
+      "id": "23",
+      "bbox": [
+        892,
+        196,
+        64,
+        18
+      ],
+      "geometry": "rect",
+      "text": "研究三",
+      "textPreview": "研究三",
+      "resolvedFontSize": 13.51,
+      "resolvedTextStyle": {
+        "fontSize": 13.51,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "研究三"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "研究三",
+          "runs": [
+            {
+              "index": 1,
+              "text": "研究三",
+              "fontSize": 13.51,
+              "typeface": "PingFang SC",
+              "color": "#6D8A52",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udg7adsj",
+      "id": "24",
+      "bbox": [
+        880,
+        242,
+        280,
+        38
+      ],
+      "geometry": "rect",
+      "text": "刺激凸显性",
+      "textPreview": "刺激凸显性",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "fontSize": 31,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "刺激凸显性"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "刺激凸显性",
+          "runs": [
+            {
+              "index": 1,
+              "text": "刺激凸显性",
+              "fontSize": 31,
+              "typeface": "PingFang SC",
+              "color": "#6D8A52",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nyd0z610",
+      "id": "25",
+      "bbox": [
+        880,
+        293,
+        280,
+        26
+      ],
+      "geometry": "rect",
+      "text": "公开自然电影数据",
+      "textPreview": "公开自然电影数据",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "公开自然电影数据"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "公开自然电影数据",
+          "runs": [
+            {
+              "index": 1,
+              "text": "公开自然电影数据",
+              "fontSize": 19,
+              "typeface": "PingFang SC",
+              "color": "#11272B",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cj6tovah",
+      "id": "26",
+      "bbox": [
+        880,
+        355,
+        276,
+        100
+      ],
+      "geometry": "rect",
+      "text": "场景切换与高唤醒片段是否牵引 A-H 连接方向？",
+      "textPreview": "场景切换与高唤醒片段是否牵引 A-H 连接方向？",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "场景切换与高唤醒片段是否牵"
+          },
+          {
+            "index": 2,
+            "text": "引 A-H 连接方向？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "场景切换与高唤醒片段是否牵引 A-H 连接方向？",
+          "runs": [
+            {
+              "index": 1,
+              "text": "场景切换与高唤醒片段是否牵引 A-H 连接方向？",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#11272B"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/54zidony",
+      "id": "27",
+      "bbox": [
+        880,
+        495,
+        288,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#6D8A52",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u9knih4b",
+      "id": "28",
+      "bbox": [
+        78,
+        604,
+        940,
+        32
+      ],
+      "geometry": "rect",
+      "text": "答辩主线：刺激属性从“可控情绪”推进到“真实偏好”与“自然情境凸显性”。",
+      "textPreview": "答辩主线：刺激属性从“可控情绪”推进到“真实偏好”与“自然情境凸显性”。",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "答辩主线：刺激属性从“可控情绪”推进到“真实偏好”与“自然情境凸显性”。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "答辩主线：刺激属性从“可控情绪”推进到“真实偏好”与“自然情境凸显性”。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "答辩主线：刺激属性从“可控情绪”推进到“真实偏好”与“自然情境凸显性”。",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#11272B",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/judg7ads",
+      "id": "29",
+      "bbox": [
+        1160,
+        668,
+        60,
+        22
+      ],
+      "geometry": "rect",
+      "text": "02",
+      "textPreview": "02",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "PingFang SC",
+        "alignment": "right"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "02",
+          "runs": [
+            {
+              "index": 1,
+              "text": "02",
+              "fontSize": 14,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

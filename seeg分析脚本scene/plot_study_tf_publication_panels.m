@@ -18,11 +18,11 @@ study2 = {
 };
 
 plot_one_study(study1, 'study1', '研究一：正性与负性图片条件下的时频结果', ...
-    {'负性图片：平均z功率','正性图片：平均z功率','正性 - 负性（未掩膜）','正性 - 负性（显著簇）'}, ...
+    {'负性图片：平均z功率','正性图片：平均z功率','正性 - 负性（z差值）','正性 - 负性（显著簇）'}, ...
     'tf_study1_valence_publication.png', out_dir);
 
 plot_one_study(study2, 'study2', '研究二：喜欢与不喜欢短视频条件下的时频结果', ...
-    {'不喜欢条件：平均z功率','喜欢条件：平均z功率','喜欢 - 不喜欢（未掩膜）','喜欢 - 不喜欢（显著簇）'}, ...
+    {'不喜欢条件：平均z功率','喜欢条件：平均z功率','喜欢 - 不喜欢（z差值）','喜欢 - 不喜欢（显著簇）'}, ...
     'tf_study2_preference_publication.png', out_dir);
 end
 
@@ -51,7 +51,7 @@ for r = 1:2
 
     add_row_letter(fig, letters{letter_i}, row_avg);
     letter_i = letter_i + 1;
-    plot_avg_row(fig, prepared, layout, row_avg, avg_titles);
+    plot_avg_row(fig, prepared, layout, row_avg, avg_titles, study_code);
 end
 
 out_png = fullfile(out_dir, out_name);
@@ -63,8 +63,7 @@ end
 function P = prepare_res(res, study_code)
 P.freq_vec = res.freq_vec(:);
 P.t_vec = res.t_vec(:)';
-t_end_keep = max(P.t_vec) - 500;
-P.t_keep = P.t_vec <= t_end_keep;
+P.t_keep = true(size(P.t_vec));
 P.t_vec2 = P.t_vec(P.t_keep);
 [P.TT, P.FF] = meshgrid(P.t_vec2, P.freq_vec);
 
@@ -99,13 +98,13 @@ P.yticks = P.yticks(P.yticks >= 2 & P.yticks <= max(P.freq_vec));
 end
 
 function layout = make_layout()
-layout.left = 0.105;
-layout.width = 0.178;
-layout.gap = 0.052;
+layout.left = 0.095;
+layout.width = 0.165;
+layout.gap = 0.050;
 layout.cb_gap = 0.008;
 layout.cb_width = 0.014;
-layout.height = 0.165;
-layout.row_y = [0.77 0.56 0.31 0.10];
+layout.height = 0.155;
+layout.row_y = [0.785 0.545 0.305 0.065];
 layout.x4 = layout.left + (0:3) * (layout.width + layout.gap);
 layout.x3 = layout.left + [0 1 2] * (layout.width + layout.gap);
 end
@@ -123,20 +122,31 @@ for i = 1:3
 end
 end
 
-function plot_avg_row(fig, P, layout, row_idx, titles)
+function plot_avg_row(fig, P, layout, row_idx, titles, study_code)
 y = layout.row_y(row_idx);
 mx = max(abs(P.diff(:)), [], 'omitnan');
 if isempty(mx) || mx == 0, mx = 1; end
+avg_lims = [min([P.avg_left_plot(:); P.avg_right_plot(:)], [], 'omitnan'), ...
+    max([P.avg_left_plot(:); P.avg_right_plot(:)], [], 'omitnan')];
+if any(~isfinite(avg_lims)) || avg_lims(1) == avg_lims(2)
+    avg_lims = [avg_lims(1)-1 avg_lims(2)+1];
+end
 data = {P.avg_left_plot, P.avg_right_plot, P.diff_plot, P.diff_plot};
 cmaps = {@jet, @jet, @redblue, @redblue};
 alphas = {[], [], [], double(P.sig)};
 for i = 1:4
     ax = axes(fig, 'Position', [layout.x4(i) y layout.width layout.height]);
     plot_panel(ax, P, data{i}, cmaps{i}, titles{i}, i == 1, alphas{i});
-    if i >= 3
+    if i <= 2
+        clim(ax, avg_lims);
+    elseif i >= 3
         clim(ax, [-mx mx]);
     end
-    add_colorbar(ax, layout);
+    tick_step = 1;
+    if strcmp(study_code, 'study2') && row_idx == 2
+        tick_step = 2;
+    end
+    add_colorbar(ax, layout, tick_step);
 end
 end
 
@@ -162,11 +172,21 @@ if ~isempty(alpha_data)
 end
 end
 
-function add_colorbar(ax, layout)
+function add_colorbar(ax, layout, tick_step)
+if nargin < 3
+    tick_step = [];
+end
 pos = ax.Position;
 cb = colorbar(ax);
 cb.Position = [pos(1)+pos(3)+layout.cb_gap pos(2) layout.cb_width pos(4)];
 cb.FontSize = 16;
+if ~isempty(tick_step)
+    lims = clim(ax);
+    ticks = ceil(lims(1)/tick_step)*tick_step:tick_step:floor(lims(2)/tick_step)*tick_step;
+    if numel(ticks) >= 2
+        cb.Ticks = ticks;
+    end
+end
 end
 
 function add_row_letter(fig, letter, row_idx)

@@ -1,0 +1,1046 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/gc5myn",
+    "id": "gc5myn",
+    "slide": 4,
+    "layoutId": "2329afa4-4c1e-4b17-a0cb-e8fb9fc74fd3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "42599b19-8c2f-4bbb-8ad3-5d9cf1934524",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "2329afa4-4c1e-4b17-a0cb-e8fb9fc74fd3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "42599b19-8c2f-4bbb-8ad3-5d9cf1934524",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "42599b19-8c2f-4bbb-8ad3-5d9cf1934524",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bi9s36hc",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5F7F6",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/032lszqt",
+      "id": "2",
+      "bbox": [
+        0,
+        0,
+        1280,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#126C75",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tovahoza",
+      "id": "3",
+      "bbox": [
+        54,
+        24,
+        330,
+        24
+      ],
+      "geometry": "rect",
+      "text": "研究一｜情绪效价",
+      "textPreview": "研究一｜情绪效价",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "研究一｜情绪效价"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "研究一｜情绪效价",
+          "runs": [
+            {
+              "index": 1,
+              "text": "研究一｜情绪效价",
+              "fontSize": 15,
+              "typeface": "PingFang SC",
+              "color": "#126C75",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9s36hcr",
+      "id": "4",
+      "bbox": [
+        54,
+        52,
+        1040,
+        46
+      ],
+      "geometry": "rect",
+      "text": "杏仁核在早期中低频段区分正性与负性情绪",
+      "textPreview": "杏仁核在早期中低频段区分正性与负性情绪",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "杏仁核在早期中低频段区分正性与负性情绪"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "杏仁核在早期中低频段区分正性与负性情绪",
+          "runs": [
+            {
+              "index": 1,
+              "text": "杏仁核在早期中低频段区分正性与负性情绪",
+              "fontSize": 30,
+              "typeface": "PingFang SC",
+              "color": "#11272B",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bulwval8",
+      "id": "5",
+      "bbox": [
+        54,
+        112,
+        1172,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6E0DE",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/psfil0rq",
+      "id": "6",
+      "bbox": [
+        1115,
+        28,
+        106,
+        34
+      ],
+      "alt": "Zhejiang University logo",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "728e223d-a271-4935-b521-3b8773c65c1b",
+        "contentType": "image/png",
+        "byteLength": 51013
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p0bi9s36",
+      "id": "7",
+      "bbox": [
+        62,
+        145,
+        708,
+        456
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#CAD7D5",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 8,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/7u54zido",
+      "id": "8",
+      "bbox": [
+        76,
+        159,
+        680,
+        408
+      ],
+      "alt": "核心结果图：情绪效价的时间-频率 F 统计量与显著簇",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "577bec8d-f98e-4f4b-84ed-ea84fd0c40c6",
+        "contentType": "image/png",
+        "byteLength": 56856
+      }
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/byhgn29g",
+      "id": "9",
+      "bbox": [
+        80,
+        573,
+        672,
+        18
+      ],
+      "geometry": "rect",
+      "text": "核心结果图：情绪效价的时间-频率 F 统计量与显著簇",
+      "textPreview": "核心结果图：情绪效价的时间-频率 F 统计量与显著簇",
+      "resolvedFontSize": 12.51,
+      "resolvedTextStyle": {
+        "fontSize": 12.51,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "核心结果图：情绪效价的时间-频率 F 统计量与显著簇"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "核心结果图：情绪效价的时间-频率 F 统计量与显著簇",
+          "runs": [
+            {
+              "index": 1,
+              "text": "核心结果图：情绪效价的时间-频率 F 统计量与显著簇",
+              "fontSize": 12.51,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ra5gbq1o",
+      "id": "10",
+      "bbox": [
+        820,
+        154,
+        310,
+        72
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D6E0DE",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2p8nqxs7",
+      "id": "11",
+      "bbox": [
+        834,
+        165,
+        282,
+        18
+      ],
+      "geometry": "rect",
+      "text": "刺激",
+      "textPreview": "刺激",
+      "resolvedFontSize": 13.51,
+      "resolvedTextStyle": {
+        "fontSize": 13.51,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "刺激"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "刺激",
+          "runs": [
+            {
+              "index": 1,
+              "text": "刺激",
+              "fontSize": 13.51,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9gr2p8nq",
+      "id": "12",
+      "bbox": [
+        834,
+        185,
+        282,
+        38
+      ],
+      "geometry": "rect",
+      "text": "IAPS 120 张",
+      "textPreview": "IAPS 120 张",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "IAPS 120 张"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "IAPS 120 张",
+          "runs": [
+            {
+              "index": 1,
+              "text": "IAPS 120 张",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#B65B3D",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gvy90je9",
+      "id": "13",
+      "bbox": [
+        820,
+        242,
+        310,
+        72
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D6E0DE",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r2p8nqxs",
+      "id": "14",
+      "bbox": [
+        834,
+        253,
+        282,
+        18
+      ],
+      "geometry": "rect",
+      "text": "分析窗",
+      "textPreview": "分析窗",
+      "resolvedFontSize": 13.51,
+      "resolvedTextStyle": {
+        "fontSize": 13.51,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "分析窗"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "分析窗",
+          "runs": [
+            {
+              "index": 1,
+              "text": "分析窗",
+              "fontSize": 13.51,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2hwfyxob",
+      "id": "15",
+      "bbox": [
+        834,
+        273,
+        282,
+        38
+      ],
+      "geometry": "rect",
+      "text": "0–2 s｜2–100 Hz",
+      "textPreview": "0–2 s｜2–100 Hz",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "0–2 s｜2–100 Hz"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "0–2 s｜2–100 Hz",
+          "runs": [
+            {
+              "index": 1,
+              "text": "0–2 s｜2–100 Hz",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#126C75",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/94fu18jq",
+      "id": "16",
+      "bbox": [
+        820,
+        330,
+        310,
+        72
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D6E0DE",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kjm1cfa9",
+      "id": "17",
+      "bbox": [
+        834,
+        341,
+        282,
+        18
+      ],
+      "geometry": "rect",
+      "text": "显著簇 1",
+      "textPreview": "显著簇 1",
+      "resolvedFontSize": 13.51,
+      "resolvedTextStyle": {
+        "fontSize": 13.51,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "显著簇 1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "显著簇 1",
+          "runs": [
+            {
+              "index": 1,
+              "text": "显著簇 1",
+              "fontSize": 13.51,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rqd4vmtw",
+      "id": "18",
+      "bbox": [
+        834,
+        361,
+        282,
+        38
+      ],
+      "geometry": "rect",
+      "text": "450–800 ms｜5.8–20.2 Hz",
+      "textPreview": "450–800 ms｜5.8–20.2 Hz",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "450–800 ms｜5.8–20.2 Hz"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "450–800 ms｜5.8–20.2 Hz",
+          "runs": [
+            {
+              "index": 1,
+              "text": "450–800 ms｜5.8–20.2 Hz",
+              "fontSize": 19,
+              "typeface": "PingFang SC",
+              "color": "#B65B3D",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/25kb6xkf",
+      "id": "19",
+      "bbox": [
+        820,
+        418,
+        310,
+        72
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D6E0DE",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a5gbq1or",
+      "id": "20",
+      "bbox": [
+        834,
+        429,
+        282,
+        18
+      ],
+      "geometry": "rect",
+      "text": "显著簇 2",
+      "textPreview": "显著簇 2",
+      "resolvedFontSize": 13.51,
+      "resolvedTextStyle": {
+        "fontSize": 13.51,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "显著簇 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "显著簇 2",
+          "runs": [
+            {
+              "index": 1,
+              "text": "显著簇 2",
+              "fontSize": 13.51,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3m94fu18",
+      "id": "21",
+      "bbox": [
+        834,
+        449,
+        282,
+        38
+      ],
+      "geometry": "rect",
+      "text": "1650–1950 ms｜2.0–4.1 Hz",
+      "textPreview": "1650–1950 ms｜2.0–4.1 Hz",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "PingFang SC",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1650–1950 ms｜2.0–4.1 Hz"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1650–1950 ms｜2.0–4.1 Hz",
+          "runs": [
+            {
+              "index": 1,
+              "text": "1650–1950 ms｜2.0–4.1 Hz",
+              "fontSize": 19,
+              "typeface": "PingFang SC",
+              "color": "#B65B3D",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s72x4nap",
+      "id": "22",
+      "bbox": [
+        820,
+        535,
+        8,
+        8
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#126C75",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lszqtcj6",
+      "id": "23",
+      "bbox": [
+        838,
+        526,
+        337,
+        32
+      ],
+      "geometry": "rect",
+      "text": "cluster 校正后杏仁核效应稳定",
+      "textPreview": "cluster 校正后杏仁核效应稳定",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "cluster 校正后杏仁核效应稳定"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "cluster 校正后杏仁核效应稳定",
+          "runs": [
+            {
+              "index": 1,
+              "text": "cluster 校正后杏仁核效应稳定",
+              "fontSize": 18,
+              "typeface": "PingFang SC",
+              "color": "#11272B"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/adsji5sn",
+      "id": "24",
+      "bbox": [
+        820,
+        567,
+        8,
+        8
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#126C75",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ylc7u54",
+      "id": "25",
+      "bbox": [
+        838,
+        558,
+        337,
+        32
+      ],
+      "geometry": "rect",
+      "text": "海马未出现稳定显著簇",
+      "textPreview": "海马未出现稳定显著簇",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "海马未出现稳定显著簇"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "海马未出现稳定显著簇",
+          "runs": [
+            {
+              "index": 1,
+              "text": "海马未出现稳定显著簇",
+              "fontSize": 18,
+              "typeface": "PingFang SC",
+              "color": "#11272B"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sji5snel",
+      "id": "26",
+      "bbox": [
+        820,
+        599,
+        8,
+        8
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#126C75",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h4byhgn2",
+      "id": "27",
+      "bbox": [
+        838,
+        590,
+        337,
+        32
+      ],
+      "geometry": "rect",
+      "text": "为真实短视频偏好分析提供脑区假设",
+      "textPreview": "为真实短视频偏好分析提供脑区假设",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "PingFang SC",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "为真实短视频偏好分析提供脑区假设"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "为真实短视频偏好分析提供脑区假设",
+          "runs": [
+            {
+              "index": 1,
+              "text": "为真实短视频偏好分析提供脑区假设",
+              "fontSize": 18,
+              "typeface": "PingFang SC",
+              "color": "#11272B"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ap4r65wj",
+      "id": "28",
+      "bbox": [
+        1160,
+        668,
+        60,
+        22
+      ],
+      "geometry": "rect",
+      "text": "04",
+      "textPreview": "04",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "PingFang SC",
+        "alignment": "right"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "04"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "04",
+          "runs": [
+            {
+              "index": 1,
+              "text": "04",
+              "fontSize": 14,
+              "typeface": "PingFang SC",
+              "color": "#5E6F72"
+            }
+          ]
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}
